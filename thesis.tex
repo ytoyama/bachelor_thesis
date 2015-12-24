@@ -87,6 +87,7 @@
 
 以下に具体的なアルゴリズムを示す。
 ここでは文章の意味表現を学習する場合について考える。
+学習の概略を図\label{fig:ParagraphVector}に示す。
 まず、意味表現を学習する対象となる文に含まれる単語を
 初めから一つずつ読んでいく。
 その際、以下の式1に示す目的関数を最大化するように各パラメータの学習を行う。
@@ -109,17 +110,17 @@
 これにより、BOWと異なり、単語の並び順を考慮した文や文章の分散表現を
 生成することができる。
 
-\begin{figure}
+\begin{figure}\label{fig:ParagraphVector}
   \includegraphics{fig/dvsvwv.png}
   \caption{文書及び文ベクトルの学習の概略}
 \end{figure}
 
-\section{提案手法}\label{ux63d0ux6848ux624bux6cd5}
+\section{提案手法}
 
 提案手法では、パラグラフベクトルによってレビュー内の各文及び文章の分散表現を
 生成し、それらをニューラルネットワークの入力として分類を行う。
 
-\subsection{アイデア}\label{ux30a2ux30a4ux30c7ux30a2}
+\subsection{アイデア}
 
 先行研究\cite{fujitani15}の実験結果から、
 レビュー内の各文の特徴量を元にレビューの分類を行うことが
@@ -160,11 +161,11 @@ w(x; w) = \frac{1}{2} (\cos(\frac{\pi |x|}{w}) + 1) \text{if $x$}
 \subsection{実験設定}
 
 基準手法として、NNへの入力となる特徴量が異なる4つの手法を用いた。
-各手法に用いた特徴量を表XXXに列挙する。
+各手法に用いた特徴量を表\ref{tab:MethodFeatures}に列挙する。
 
 \begin{table}
   \caption{各基準手法に用いた特徴量}
-  \begin{tabular}{l | l}
+  \begin{tabular}{l | l}\label{tab:MethodFeatures}
     基準手法 & 特徴量 \\
     \hline
     1 & レビュー全体の文書ベクトル \\
