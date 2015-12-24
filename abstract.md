@@ -81,7 +81,7 @@
 `p`はsoftmax関数により正規化された、文脈から現在の単語が導かれることの
 尤度である。
 
-![dvsvwv](dvsvwv.png)
+![dvsvwv](fig/dvsvwv.png)
 図XXX. 文書及び文ベクトルの学習の概略
 
 <!--
