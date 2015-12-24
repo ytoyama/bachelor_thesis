@@ -4,6 +4,7 @@ dpi = 88
 
 .SUFFIXES: .tex .pdf
 .tex.pdf:
+	lualatex ${.IMPSRC} # for forward references
 	lualatex ${.IMPSRC}
 
 .PHONY: all
@@ -15,4 +16,4 @@ view: ${main_pdf}
 
 .PHONY: clean
 clean:
-	rm -rf ${main_pdf}
+	rm -rf ${main_pdf} *.log *.aux
