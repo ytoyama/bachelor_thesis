@@ -14,32 +14,18 @@
 
 \newcommand{\tti@lineheight}{1.5em}
 
-%\newcommand{\titleformat}{}
-
 \titleformat{\part}{%
   \normalfont%
-  \fontsize{20pt}{\tti@lineheight}%
+  \fontsize{18pt}{\tti@lineheight}%
   \selectfont%
-  }{\thepart}{1em}{}
+}{\thepart}{1em}{}
 
-\titleformat{\section}{%
-  \normalfont%
-  \fontsize{16pt}{\tti@lineheight}%
-  \selectfont%
-  }{\thesection}{1em}{}
+\newcommand{\tti@titleformat}[2]%
+  {\titleformat*{#1}{\normalfont\fontsize{#2}{\tti@lineheight}\selectfont}}
 
-\titleformat{\subsection}{%
-  \normalfont%
-  \fontsize{14pt}{\tti@lineheight}%
-  \selectfont%
-  }{\thesubsection}{1em}{}
-
-\titleformat{\subsubsection}{%
-  \normalfont%
-  \fontsize{14pt}{\tti@lineheight}%
-  \selectfont%
-  }{\thesubsubsection}{1em}{}
-
+\tti@titleformat{\section}{16pt}
+\tti@titleformat{\subsection}{14pt}
+\tti@titleformat{\subsubsection}{12pt}
 
 \newcommand{\sectionbreak}{\clearpage}
 
@@ -67,10 +53,7 @@
 
 % laboratory command
 
-\newcommand{\laboratory}[1]{
-  \newcommand{\@laboratory}{#1}
-}
-
+\newcommand{\laboratory}[1]{\newcommand{\@laboratory}{#1}}
 
 
 % document environment with title page
@@ -102,7 +85,6 @@
 \renewenvironment{document}{%
   \originaldocument\@titlepage}%
   {\endoriginaldocument}
-
 
 
 \endinput
