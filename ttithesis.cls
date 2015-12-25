@@ -39,10 +39,11 @@
 \makeatother
 
 
-% maketitlepage command
+
+% document environment with title page
 
 \makeatletter
-\newcommand{\maketitlepage}{
+\newcommand{\@titlepage}{
   \begin{titlepage}
     \setstretch{1}
     \centering
@@ -64,6 +65,15 @@
   \end{titlepage}
 }
 \makeatother
+
+\makeatletter
+\let\originaldocument\document
+\let\endoriginaldocument\enddocument
+\renewenvironment{document}{%
+  \originaldocument\@titlepage}%
+  {\endoriginaldocument}
+\makeatother
+
 
 
 \endinput
