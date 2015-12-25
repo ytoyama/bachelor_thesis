@@ -3,7 +3,7 @@ dpi = 88
 
 
 .SUFFIXES: .tex .pdf
-.tex.pdf:
+.tex.pdf: ttithesis.cls
 	lualatex ${.IMPSRC} # for forward references
 	lualatex ${.IMPSRC}
 
