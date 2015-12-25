@@ -1,19 +1,27 @@
-main_pdf = thesis.pdf
+thesis_pdf = thesis.pdf
+summary_pdf = summary.pdf
+all_pdfs = ${thesis_pdf} ${summary_pdf}
+
 dpi = 88
+pdf_viewer = mupdf -r ${dpi}
 
 
 .SUFFIXES: .tex .pdf
-.tex.pdf: ttithesis.cls
+.tex.pdf: ttithesis.cls ttisummary.cls
 	lualatex ${.IMPSRC} # for forward references
 	lualatex ${.IMPSRC}
 
 .PHONY: all
-all: ${main_pdf}
+all: ${all_pdfs}
 
-.PHONY: view
-view: ${main_pdf}
-	mupdf -r ${dpi} ${.ALLSRC}
+.PHONY: view_thesis
+view_thesis: ${thesis_pdf}
+	${pdf_viewer} ${.ALLSRC}
+
+.PHONY: view_summary
+view_summary: ${summary_pdf}
+	${pdf_viewer} ${.ALLSRC}
 
 .PHONY: clean
 clean:
-	rm -rf ${main_pdf} *.log *.aux
+	rm -rf ${all_pdfs} *.log *.aux
