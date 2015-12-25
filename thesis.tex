@@ -65,7 +65,7 @@
 
 以下に具体的なアルゴリズムを示す。
 ここでは文章の意味表現を学習する場合について考える。
-学習の概略を図\label{fig:ParagraphVector}に示す。
+学習の概略を図\ref{fig:ParagraphVector}に示す。
 
 まず、意味表現を学習する対象となる文に含まれる単語を
 初めから一つずつ読んでいく。
@@ -94,9 +94,10 @@ $p$はsoftmax関数により正規化された、文脈から現在の単語が�
 これにより、Bag Of Words (BOW)と異なり、
 単語の並び順を考慮した文や文章の分散表現を生成することができる。
 
-\begin{figure}\label{fig:ParagraphVector}
+\begin{figure}
   \includegraphics{fig/dvsvwv.png}
   \caption{文書及び文ベクトルの学習の概略}
+  \label{fig:ParagraphVector}
 \end{figure}
 
 \section{提案手法}
