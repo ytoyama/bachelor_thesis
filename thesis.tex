@@ -3,6 +3,8 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{scrextend}
+\usepackage{setspace}
+\usepackage{color}
 
 
 \title{文間及びカテゴリ間の関係性を捉えた\\レーティング予測}
@@ -128,9 +130,24 @@ Rieら\cite{rie14}、Duyuら\cite{duyu15}等によって提案されている。
 これにより、レビュー内の文の位置関係がレーティング予測時に利用できると
 考えられる。
 以下に、文の位置関係が重要となる例を示す。
+2つ目の例は、1つ目の例の1文目と3文目を入れ替えたものである。
 
 \begin{addmargin}{8ex}
-  例です。
+  \vspace{1em}
+  \setstretch{1}
+  食事は本格的で新鮮な食材が使われており美味しかった。
+  しかし、それよりも嬉しかったことがある。
+  それは、部屋からの海の眺めが素晴らしかったことである。
+  これには子供も喜んでいた。
+\end{addmargin}
+
+\begin{addmargin}{8ex}
+  \vspace{1em}
+  \setstretch{1}
+  \textcolor{red}{それは、部屋からの海の眺めが素晴らしかったことである。}
+  しかし、それよりも嬉しかったことがある。
+  \textcolor{red}{食事は本格的で新鮮な食材が使われており美味しかった。}
+  これには子供も喜んでいた。
 \end{addmargin}
 
 \subsection{アルゴリズム}
