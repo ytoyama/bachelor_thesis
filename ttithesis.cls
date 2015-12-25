@@ -6,7 +6,42 @@
 \RequirePackage{setspace}
 \setstretch{1.5}
 \RequirePackage[font=small]{caption}
+\RequirePackage{titlesec}
 
+
+
+% sections
+
+\newcommand{\tti@lineheight}{1.5em}
+
+%\newcommand{\titleformat}{}
+
+\titleformat{\part}{%
+  \normalfont%
+  \fontsize{20pt}{\tti@lineheight}%
+  \selectfont%
+  }{\thepart}{1em}{}
+
+\titleformat{\section}{%
+  \normalfont%
+  \fontsize{16pt}{\tti@lineheight}%
+  \selectfont%
+  }{\thesection}{1em}{}
+
+\titleformat{\subsection}{%
+  \normalfont%
+  \fontsize{14pt}{\tti@lineheight}%
+  \selectfont%
+  }{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}{%
+  \normalfont%
+  \fontsize{14pt}{\tti@lineheight}%
+  \selectfont%
+  }{\thesubsubsection}{1em}{}
+
+
+\newcommand{\sectionbreak}{\clearpage}
 
 
 % centralized tabular, table, and figure environments
@@ -32,17 +67,14 @@
 
 % laboratory command
 
-\makeatletter
 \newcommand{\laboratory}[1]{
   \newcommand{\@laboratory}{#1}
 }
-\makeatother
 
 
 
 % document environment with title page
 
-\makeatletter
 \newcommand{\@titlepage}{
   \begin{titlepage}
     \setstretch{1}
@@ -64,15 +96,12 @@
     }
   \end{titlepage}
 }
-\makeatother
 
-\makeatletter
 \let\originaldocument\document
 \let\endoriginaldocument\enddocument
 \renewenvironment{document}{%
   \originaldocument\@titlepage}%
   {\endoriginaldocument}
-\makeatother
 
 
 
