@@ -1,13 +1,14 @@
 \ProvidesClass{ttisummary}
 
-\LoadClass[a4paper,11pt]{ltjsarticle}
+\LoadClass[twocolumn,a4paper,11pt]{ltjsarticle}
 
 \RequirePackage{geometry}
 \geometry{top=20truemm,bottom=20truemm,left=25truemm,right=25truemm}
 
 \RequirePackage{multicol}
 \RequirePackage{setspace}
-\RequirePackage{tabularx}
+\setstretch{1}
+\RequirePackage{array}
 
 
 
@@ -22,8 +23,9 @@
   \newcolumntype{B}{@{}>{\centering\arraybackslash}p{0.26\linewidth}@{}}
   \newcolumntype{C}{@{}>{\centering\arraybackslash}p{0.78\linewidth}@{}}
 
-  \begin{table*}[ht]
+  \twocolumn[
     \centering
+
     {\fontsize{18pt}{0pt}\selectfont 豊田工業大学~~~卒業研究報告書要旨} \\
 
     \begin{tabular}{|A|B|B|B|}
@@ -38,12 +40,9 @@
       \multicolumn{3}{C|}{\tti@tableelem{\@title}} \\
       \hline
     \end{tabular}
-  \end{table*}
-
-  \begin{multicols}{2}
-}{\end{multicols}\tti@endoriginaldocument}
-
-%\setlength\hoffset{-1in}
+    \vspace{1em}
+  ]
+}{\tti@endoriginaldocument}
 
 
 \endinput
