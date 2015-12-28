@@ -2,6 +2,9 @@
 
 \LoadClass[11pt,a4paper]{ltjsarticle}
 
+\RequirePackage{geometry}
+\geometry{top=20truemm,bottom=20truemm,left=25truemm,right=25truemm}
+
 \RequirePackage{luatexja}
 \RequirePackage{setspace}
 \setstretch{1.5}
