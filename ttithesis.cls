@@ -10,7 +10,14 @@
 \setstretch{1.5}
 \RequirePackage[font=small]{caption}
 \RequirePackage{titlesec}
+\RequirePackage{tocloft}
 
+
+
+% table of contents
+
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\contentsname}{\normalfont 目次}
 
 
 % sections
@@ -86,7 +93,7 @@
 \let\originaldocument\document
 \let\endoriginaldocument\enddocument
 \renewenvironment{document}{%
-  \originaldocument\@titlepage}%
+  \originaldocument\@titlepage\tableofcontents}%
   {\endoriginaldocument}
 
 
