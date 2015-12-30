@@ -11,6 +11,7 @@
 \RequirePackage[font=small]{caption}
 \RequirePackage{titlesec}
 \RequirePackage{tocloft}
+\RequirePackage{graphicx}
 
 
 
@@ -59,6 +60,10 @@
 \renewenvironment{figure}[1][ht]{%
   \originalfigure[#1]\centering}%
   {\endoriginalfigure}
+
+\let\tti@includegraphics\includegraphics
+\renewcommand{\includegraphics}[1]{%
+    \tti@includegraphics[width=0.8\textwidth]{#1}}
 
 
 % laboratory command
