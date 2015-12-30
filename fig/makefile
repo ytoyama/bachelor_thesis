@@ -1,7 +1,7 @@
 RM = rm -rf
 INKSCAPE = inkscape
 DPI = 360
-CONVERTED_FIGURES = dvsvwv.png
+CONVERTED_FIGURES = dvsvwv.png model.png
 
 .SUFFIXES: .svg .png
 .svg.png:
