@@ -244,18 +244,27 @@ $s_{i_{sent}}$は文ベクトル、$t_{i_{sect}}$は圧縮された後の文ベ�
 \section{実験}
 
 基準手法及び提案手法について分類精度を測定するために実験を行った。
-全ての実験には、先行研究\cite{fujitani15}と同様に、
-ホテル予約サイト楽天トラベルにおけるレビュー337,266件から
-訓練データ300,000件、開発データ10,000件、評価データ10,000件を用いた。
 
 
 \subsection{実験設定}
 
-表XXXと表XXXに各手法でのパラメータ設定を示す。
+ 実験は、分類精度を測定するものと、
+その実験で最も精度の高かった提案手法における予測レーティングと
+回答レーティングの平均二乗誤差を測定するものの2つを行った。
+ 分類精度を測定する実験では、1つの基準手法及び3つの提案手法を
+それぞれ同じデータセットに適用し、各手法の精度を測定した。
+データセットとしては、先行研究\cite{fujitani15}と同様に、
+ホテル予約サイト楽天トラベルにおけるレビュー337,266件から
+訓練データ300,000件、開発データ10,000件、評価データ10,000件を用いた。
+ レーティングの平均二乗誤差を測定する実験は、上記の分類精度を測定する
+実験で得られた予測レーティングを用いて測定を行った。
+ 表\ref{ParametersOfBaselineMethod}と表\ref{ParametersOfMyMethod1}、
+表\ref{ParametersOfMyMethod2}、表\ref{ParametersOfMyMethod3}に
+各手法でのパラメータ設定を示す。
 
 \begin{table}
   \caption{基準手法のパラメータ設定}
-  \begin{tabular}{l | r}
+  \begin{tabular}{l | r}\label{ParametersOfBaselineMethod}
     項目 & 値 \\
     \hline
     学習する単語の範囲 & 前後3単語 \\
@@ -269,7 +278,7 @@ $s_{i_{sent}}$は文ベクトル、$t_{i_{sect}}$は圧縮された後の文ベ�
 
 \begin{table}
   \caption{提案手法1のパラメータ設定}
-  \begin{tabular}{l | r}
+  \begin{tabular}{l | r}\label{ParametersOfMyMethod1}
     項目 & 値 \\
     \hline
     学習する単語の範囲 & 前後3単語 \\
@@ -283,7 +292,7 @@ $s_{i_{sent}}$は文ベクトル、$t_{i_{sect}}$は圧縮された後の文ベ�
 
 \begin{table}
   \caption{提案手法2のパラメータ設定}
-  \begin{tabular}{l | r}
+  \begin{tabular}{l | r}\label{ParametersOfMyMethod2}
     項目 & 値 \\
     \hline
     学習する単語の範囲 & 前後3単語 \\
@@ -297,7 +306,7 @@ $s_{i_{sent}}$は文ベクトル、$t_{i_{sect}}$は圧縮された後の文ベ�
 
 \begin{table}
   \caption{提案手法3のパラメータ設定}
-  \begin{tabular}{l | r}
+  \begin{tabular}{l | r}\label{ParametersOfMyMethod3}
     項目 & 値 \\
     \hline
     学習する単語の範囲 & 前後3単語 \\
@@ -312,15 +321,17 @@ $s_{i_{sent}}$は文ベクトル、$t_{i_{sect}}$は圧縮された後の文ベ�
 
 \subsection{結果}
 
-表XXXに実験結果を示す。
+表\ref{Accuracies}に分類精度を測定する実験の実験結果を示す。
 
 \begin{table}
   \caption{実験結果}
-  \begin{tabular}{l | r}
+  \begin{tabular}{l | r}\label{Accuracies}
     手法 & 精度 \\
     \hline
-    文書ベクトルのみを用いた手法 & 0 \\
-    文書ベクトル及び平均した文ベクトルを用いた手法 & 0 \\
+    基準手法 & 0 \\
+    提案手法1 & 0 \\
+    提案手法2 & 0 \\
+    提案手法3 & 0 \\
   \end{tabular}
 \end{table}
 
