@@ -213,6 +213,16 @@ Rieら\cite{rie14}、Duyuら\cite{duyu15}等によって提案されている。
 初めに、パラグラフベクトルを用いて、
 各レビューの文書ベクトルとそれに含まれる各文のベクトルを生成する。
 文書ベクトルと文ベクトルについては別々のモデルを学習させ生成する。
+以下の目的関数を最大化するように学習を行う。
+
+\begin{gather}
+  L_d = \sum^{T}_{t = 1} \left\{ \log \sigma(s(w_t, w_{t-n}, ..., w_{t-1}, d))
+        + \sum^{k}_{w_{t}' \sim P_n}
+          \log(1 - \sigma(s(w_{t}', w_{t-n}, ..., w_{t-1}, d))) \right\} \\
+  s(w_t, w_0, ..., w_n, d)
+    = W_{score}(w_t)
+      \cdot \begin{bmatrix} W(w_0) \\ \vdots \\ W(w_n) \\ D(d) \end{bmatrix}
+\end{gather}
 
 次に、各レビュー内の全ての文ベクトルに対して重み付け平均を行い、
 圧縮された文ベクトルを生成する。
@@ -220,13 +230,13 @@ Rieら\cite{rie14}、Duyuら\cite{duyu15}等によって提案されている。
 以下に重み付け平均を行う関数を示す。
 
 \begin{gather}
-t_{i_{sect}} = \sum_{i_{sent}} \frac{\mathbf{w}(x_{i_{sect}}(i_{sent})}
-                                    {|\mathbf{w}(x_{i_{sect}}(i_{sent}))|}
-                               s_{i_{sent}} \\
-x_{i_{sect}}(i_{sent}) = \frac{i_{sent} - i_{sect}}{\#sections} \\
-\mathbf{w}(x) = (w_{1}(x), w_{2}(x), ..., w_{i_{sect}}(x),
-                 ..., w_{\#sentences}(x)) \\
-w(x) = \frac{1}{2} (\cos(\pi|x|) + 1) \hspace{8ex} \text{if $|x| <= 1$}
+  t_{i_{sect}} = \sum_{i_{sent}} \frac{\mathbf{w}(x_{i_{sect}}(i_{sent})}
+                                      {|\mathbf{w}(x_{i_{sect}}(i_{sent}))|}
+                                 s_{i_{sent}} \\
+  x_{i_{sect}}(i_{sent}) = \frac{i_{sent} - i_{sect}}{\#sections} \\
+  \mathbf{w}(x) = (w_{1}(x), w_{2}(x), ..., w_{i_{sect}}(x),
+                   ..., w_{\#sentences}(x)) \\
+  w(x) = \frac{1}{2} (\cos(\pi|x|) + 1) \hspace{8ex} \text{if $|x| <= 1$}
 \end{gather}
 
 ここで、$i_{sent}$はレビュー内の文のインデックス、
