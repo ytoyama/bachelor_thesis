@@ -1,13 +1,13 @@
 rm = rm -rf
+latex = lualatex
 pdf_viewer = mupdf
 nlp_pdf = nlp.pdf
 
 
 .SUFFIXES: .tex .pdf
 .tex.pdf:
-	platex ${.IMPSRC}
-	platex ${.IMPSRC}
-	dvipdfmx ${.IMPSRC:R:=.dvi}
+	${latex} ${.IMPSRC}
+	${latex} ${.IMPSRC}
 
 .PHONY: all
 all: ${nlp_pdf}
@@ -19,4 +19,4 @@ clean:
 
 .PHONY: nlp
 nlp: ${nlp_pdf}
-	${pdf_viewer} ${.ALLSRC}
+	${pdf_viewer} -r 88 ${.ALLSRC}
