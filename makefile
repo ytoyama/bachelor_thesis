@@ -7,7 +7,7 @@ pdf_viewer = mupdf -r ${dpi}
 
 
 .SUFFIXES: .tex .pdf
-.tex.pdf: ttithesis.cls ttisummary.cls
+.tex.pdf:
 	lualatex ${.IMPSRC} # for forward references
 	lualatex ${.IMPSRC}
 
@@ -25,3 +25,7 @@ view_summary: ${summary_pdf}
 .PHONY: clean
 clean:
 	rm -rf ${all_pdfs} *.log *.aux
+
+
+${thesis_pdf}: ttithesis.cls
+${summary_pdf}: ttisummary.cls
