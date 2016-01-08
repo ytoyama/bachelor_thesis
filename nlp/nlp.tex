@@ -135,7 +135,7 @@ $h(w_{t-k}, ..., w_{t+k}, d; W, D)$は引数となるベクトルを平均した
 
 \begin{figure}
   \includegraphics{fig/paragraph_vector.png}
-  \caption{文書及び文ベクトルの学習の概略}
+  \caption{パラグラフベクトルの学習の概略}
   \label{fig:ParagraphVector}
 \end{figure}
 
@@ -231,7 +231,7 @@ $i_{sect}$は重み付け平均された後の文ベクトルのインデック�
 $s_{i_{sent}}$は文ベクトル、$t_{i_{sect}}$は圧縮された後の文ベクトルである。
 
 次に、レビュー毎の特徴量を用いて分類器によってレーティング予測を行う。
-各レビューの特徴量については後述する。
+レビューの特徴量については後述する。
 分類器は全結合ニューラルネットワークによって構成される。
 図\ref{fig:MyModel}に各層の結合の様子を示す。
 
@@ -245,7 +245,8 @@ $s_{i_{sent}}$は文ベクトル、$t_{i_{sect}}$は圧縮された後の文ベ�
 また、出力層はカテゴリの数とラベルの数の積だけのユニットを持ち、
 各ユニットの出力はそれが含まれるカテゴリ内でそれが示すクラスが選ばれることの
 正規化されていない対数確率を表す。
-ニューラルネットワークの最小化すべき目的関数を式\ref{eq:NNObjective}に示す。
+ニューラルネットワークは式\ref{eq:NNObjective}に示す目的関数を最小化するように
+学習を行う。
 
 \begin{gather}
   E = - \sum^{N}_{n = 1} \sum^{C}_{c = 1} \sum^{K}_{k = 1}
@@ -256,7 +257,8 @@ $s_{i_{sent}}$は文ベクトル、$t_{i_{sect}}$は圧縮された後の文ベ�
 
 各ユニットの出力はカテゴリ毎にソフトマックスクロスエントロピー関数によって
 損失に変換される。
-ここで、$y_ck(x_n; w)$はカテゴリ$c$においてクラス$k$が選ばれる対数確率である。
+ここで、$y_{ck}(x_n; w)$はカテゴリ$c$において
+クラス$k$が選ばれる対数確率である。
 $N$はミニバッチサイズ、$C$はカテゴリの総数、$K$はクラスの総数である。
 
 提案手法としては、Quocら\cite{quoc14}によって提案されている基準手法を拡張し、
@@ -265,7 +267,7 @@ NNへの入力となる特徴量が異なる3つの手法を提案する。
 表\ref{tab:MethodFeatures}に列挙する。
 
 \begin{table}
-  \caption{各基準手法に用いられる特徴量}
+  \caption{各手法に用いられる特徴量}
   \centering
   \begin{tabular}{l | l} \label{tab:MethodFeatures}
     手法 & 特徴量 \\
@@ -289,7 +291,7 @@ NNへの入力となる特徴量が異なる3つの手法を提案する。
 
 \section{実験}
 
-提案手法と従来手法\cite{fujitani15}及び基準手法を比較するため
+提案手法と従来手法\cite{fujitani15}及び基準手法を比較するため、
 2つの評価基準を用いて実験を行った。
 
 
@@ -319,7 +321,7 @@ NNへの入力となる特徴量が異なる3つの手法を提案する。
 \begin{table}
   \caption{各手法のパラメータ設定}
   \centering
-  \begin{tabular}{l | r r} \label{tab:ParametersOfBaselineMethod}
+  \begin{tabular}{l | r r} \label{tab:ParametersOfMethods}
     手法 & 学習回数 & 中間層でのユニット数 \\
     \hline
     基準手法  & 20 & 512 \\
