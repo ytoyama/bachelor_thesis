@@ -219,12 +219,10 @@ $w_{t}' \sim P_n$は文脈外の単語$w_{t}'$を単語の出現頻度$P_n$に�
 
 \begin{gather}
   \mathbf{t}_{i_{sect}} = \sum_{i_{sent}}
-                          \frac{\mathbf{w}(x_{i_{sect}}(i_{sent}))}
-                               {|\mathbf{w}(x_{i_{sect}}(i_{sent}))|}
+                          \frac{w(x_{i_{sect}}(i_{sent}))}
+                               {|\sum_{i_{sent}'} w(x_{i_{sect}}(i_{sent}'))|}
                           \mathbf{s}_{i_{sent}} \\
   x_{i_{sect}}(i_{sent}) = \frac{i_{sent} - i_{sect}}{\#sections} \\
-  \mathbf{w}(x) = (w_{1}(x), w_{2}(x), ..., w_{i_{sect}}(x),
-                   ..., w_{\#sentences}(x)) \\
   w(x) = \begin{cases}
     \frac{1}{2} (\cos(\pi|x|) + 1) &\text{if $|x| <= 1$} \\
     0 &\text{otherwise}
