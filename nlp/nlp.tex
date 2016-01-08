@@ -260,6 +260,7 @@ $s_{i_{sent}}$は文ベクトル、$t_{i_{sect}}$は圧縮された後の文ベ�
 
 \begin{table}
   \caption{各基準手法に用いられる特徴量}
+  \centering
   \begin{tabularx}{\linewidth}{l | l}\label{tab:MethodFeatures}
     手法 & 特徴量 \\
     \hline
@@ -296,69 +297,24 @@ $s_{i_{sent}}$は文ベクトル、$t_{i_{sect}}$は圧縮された後の文ベ�
 訓練データ300,000件、開発データ10,000件、評価データ10,000件を用いた。
 レーティングの平均二乗誤差を測定する実験は、上記の分類精度を測定する
 実験で得られた予測レーティングを用いて測定を行った。
-表\ref{tab:ParametersOfBaselineMethod}と表\ref{tab:ParametersOfMyMethod1}、
-表\ref{tab:ParametersOfMyMethod2}、表\ref{tab:ParametersOfMyMethod3}に
-各手法でのパラメータ設定を示す。
+表\ref{tab:ParametersOfMethods}に各手法でのパラメータ設定を示す。
+全ての実験において文書及び文ベクトルについては、
+学習回数は1024回、学習する単語の範囲は前3単語、単語の最少出現回数は5回、
+ベクトルの次元数は600次元に設定し学習したものを用いた。
 
-\begin{table}
-  \caption{基準手法のパラメータ設定}
-  \begin{tabular}{l | r}\label{tab:ParametersOfBaselineMethod}
-    項目 & 値 \\
+\begin{table*}[t]
+  \caption{各手法のパラメータ設定}
+  \centering
+  \begin{tabular}{l | r r r r r}\label{tab:ParametersOfBaselineMethod}
+    手法 & 分類器の学習回数 & 中間層でのニューロン数 & 中間層の数
+    & \makecell{入力層及び中間層での\\ドロップアウト率} \\
     \hline
-    学習する単語の範囲 & 前3単語 \\
-    単語の最少出現回数 & 5 \\
-    ベクトルの次元数 & 600 \\
-    分類器の学習回数 & 20 \\
-    中間層の数 & 1 \\
-    中間層でのニューロン数 & 512 \\
-    入力層及び中間層でのドロップアウト率 & 0.2, 0.5 \\
+    基準手法  & 20 & 512 & 1 & 0.2, 0.5 \\
+    提案手法1 & 55 & 256 & 1 & 0.2, 0.5 \\
+    提案手法2 & 24 & 256 & 1 & 0.2, 0.5 \\
+    提案手法3 & 30 & 512 & 1 & 0.2, 0.5 \\
   \end{tabular}
-\end{table}
-
-\begin{table}
-  \caption{提案手法1のパラメータ設定}
-  \begin{tabular}{l | r}\label{tab:ParametersOfMyMethod1}
-    項目 & 値 \\
-    \hline
-    学習する単語の範囲 & 前3単語 \\
-    単語の最少出現回数 & 5 \\
-    ベクトルの次元数 & 600 \\
-    分類器の学習回数 & 55 \\
-    中間層の数 & 1 \\
-    中間層でのニューロン数 & 256 \\
-    入力層及び中間層でのドロップアウト率 & 0.2, 0.5 \\
-  \end{tabular}
-\end{table}
-
-\begin{table}
-  \caption{提案手法2のパラメータ設定}
-  \begin{tabular}{l | r}\label{tab:ParametersOfMyMethod2}
-    項目 & 値 \\
-    \hline
-    学習する単語の範囲 & 前3単語 \\
-    単語の最少出現回数 & 5 \\
-    ベクトルの次元数 & 600 \\
-    分類器の学習回数 & 24 \\
-    中間層の数 & 1 \\
-    中間層でのニューロン数 & 256 \\
-    入力層及び中間層でのドロップアウト率 & 0.2, 0.5 \\
-  \end{tabular}
-\end{table}
-
-\begin{table}
-  \caption{提案手法3のパラメータ設定}
-  \begin{tabular}{l | r}\label{tab:ParametersOfMyMethod3}
-    項目 & 値 \\
-    \hline
-    学習する単語の範囲 & 前3単語 \\
-    単語の最少出現回数 & 5 \\
-    ベクトルの次元数 & 600 \\
-    分類器の学習回数 & 30 \\
-    中間層の数 & 1 \\
-    中間層でのニューロン数 & 512 \\
-    入力層及び中間層でのドロップアウト率 & 0.2, 0.5 \\
-  \end{tabular}
-\end{table}
+\end{table*}
 
 
 \subsection{結果}
@@ -368,6 +324,7 @@ $s_{i_{sent}}$は文ベクトル、$t_{i_{sect}}$は圧縮された後の文ベ�
 
 \begin{table}
   \caption{各手法における正答率}
+  \centering
   \begin{tabular}{l | r}\label{tab:Accuracies}
     手法 & 精度 \\
     \hline
