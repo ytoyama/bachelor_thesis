@@ -120,10 +120,11 @@
 式\ref{eq:ParagraphVector}に示す目的関数$L$を最大化するように
 各パラメータの学習を行う。
 \begin{gather}
-  L = \frac{1}{T} \sum^{T - k}_{t = k} \log p(w_t | w_{t-k}, ..., w_{t+k})
-  \label{eq:ParagraphVector} \\
-  p(w_t | w_{t-k}, ..., w_{t+k}) = \frac{e^{y_{w_t}}}{\sum_i e^{y_i}} \\
-  y = b + Uh(w_{t-k}, ..., w_{t+k}, d; W, D)
+  L = \frac{1}{T} \sum^{T - k}_{t = k} \log p(w_t | w_{t-k}, ..., w_{t+k}),
+    \label{eq:ParagraphVector} \\
+  p(w_t | w_{t-k}, ..., w_{t+k}) = \frac{e^{y_{w_t}}}{\sum_i e^{y_i}},
+    \nonumber \\
+  y = b + Uh(w_{t-k}, ..., w_{t+k}, d; W, D) \nonumber
 \end{gather}
 ここで、$d$は文章、$w_i$は単語、$W$は全ての単語の分散表現を表す行列、
 $D$は全ての文章の分散表現を表す行列である。
@@ -180,14 +181,14 @@ Rieら\cite{rie14}、Duyuら\cite{duyu15}等によって提案されている。
 \begin{multline}
   L_d = \sum^{T}_{t = n + 1} \{ \log \sigma(s(w_t, w_{t-n}, ..., w_{t-1}, d)) \\
         + \sum^{k}_{w_{t}' \sim P_n}
-          \log(1 - \sigma(s(w_{t}', w_{t-n}, ..., w_{t-1}, d))) \}
-  \label{eq:PVObjective} \\
+        \log(1 - \sigma(s(w_{t}', w_{t-n}, ..., w_{t-1}, d))) \},
+    \label{eq:PVObjective} \\
 \end{multline}
 \begin{gather}
   s(w_t, w_{t - n}, ..., w_{t - 1}, d)
     = W_{map}(w_t)
       \cdot \begin{bmatrix} W(w_{t - 1}) \\ \vdots
-      \\ W(w_{t - n}) \\ D(d) \end{bmatrix}
+      \\ W(w_{t - n}) \\ D(d) \end{bmatrix} \nonumber
 \end{gather}
 ここで、$T$は現在の文章内の単語数、$t$は現在の単語位置、$d$は現在の文章、
 $w_i$は位置$i$にある単語、$n$はウィンドウサイズである。
@@ -219,12 +220,12 @@ $w_{t}' \sim P_n$は文脈外の単語$w_{t}'$を単語の出現頻度$P_n$に�
   \mathbf{t}_{i_{sect}} = \sum_{i_{sent}}
                           \frac{w(x_{i_{sect}}(i_{sent}))}
                                {|\sum_{i_{sent}'} w(x_{i_{sect}}(i_{sent}'))|}
-                          \mathbf{s}_{i_{sent}} \\
-  x_{i_{sect}}(i_{sent}) = \frac{i_{sent} - i_{sect}}{\#sections} \\
+                          \mathbf{s}_{i_{sent}}, \nonumber \\
+  x_{i_{sect}}(i_{sent}) = \frac{i_{sent} - i_{sect}}{\#sections}, \nonumber \\
   w(x) = \begin{cases}
     \frac{1}{2} (\cos(\pi|x|) + 1) &\text{if $|x| <= 1$} \\
     0 &\text{otherwise}
-  \end{cases}
+  \end{cases} \nonumber
 \end{gather}
 ここで、$i_{sent}$はレビュー内の文のインデックス、
 $\#sections$は重み付け平均された後の文ベクトルの数、
@@ -250,10 +251,10 @@ $s_{i_{sent}}$は文ベクトル、$t_{i_{sect}}$は圧縮された後の文ベ�
 最小化するように学習を行う。
 \begin{gather}
   E = - \sum^{N}_{n = 1} \sum^{C}_{c = 1} \sum^{K}_{k = 1}
-        d_{nck} \log{y_{ck}(x_n; w)}
+        d_{nck} \log{y_{ck}(x_n; w)}, \nonumber
   \label{eq:NNObjective} \\
   y_{ck}(x_n; w) = \frac{e^{u_{ck}(x_n; w)}}
-                        {\sum^{K}_{j = 1} e^{u_{cj}(x_n; w)}}
+                        {\sum^{K}_{j = 1} e^{u_{cj}(x_n; w)}} \nonumber
 \end{gather}
 各ユニットの出力はカテゴリ毎にソフトマックス交差エントロピー関数によって
 損失に変換される。
