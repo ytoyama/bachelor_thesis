@@ -251,7 +251,7 @@ $s_{i_{sent}}$は文ベクトル、$t_{i_{sect}}$は圧縮された後の文ベ�
 最小化するように学習を行う。
 \begin{gather}
   E = - \sum^{N}_{n = 1} \sum^{C}_{c = 1} \sum^{K}_{k = 1}
-        d_{nck} \log{y_{ck}(x_n; w)}, \nonumber
+        d_{nck} \log{y_{ck}(x_n; w)},
   \label{eq:NNObjective} \\
   y_{ck}(x_n; w) = \frac{e^{u_{ck}(x_n; w)}}
                         {\sum^{K}_{j = 1} e^{u_{cj}(x_n; w)}} \nonumber
