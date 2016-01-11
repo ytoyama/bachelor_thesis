@@ -169,6 +169,7 @@ Rieら\cite{rie14}、Duyuら\cite{duyu15}等によって提案されている。
 
 提案手法では、PV-DMによってレビュー内の各文及び文章の分散表現を
 生成し、それらをニューラルネットワークの入力として分類を行う。
+これによって、文間及びカテゴリ間の深い関係性を捉える。
 
 提案するレビュー分類手法の
 入力はレビューである文書と正解レーティングの組の集合、
@@ -187,8 +188,8 @@ Rieら\cite{rie14}、Duyuら\cite{duyu15}等によって提案されている。
 \begin{gather}
   s(w_t, w_{t - n}, ..., w_{t - 1}, d)
     = W_{map}(w_t)
-      \cdot \begin{bmatrix} W(w_{t - 1}) \\ \vdots
-      \\ W(w_{t - n}) \\ D(d) \end{bmatrix} \nonumber
+      \cdot \begin{bmatrix} W(w_{t - n}) \\ \vdots
+      \\ W(w_{t - 1}) \\ D(d) \end{bmatrix} \nonumber
 \end{gather}
 ここで、$T$は現在の文章内の単語数、$t$は現在の単語位置、$d$は現在の文章、
 $w_i$は位置$i$にある単語、$n$はウィンドウサイズである。
