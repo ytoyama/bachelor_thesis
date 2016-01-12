@@ -152,7 +152,7 @@ BOW等に比べて高い正答率を示すことが示されている。
 しかし、文書全体にパラグラフベクトルを用いる場合、文同士の位置関係が
 分類時に考慮できない。
 
-\begin{figure}[t]
+\begin{figure}[t!]
   \includegraphics{fig/paragraph_vector.png}
   \caption{パラグラフベクトルの学習の概略}
   \label{fig:ParagraphVector}
@@ -270,7 +270,7 @@ $\cos$関数はほぼ同じ正答率を示したため、$\cos$関数を採用�
 最後に、分類器によってレーティング予測を行う。
 分類器は全結合ニューラルネットワークによって構成される。
 図\ref{fig:MyModel}に各層の結合の様子を示す。
-\begin{figure}[t]
+\begin{figure}[t!]
   \includegraphics{fig/model.png}
   \caption{全結合ニューラルネットワークによる分類器}
   \label{fig:MyModel}
@@ -313,7 +313,7 @@ WeightedASV (Weighted-Averaged Sentence Vector)を用いた。
 基準手法と2つの比較手法、提案手法に用いられる分類器の入力を
 表\ref{tab:MethodFeatures}に列挙する。
 
-\begin{table}[b]
+\begin{table}[b!]
   \caption{各手法に用いられる特徴量}
   \centering
   \begin{tabularx}{\linewidth}{l | X} \label{tab:MethodFeatures}
@@ -355,7 +355,7 @@ WeightedASVと提案手法において圧縮された文ベクトルの数はそ
 学習回数は1,024回、学習する単語の範囲は前3単語、単語の最少出現回数は5回、
 ベクトルの次元数は600次元に設定し学習したものを用いた。
 
-\begin{table}[b]
+\begin{table}[b!]
   \caption{各手法のパラメータ設定}
   \centering
   \begin{tabular}{l | r r} \label{tab:ParametersOfMethods}
@@ -384,7 +384,7 @@ WeightedASVと提案手法において圧縮された文ベクトルの数はそ
 有効であることが分かった。
 これは文書ベクトルと文ベクトルがいくらか異なる特徴を学習していることを示す。
 
-\begin{table}[b]
+\begin{table}[b!]
   \caption{各手法における正答率}
   \centering
   \begin{tabular}{l | r} \label{tab:Accuracies}
@@ -410,7 +410,7 @@ WeightedASVと提案手法において圧縮された文ベクトルの数はそ
 よく捉えていると考えられる。
 また、その他全てのカテゴリにおいても提案手法は従来手法より低い誤差を示した。
 
-\begin{table}[b]
+\begin{table}[b!]
   \caption{提案手法と従来手法\cite{fujitani15}におけるレーティングのRMSE}
   \centering
   \begin{tabular}{l | r r} \label{tab:RMSEs}
