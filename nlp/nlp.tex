@@ -118,11 +118,13 @@ Multi-Instance Multi-Label learning for Relation Extraction (MIML-RE)モデル�
 \subsection{パラグラフベクトル}
 
 パラグラフベクトルは、文や文章といった大きな単位の言語表現の意味表現を
-学習する手法である。これは、Continuous BOW (CBOW)
-またはSkip-gram\cite{yoshua03}という単語の意味表現の学習手法を
-応用した手法である。
+学習する手法である。
+これは、Continuous BOW (CBOW)またはSkip-gram\cite{yoshua03}という
+単語の意味表現の学習手法を応用した手法である。
 ここではCBOWを応用したDistributed Memory model of Paragraph Vectors (PV-DM)
 について説明する。
+PV-DMはBOWと異なり、単語の並び順を考慮した文や文章の分散表現を
+生成することができる。
 
 以下に具体的なアルゴリズムを示す。
 ここでは文章の意味表現を学習する場合について考える。
@@ -148,9 +150,6 @@ $p$はsoftmax関数により正規化された、文脈から現在の単語が�
 $p$を構成する$y$は現在の単語とウィンドウ内の単語及び現在の文章から導出される。
 $h(w_{t-k}, ..., w_{t-1}, d; W, D)$は引数となるベクトルを平均したベクトル
 または結合したベクトルを返す関数である。
-
-これにより、PV-DMはBOWと異なり、
-単語の並び順を考慮した文や文章の分散表現を生成することができる。
 
 PV-DMによって得られたパラグラフベクトルは評判分類問題において
 BOW等に比べ高い正答率を示すことが示されている。
