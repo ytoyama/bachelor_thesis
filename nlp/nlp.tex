@@ -19,19 +19,20 @@
 
 \title{\textbf{
   %パラグラフベクトルとNNによる\\
-  文書及び文間、カテゴリ間の関係性を捉えたレーティング予測\\
-  %Sentiment Classification Reflecting Relation among Sentences and Categories\\
+  文書・文間、カテゴリ間の関係を考慮したレーティング予測 \\
+  Sentiment Classification Reflecting Relations \\
+  among a Document, Sentences and Categories \\
   %via Pragraph Vector and Neural Network\\
 }}
 
 \author{
   \begin{tabular}{c c c}
-    外山 洋太 & \hspace{4ex}三輪 誠\hspace{4ex} & 佐々木 裕 \\
-    \multicolumn{3}{c}{豊田工業大学}
-    %\makecell{外山 洋太\\Yota Toyama}
-    %& \hspace{4ex}\makecell{三輪 誠\\Makoto Miwa}\hspace{4ex}
-    %& \makecell{佐々木 裕\\Yutaka Sasaki} \\
-    %\multicolumn{3}{c}{\makecell{豊田工業大学\\Toyota Technological Institute}}
+    %外山 洋太 & \hspace{4ex}三輪 誠\hspace{4ex} & 佐々木 裕 \\
+    %\multicolumn{3}{c}{豊田工業大学}
+    \makecell{外山 洋太\\Yota Toyama}
+    & \hspace{4ex}\makecell{三輪 誠\\Makoto Miwa}\hspace{4ex}
+    & \makecell{佐々木 裕\\Yutaka Sasaki} \\
+    \multicolumn{3}{c}{\makecell{豊田工業大学\\Toyota Technological Institute}}
   \end{tabular}
 }
 \date{\texttt{\{sd12056, makoto-miwa, yutaka.sasaki\}@toyota-ti.ac.jp}}
@@ -74,7 +75,8 @@
 
 本研究は、複数カテゴリにおける評判分類について、
 %パラグラフベクトル\cite{quoc14}とニューラルネットワークを用いて
-文書及び文間、カテゴリ間の関係性を捉えた分類を実現することを目的とする。
+文書及び文間の関係とカテゴリ間の関係を同時に考慮した分類を実現することを
+目的とする。
 
 %提案手法では、パラグラフベクトル\cite{quoc14}によって
 %生成された各レビューの文書ベクトルと文ベクトルを
