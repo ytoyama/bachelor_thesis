@@ -19,17 +19,15 @@
 
 \title{\textbf{
   %パラグラフベクトルとNNによる\\
-  文間及びカテゴリ間の関係性を捉えたレーティング予測\\
+  文書及び文間、カテゴリ間の関係性を捉えたレーティング予測\\
   %Sentiment Classification Reflecting Relation among Sentences and Categories\\
   %via Pragraph Vector and Neural Network\\
 }}
 
 \author{
   \begin{tabular}{c c c}
-    \makecell{外山 洋太}
-    & \hspace{4ex}\makecell{三輪 誠}\hspace{4ex}
-    & \makecell{佐々木 裕} \\
-    \multicolumn{3}{c}{\makecell{豊田工業大学}}
+    外山 洋太 & \hspace{4ex}三輪 誠\hspace{4ex} & 佐々木 裕 \\
+    \multicolumn{3}{c}{豊田工業大学}
     %\makecell{外山 洋太\\Yota Toyama}
     %& \hspace{4ex}\makecell{三輪 誠\\Makoto Miwa}\hspace{4ex}
     %& \makecell{佐々木 裕\\Yutaka Sasaki} \\
@@ -65,16 +63,18 @@
 例えば、文毎の素性を入力とすれば文間の関係性を捉えることができる。
 さらに、多カテゴリの分類問題においてはカテゴリ間の関係性を捉えた分類が
 実現できる。
-また、評判分類に関する多くの研究は1つのカテゴリにおける二値分類問題を
+しかし、評判分類に関する多くの研究は1つのカテゴリにおける二値分類問題を
 対象としている。
 
 文や文章の意味表現の学習手法として、単語と文章の分散表現を同時に学習する
 パラグラフベクトル\cite{quoc14}がある。
 これは評判分類問題に対して優れた性能を示している。
+しかし、文書全体にパラグラフベクトルを用いた場合、
+分類時に文の位置関係を考慮できない。
 
 本研究は、複数カテゴリにおける評判分類について、
 %パラグラフベクトル\cite{quoc14}とニューラルネットワークを用いて
-文間及びカテゴリ間の関係性を捉えた分類を実現することを目的とする。
+文書及び文間、カテゴリ間の関係性を捉えた分類を実現することを目的とする。
 
 %提案手法では、パラグラフベクトル\cite{quoc14}によって
 %生成された各レビューの文書ベクトルと文ベクトルを
