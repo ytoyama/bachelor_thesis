@@ -14,12 +14,12 @@ pdf_viewer = mupdf -r ${dpi}
 .PHONY: all
 all: ${all_pdfs}
 
-.PHONY: view_thesis
-view_thesis: ${thesis_pdf}
+.PHONY: thesis
+thesis: ${thesis_pdf}
 	${pdf_viewer} ${.ALLSRC}
 
-.PHONY: view_summary
-view_summary: ${summary_pdf}
+.PHONY: summary
+summary: ${summary_pdf}
 	${pdf_viewer} ${.ALLSRC}
 
 .PHONY: clean
