@@ -1,9 +1,9 @@
 Sentiment classification of product reviews are important
-to analyze sentiment for marketing.
+to analyze sentiment of them for marketing in companies.
 The present methods of sentiment classification
 on multiple categories of rating
 are not capable enough to classify sentiment of a review
-considering relations among a document, its sentences and categories.
+considering relations among its text, its sentences and categories.
 This research aims to propose a method of sentiment classification
 on multiples categories
 which considers them and improves classification accuracy better
@@ -14,12 +14,17 @@ First, it generates distributed expression of reviews and sentences in them
 using the Distributed  Memory model of Paragraph Vectors (PV-DM),
 which shows good performance on sentiment classification.
 Second, it classifies reviews by them to classes of degrees of ratings
-on labels of multiple categories using fully-connected neural network
-as sentence vectors are compressed into an weighted average of them.
+on labels of multiple categories using the fully-connected neural network
+as sentence vectors in each review are compressed
+into an weighted average of them.
+At the second step, the relations of text and sentences in a review
+and categories are considered to classify it.
 
 In the experiments,
 And, from the result that the proposed method indicated better accuracy
-than the comparative methods, it is found out that
+than the comparative methods and the present method specialized
+for sentiment classification on multiple categories,
+it is found out that
 the order of sentences in a review is important for sentiment classification
-and Paragraph Vector captures some sort of different features
-when it is applied to a whole document and sentences in a review.
+and PV-DM captures some sort of different features them
+applied to a whole document and sentences in a review.
