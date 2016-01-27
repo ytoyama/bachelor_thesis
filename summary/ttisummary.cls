@@ -12,7 +12,7 @@
 
 
 
-\newcommand{\tti@tableelem}[1]{{\fontsize{11pt}{0pt}\selectfont#1}}
+\newcommand{\tti@tableelem}[1]{{\fontsize{12pt}{0pt}\selectfont#1}}
 
 \let\tti@originaldocument\document
 \let\tti@endoriginaldocument\enddocument
