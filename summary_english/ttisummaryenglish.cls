@@ -26,7 +26,8 @@
 
   {
     \centering
-    {\fontsize{14pt}{0pt}\selectfont Undergraduate Research Report} \\
+    {\fontsize{14pt}{0pt}\selectfont
+     Introductory Research Report for Graduate School} \\
     \vspace{0.5em}
 
     \begin{tabular}{|A|A|A|A|}
