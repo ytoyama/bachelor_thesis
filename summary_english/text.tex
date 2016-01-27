@@ -4,7 +4,7 @@ to analyze sentiment of them for marketing in companies.
 %on multiple categories of rating
 %are not capable enough to classify sentiment of a review
 %considering relations among its text, its sentences and categories.
-
+%
 Nowadays, on sentiment classification problem,
 some methods using neural network are proposed
 and work better than previous methods.
@@ -12,7 +12,7 @@ Neural network is capable to extract and utilize complex relations
 among factors in input features for sentiment classification.
 However, they are usually for binary or multi-class classification
 on one category.
-
+%
 As a method to learn semantic representations of large language expressions,
 such as documents, paragraphs, and sentences,
 the Distributed  Memory model of Paragraph Vectors (PV-DM) is proposed
@@ -23,22 +23,22 @@ This research aims to propose a method of sentiment classification
 on multiples categories
 which considers relations among its text, its sentences and categories
 and improves classification accuracy better than present methods.
-
+%
 The proposed method classifies reviews in 2 steps.
 First, it generates distributed representations of reviews and sentences
 in them using PV-DM.
-Second, it classifies reviews by them to classes of ratings
-on labels of categories using the fully-connected neural network
+Second, it classifies reviews by them to classes of degrees of ratings
+on labels of multiple categories using the fully-connected neural network
 as sentence vectors in each review are compressed
 into an weighted average of them.
 At the second step, the relations of text and sentences in a review
 and categories are considered to classify it.
-
-In the experiments,
-And, from the result that the proposed method indicated better accuracy
+%
+In the experiments, from the result that
+the proposed method indicated better accuracy
 than the comparative methods and the present method specialized
 for sentiment classification on multiple categories,
 it is found out that
 the order of sentences in a review is important for sentiment classification
-and PV-DM captures some sort of different features them
+and PV-DM captures some sort of different features of them
 applied to a whole document and sentences in a review.
