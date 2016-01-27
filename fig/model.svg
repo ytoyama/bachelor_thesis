@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="297.00912mm"
-   height="138.28888mm"
-   viewBox="0 0 1052.3945 489.99996"
+   width="296.33334mm"
+   height="145.80745mm"
+   viewBox="0 0 1050 516.64056"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -209,15 +209,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="269.00551"
-     inkscape:cy="423.67126"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="217.52883"
+     inkscape:cy="445.1906"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
-     inkscape:window-width="1246"
+     inkscape:window-width="862"
      inkscape:window-height="1064"
      inkscape:window-x="0"
      inkscape:window-y="14"
@@ -229,7 +229,7 @@
     <inkscape:grid
        type="xygrid"
        id="grid3336"
-       originx="-37.605469"
+       originx="-40.000001"
        originy="-310.00002" />
   </sodipodi:namedview>
   <metadata
@@ -240,7 +240,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -248,7 +248,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-37.605473,-252.36221)">
+     transform="translate(-40.000004,-225.72159)">
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-8-3-4-4)"
        d="m 575.98934,494.27525 78.72116,-1.77151"
@@ -698,5 +698,16 @@
          id="tspan4227-2"
          x="67.167976"
          y="414.68643">文ベクトル2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="36.562504"
+       y="257.08878"
+       id="text4225-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4227-6"
+         x="36.562504"
+         y="257.08878">(PV-DMによる)</tspan></text>
   </g>
 </svg>
