@@ -20,3 +20,6 @@ clean:
 .PHONY: summary
 summary: ${summary_pdf}
 	${pdf_viewer} -r 88 ${.ALLSRC}
+
+
+summary.pdf: ttisummary.cls
