@@ -26,7 +26,7 @@
   \twocolumn[
     \centering
 
-    {\fontsize{18pt}{0pt}\selectfont 豊田工業大学~~~卒業研究報告書要旨} \\
+    {\fontsize{18pt}{0pt}\selectfont 豊田工業大学~~~課題研究報告書要旨} \\
 
     \begin{tabular}{|A|B|B|B|}
       \hline
