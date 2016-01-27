@@ -10,6 +10,8 @@
 \setstretch{1}
 \RequirePackage{array}
 
+\pagenumbering{gobble}
+
 
 
 \newcommand{\tti@tableelem}[1]{{\fontsize{12pt}{0pt}\selectfont#1}}
