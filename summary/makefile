@@ -6,8 +6,11 @@ summary_pdf = summary.pdf
 
 .SUFFIXES: .tex .pdf
 .tex.pdf:
-	${latex} ${.IMPSRC}
-	cat ${.IMPSRC} | tr "、。" "，．" | ${latex} --jobname=${.TARGET:.pdf=}
+	: ${src::=${.IMPSRC:.tex=_tmp_by_make.tex}}
+	cat ${.IMPSRC} | tr "、。" "，．" > ${src}
+	${latex} --jobname=${.TARGET:.pdf=} ${src}
+	${latex} --jobname=${.TARGET:.pdf=} ${src}
+	${rm} ${src}
 
 .PHONY: all
 all: ${summary_pdf}
