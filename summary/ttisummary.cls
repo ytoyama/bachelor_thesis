@@ -34,6 +34,7 @@
     \centering
 
     {\fontsize{18pt}{0pt}\selectfont 豊田工業大学~~~課題研究報告書要旨} \\
+    \vspace{0.5em}
 
     \begin{tabular}{|A|B|B|B|}
       \hline
