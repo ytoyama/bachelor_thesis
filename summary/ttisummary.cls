@@ -3,15 +3,20 @@
 \LoadClass[twocolumn,a4paper,11pt]{ltjsarticle}
 
 \RequirePackage{geometry}
-\geometry{top=20truemm,bottom=20truemm,left=25truemm,right=25truemm}
-
 \RequirePackage{multicol}
 \RequirePackage{setspace}
-\setstretch{1}
 \RequirePackage{array}
+\RequirePackage{titlesec}
 
+\geometry{top=20truemm,bottom=20truemm,left=25truemm,right=25truemm}
+\setstretch{1}
 \pagenumbering{gobble}
-
+\titleformat*{\section}{\normalsize}
+\titleformat*{\subsection}{\normalsize}
+\titleformat*{\subsubsection}{\normalsize}
+\titlespacing{\section}{0pt}{*0.25}{*0.125}
+\titlespacing{\subsection}{0pt}{*0.25}{*0.125}
+\setlength{\textfloatsep}{0.5em}
 
 
 \newcommand{\tti@tableelem}[1]{{\fontsize{12pt}{0pt}\selectfont#1}}
