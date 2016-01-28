@@ -1,6 +1,5 @@
 thesis_pdf = thesis.pdf
-summary_pdf = summary.pdf
-all_pdfs = ${thesis_pdf} ${summary_pdf}
+all_pdfs = ${thesis_pdf}
 
 dpi = 88
 pdf_viewer = mupdf -r ${dpi}
@@ -18,14 +17,9 @@ all: ${all_pdfs}
 thesis: ${thesis_pdf}
 	${pdf_viewer} ${.ALLSRC}
 
-.PHONY: summary
-summary: ${summary_pdf}
-	${pdf_viewer} ${.ALLSRC}
-
 .PHONY: clean
 clean:
 	rm -rf ${all_pdfs} *.log *.aux
 
 
 ${thesis_pdf}: ttithesis.cls
-${summary_pdf}: ttisummary.cls
