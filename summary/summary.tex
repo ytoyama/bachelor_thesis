@@ -6,11 +6,6 @@
 \usepackage{scrextend}
 \usepackage{setspace}
 \usepackage{tabularx}
-\usepackage{titlesec}
-
-\titlespacing{\section}{0pt}{*0.5}{*0.25}
-\titlespacing{\subsection}{0pt}{*0.5}{*0.25}
-\setlength{\textfloatsep}{0.5em}
 
 \makeatletter
 \let\tti@includegraphics\includegraphics
@@ -76,25 +71,26 @@ Multi-Instance Multi-Label learning for Relation Extraction (MIML-RE)
 \cite{mihai12}モデルを用いた手法を提案している。
 %その手法では、レビュー内の各文毎に予測した隠れレーティングから
 %レビュー全体のレーティングを予測する。
-その手法では、文毎のレーティングからレビュー全体のレーティングを予測する際の
+藤谷ら\cite{fujitani15}は、文毎のレーティングからレビュー全体の
+レーティングを予測する際の
 カテゴリ間の繋がりを手動で変化させカテゴリ間の関係性を考慮していた。
 %各文の素性にはBag Of Words (BOW)またはBag Of n-gramを用いている。
 %各文毎に隠れレーティングを予測することによって
 %0.4832の正答率が得られることが示された。
 %また、カテゴリ間の繋がりによって正答率が変化することも示されている。
 
-この手法では、文同士の位置関係を考慮していない。
+しかし、この手法では文同士の位置関係を考慮していない。
 カテゴリ間については考慮しているものの深い関係性を捉えることが
 できていなかった。
 
 
 \subsection{パラグラフベクトル}
 
-パラグラフベクトル\cite{quoc14}は、文や文章といった
-大きな単位の言語表現の分散表現を学習する手法である。
+文や文章といった大きな単位の言語表現の分散表現を学習する手法\cite{quoc14}
+である。
 その手法の一つ、Distributed Memory model of Paragraph Vectors (PV-DM)
 によって得られたパラグラフベクトルは評判分類問題において
-高い正答率を示すことが示されている。
+高い正答率を示している\cite{quoc14}。
 しかし、文書全体にパラグラフベクトルを用いる場合、文同士の位置関係が
 分類時に考慮できない。
 %これは、Continuous BOW (CBOW)またはSkip-gram\cite{yoshua03}という
@@ -164,7 +160,7 @@ Rieら\cite{rie14}、Duyuら\cite{duyu15}等によって提案されている。
   \label{fig:MyModel}
 \end{figure}
 
-提案手法では、PV-DMによってレビュー内の文書全体及び各文の分散表現を
+PV-DMによってレビュー内の文書全体及び各文の分散表現を
 生成し、それらをニューラルネットワークの入力として分類を行う。
 文毎の分散表現を用いることで文同士の位置関係を考慮し、
 ニューラルネットワークによる分類器を用いることで
@@ -258,9 +254,9 @@ Rieら\cite{rie14}、Duyuら\cite{duyu15}等によって提案されている。
 図\ref{fig:MyModel}に各層の結合の様子を示す。
 入力層はレビュー毎の文書ベクトルと圧縮された文ベクトルの結合ベクトルである。
 %ニューラルネットワークの活性化関数には、シグモイド関数を用いる。
-また、出力層はカテゴリの数とラベルの数の積だけのユニットを持つ。
-%また、出力層はカテゴリの数とラベルの数の積だけのユニットを持ち、
-%各ユニットの出力はあるカテゴリ内であるクラスが選ばれることの
+また、出力層はカテゴリの数とラベルの数の積だけのニューロンを持つ。
+%また、出力層はカテゴリの数とラベルの数の積だけのニューロンを持ち、
+%各ニューロンの出力はあるカテゴリ内であるクラスが選ばれることの
 %正規化されていない対数確率を表す。
 %ニューラルネットワークは式\ref{eq:NNObjective}に示す目的関数$E$を
 %最小化するように学習を行う。
@@ -271,9 +267,9 @@ Rieら\cite{rie14}、Duyuら\cite{duyu15}等によって提案されている。
 %  y_{ck}(x_n; w) = \frac{e^{u_{ck}(x_n; w)}}
 %                        {\sum^{K}_{j = 1} e^{u_{cj}(x_n; w)}} \nonumber
 %\end{gather}
-%各ユニットの出力はカテゴリ毎に交差エントロピー誤差関数によって
+%各ニューロンの出力はカテゴリ毎に交差エントロピー誤差関数によって
 %損失に変換される。
-%ここで、$u_{ck}$は出力層のユニットの出力値、$y_{ck}$はカテゴリ$c$において
+%ここで、$u_{ck}$は出力層のニューロンの出力値、$y_{ck}$はカテゴリ$c$において
 %クラス$k$が選ばれる確率、$w$はニューラルネットワークのパラメータである。
 %$d_{nck}$は$n$番目の文書がカテゴリ$c$でクラス$k$ならば1、
 %それ以外で0となる値である。
@@ -333,7 +329,7 @@ Weighted ASVとはレビュー内で重み付け平均によって圧縮され�
 %  \caption{各手法のパラメータ設定}
 %  \centering
 %  \begin{tabular}{l | r r} \label{tab:ParametersOfMethods}
-%    手法 & 学習回数 & 中間層でのユニット数 \\
+%    手法 & 学習回数 & 中間層でのニューロン数 \\
 %    \hline
 %    PV-DM & 20 & 512 \\
 %    ASV & 55 & 256 \\
@@ -457,21 +453,21 @@ Weighted ASVとはレビュー内で重み付け平均によって圧縮され�
   言語処理学会第21回年次大会, 2015.
 \bibitem{quoc14}
   Quoc Le et al.,
-  Distributed Representations of Sentences and Documents.
+  Distributed representations of sentences and documents.
   ICML 2014, 2014.
 \bibitem{nal14}
   Nal Kalchbrenner et al.,
-  A Convolutional Neural Network for Modelling Sentences.
+  A convolutional neural network for modelling sentences.
   ACL 2014, 2014.
 \bibitem{rie14}
   Rie Johnson et al.,
-  Effective Use of Word Order for Text Categorization
-  with Convolutional Neural Networks.
+  Effective use of word order for text categorization
+  with convolutional neural networks.
   NAACL 2015, 2015.
 \bibitem{duyu15}
   Duyu Tang et al.,
-  Learning Semantic Representation of Users and Products
-  for Document Level Sentiment Classification.
+  Learning semantic representation of users and products
+  for document level sentiment classification.
   ACL 2015, 2015.
 %\bibitem{yoshua03}
 %  Yoshua Bengio et al.,
@@ -479,7 +475,7 @@ Weighted ASVとはレビュー内で重み付け平均によって圧縮され�
 %  The Journal of Machine Learning Research 3, 2003.
 \bibitem{mihai12}
   Mihai Surdeanu et al.,
-  Multi-instance Multi-label Learning for Relation Extraction.
+  Multi-instance multi-label learning for relation extraction.
   CoNLL 2012, 2012.
 \end{thebibliography}
 
