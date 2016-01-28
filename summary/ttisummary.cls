@@ -7,16 +7,22 @@
 \RequirePackage{setspace}
 \RequirePackage{array}
 \RequirePackage{titlesec}
+\RequirePackage{caption}
 
 \geometry{top=20truemm,bottom=20truemm,left=25truemm,right=25truemm}
 \setstretch{1}
 \pagenumbering{gobble}
+
 \titleformat*{\section}{\normalsize}
 \titleformat*{\subsection}{\normalsize}
 \titleformat*{\subsubsection}{\normalsize}
+
 \titlespacing{\section}{0pt}{*0.25}{*0.125}
 \titlespacing{\subsection}{0pt}{*0.25}{*0.125}
 \setlength{\textfloatsep}{0.5em}
+
+\DeclareCaptionFormat{mycaption}{\fontsize{10pt}{0pt}\selectfont#1#2#3}
+\captionsetup{format=mycaption}
 
 
 \newcommand{\tti@tableelem}[1]{{\fontsize{12pt}{0pt}\selectfont#1}}
