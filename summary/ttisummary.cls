@@ -17,8 +17,9 @@
 \titleformat*{\subsection}{\normalsize}
 \titleformat*{\subsubsection}{\normalsize}
 
-\titlespacing{\section}{0pt}{*0.25}{*0.125}
-\titlespacing{\subsection}{0pt}{*0.25}{*0.125}
+\titlespacing{\section}{0pt}{*0.05}{*0.05}
+\titlespacing{\subsection}{0pt}{*0.05}{*0.05}
+\titlespacing{\subsubsection}{0pt}{*0.05}{*0.05}
 \setlength{\textfloatsep}{0.5em}
 
 \DeclareCaptionFormat{mycaption}{\fontsize{10pt}{0pt}\selectfont#1#2#3}
