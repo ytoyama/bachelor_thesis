@@ -3,14 +3,14 @@
 \LoadClass[a4paper,11pt]{article}
 
 \RequirePackage{geometry}
-\geometry{top=20truemm,bottom=20truemm,left=25truemm,right=25truemm}
-
 \RequirePackage{multicol}
 \RequirePackage{setspace}
-\setstretch{1}
 \RequirePackage{array}
 \RequirePackage{times}
 
+\geometry{top=20truemm,bottom=20truemm,left=25truemm,right=25truemm}
+\setstretch{1}
+\pagenumbering{gobble}
 
 \newcommand{\studentid}[1]{\newcommand{\tti@studentid}{#1}}
 
