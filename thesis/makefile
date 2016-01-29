@@ -1,17 +1,22 @@
-thesis_pdf = thesis.pdf
-all_pdfs = ${thesis_pdf}
-
+rm = rm -rf
+latex = lualatex
 dpi = 88
 pdf_viewer = mupdf -r ${dpi}
+
+thesis_pdf = thesis.pdf
 
 
 .SUFFIXES: .tex .pdf
 .tex.pdf:
-	lualatex ${.IMPSRC} # for forward references
-	lualatex ${.IMPSRC}
+	: ${src::=${.IMPSRC:.tex=_tmp_by_make.tex}}
+	: ${jobname::=${.TARGET:.pdf=}}
+	cat ${.IMPSRC} | tr "、。" "，．" > ${src}
+	${latex} --jobname=${jobname} ${src} # for forward references
+	${latex} --jobname=${jobname} ${src}
+	${rm} ${src}
 
 .PHONY: all
-all: ${all_pdfs}
+all: ${thesis_pdf}
 
 .PHONY: thesis
 thesis: ${thesis_pdf}
@@ -19,7 +24,7 @@ thesis: ${thesis_pdf}
 
 .PHONY: clean
 clean:
-	rm -rf ${all_pdfs} *.log *.aux
+	${rm} *.pdf *.toc *.log *.aux
 
 
 ${thesis_pdf}: ttithesis.cls
