@@ -9,7 +9,7 @@
 \RequirePackage{times}
 
 \geometry{top=20truemm,bottom=20truemm,left=25truemm,right=25truemm}
-\setstretch{1}
+\setstretch{1.25}
 \pagenumbering{gobble}
 
 \newcommand{\studentid}[1]{\newcommand{\tti@studentid}{#1}}
