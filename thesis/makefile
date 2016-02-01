@@ -27,4 +27,5 @@ clean:
 	${rm} *.pdf *.toc *.log *.aux
 
 
-${thesis_pdf}: ttithesis.cls
+${thesis_pdf}: ttithesis.cls introduction.tex related_research.tex \
+               proposed_method.tex experiments.tex conclusion.tex
