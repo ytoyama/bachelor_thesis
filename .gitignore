@@ -3,4 +3,7 @@
 *.toc
 *.dvi
 *.swp
+*.out
+*.nav
+*.snm
 .*
