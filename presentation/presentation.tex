@@ -3,7 +3,16 @@
 
 \usepackage{luatexja}
 \usepackage{graphicx}
+\usepackage{calc}
+\usepackage[overlay,absolute]{textpos}
 
+\setlength{\TPHorizModule}{\textwidth}
+\setlength{\TPVertModule}{\textheight}
+\newlength\horizoffset
+\setlength{\horizoffset}{1in+\hoffset+\oddsidemargin}
+\newlength\vertoffset
+\setlength{\vertoffset}{1in+\voffset+\topmargin+\headheight+\headsep}
+\textblockorigin{\horizoffset}{\vertoffset}
 
 \beamertemplatenavigationsymbolsempty
 \newcommand{\itemtitle}[1]{\textbf{#1}\\}
@@ -41,6 +50,10 @@
       \item カテゴリ間の複雑な関係
     \end{itemize}
   \end{block}
+  \begin{textblock}{0.575}(0.475,0.1375)
+    \fboxsep=2mm % HACK
+    \fcolorbox{white}{white}{\includegraphics[width=\linewidth]{fig/model.png}}
+  \end{textblock}
   \begin{block}{方法}
     \begin{itemize}
       \item \itemtitle{パラグラフベクトル}
