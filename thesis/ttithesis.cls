@@ -62,8 +62,8 @@
   {\endoriginalfigure}
 
 \let\tti@includegraphics\includegraphics
-\renewcommand{\includegraphics}[1]{%
-    \tti@includegraphics[width=0.8\textwidth]{#1}}
+\renewcommand{\includegraphics}[2][0.8]{%
+    \tti@includegraphics[width=#1\linewidth]{#2}}
 
 
 % laboratory command
