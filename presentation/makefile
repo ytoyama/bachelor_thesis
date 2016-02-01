@@ -1,7 +1,10 @@
 rm = rm -rf
 latex = lualatex
 pdf_viewer = mupdf -r 160
+image_viewer = feh -.
 presentation_pdf = presentation.pdf
+pdftk = pdftk
+convert = convert
 
 
 .SUFFIXES: .tex .pdf
@@ -12,17 +15,29 @@ presentation_pdf = presentation.pdf
 	${latex} --jobname=${.TARGET:.pdf=} ${src}
 	${rm} ${src}
 
+.SUFFIXES: .pdf .png
+.pdf.png:
+	${convert} -density 512 ${.IMPSRC} -quality 100 ${.TARGET}
+
 .PHONY: all
 all: ${presentation_pdf}
 
 .PHONY: clean
 clean:
-	${rm} *.pdf *.dvi *.aux *.log *.toc *.nav *.snm *.out
-
+	${rm} *.pdf *.dvi *.aux *.log *.toc *.nav *.snm *.out *.png doc_data.txt
 
 .PHONY: presentation
 presentation: ${presentation_pdf}
 	${pdf_viewer} ${.ALLSRC}
 
+.PHONY: images
+images: ${presentation_pdf}
+	: ${filename_format::=${.ALLSRC:.pdf=}_%d.pdf}}
+	${pdftk} ${.ALLSRC} burst output '${filename_format}'
+	for filename in $$(echo $$(echo "${filename_format}" | sed 's/%d/*/')); do \
+	  ${MAKE} "$$(echo "$$filename" | sed "s/\.pdf/\.png/")"; \
+	  ${rm} "$$filename"; \
+	done
+	${image_viewer} *.png
 
 ${presentation_pdf}: beamerthemettipresentation.sty
