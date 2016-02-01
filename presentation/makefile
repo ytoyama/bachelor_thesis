@@ -33,11 +33,16 @@ presentation: ${presentation_pdf}
 .PHONY: images
 images: ${presentation_pdf}
 	: ${filename_format::=${.ALLSRC:.pdf=}_%d.pdf}}
-	${pdftk} ${.ALLSRC} burst output '${filename_format}'
-	for filename in $$(echo $$(echo "${filename_format}" | sed 's/%d/*/')); do \
-	  ${MAKE} "$$(echo "$$filename" | sed "s/\.pdf/\.png/")"; \
-	  ${rm} "$$filename"; \
-	done
+	if [ ${presentation_pdf} \
+	     -nt $$(echo "${filename_format}" | sed 's/%d/1/') ]; \
+	then \
+	  ${pdftk} ${.ALLSRC} burst output '${filename_format}'; \
+	  for filename in $$(echo $$(echo "${filename_format}" | sed 's/%d/*/')); \
+	  do \
+	    ${MAKE} "$$(echo "$$filename" | sed "s/\.pdf/\.png/")"; \
+	    ${rm} "$$filename"; \
+	  done; \
+	fi
 	${image_viewer} *.png
 
 ${presentation_pdf}: beamerthemettipresentation.sty
