@@ -33,8 +33,9 @@ presentation: ${presentation_pdf}
 .PHONY: images
 images: ${presentation_pdf}
 	: ${filename_format::=${.ALLSRC:.pdf=}_%d.pdf}}
-	if [ ${presentation_pdf} \
-	     -nt $$(echo "${filename_format}" | sed 's/%d/1/') ]; \
+	first_page_png=$$(echo "${filename_format:.pdf=.png}" | sed 's/%d/1/'); \
+	if [ ! -r "$$first_page_png" ] \
+	   || [ ${presentation_pdf} -nt "$$first_page_png" ]; \
 	then \
 	  ${pdftk} ${.ALLSRC} burst output '${filename_format}'; \
 	  for filename in $$(echo $$(echo "${filename_format}" | sed 's/%d/*/')); \
