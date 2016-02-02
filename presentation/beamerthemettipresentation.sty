@@ -1,5 +1,10 @@
 \mode<all>
 
+\newcommand{\tti@horizontaloffset}{\hspace{2ex}}
+\newenvironment{tti@horizontaloffsetenv}
+    {\tti@horizontaloffset}
+    {\tti@horizontaloffset}
+
 
 % font
 
@@ -14,9 +19,9 @@
 \setbeamerfont*{itemize/enumerate subsubbody}{parent=itemize/enumerate subbody}
 \setbeamerfont*{caption}{size=\normalsize}
 
-\setbeamerfont*{title}{size=\Large}
-\setbeamerfont*{author}{size=\normalsize}
-\setbeamerfont*{institute}{size=\normalsize}
+\setbeamerfont*{title}{size=\LARGE}
+\setbeamerfont*{author}{size=\large}
+\setbeamerfont*{institute}{parent=author}
 
 %% colors
 
@@ -45,13 +50,19 @@
 
 \setbeamertemplate{headline}{
   \begin{beamercolorbox}[sep=1ex,wd=\paperwidth]{headandfootline}
-    \textbf{\inserttitle}
+    \begin{tti@horizontaloffsetenv}
+      \textbf{\insertshorttitle}
+    \end{tti@horizontaloffsetenv}
   \end{beamercolorbox}
 }
 
 \setbeamertemplate{footline}{
   \begin{beamercolorbox}[sep=1ex,wd=\paperwidth]{headandfootline}
-    \hfill\insertinstitute\hspace{1ex}\insertauthor\hspace{1ex}
+    \begin{tti@horizontaloffsetenv}
+      \insertpagenumber
+      \hfill
+      \insertinstitute\hspace{2ex}\insertauthor
+    \end{tti@horizontaloffsetenv}
   \end{beamercolorbox}
 }
 
@@ -59,10 +70,11 @@
 
 \setbeamertemplate{title page}{
   \centering
-  \usebeamercolor{title}\usebeamerfont{title}\inserttitle\par
-  \bigskip
-  \usebeamercolor{institute}\usebeamerfont{institute}\insertinstitute\par
-  \usebeamercolor{author}\usebeamerfont{author}\insertauthor\par
+  {\usebeamercolor{title}\usebeamerfont{title}\inserttitle}\par
+  \vspace{4em}
+  {\usebeamercolor{institute}\usebeamerfont{institute}\insertinstitute}
+  \hspace{2ex}
+  {\usebeamercolor{author}\usebeamerfont{author}\insertauthor}\par
 }
 
 
