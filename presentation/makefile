@@ -20,7 +20,7 @@ convert = convert
 	${convert} -density 512 ${.IMPSRC} -quality 100 ${.TARGET}
 
 .PHONY: all
-all: ${presentation_pdf}
+all: ${presentation_pdf} images
 
 .PHONY: clean
 clean:
@@ -30,9 +30,13 @@ clean:
 presentation: ${presentation_pdf}
 	${pdf_viewer} ${.ALLSRC}
 
+.PHONY: view_images
+view_images: images
+	${image_viewer} *.png
+
 .PHONY: images
 images: ${presentation_pdf}
-	: ${filename_format::=${.ALLSRC:.pdf=}_%d.pdf}}
+	: ${filename_format::=${.ALLSRC:.pdf=}_%d.pdf}
 	first_page_png=$$(echo "${filename_format:.pdf=.png}" | sed 's/%d/1/'); \
 	if [ ! -r "$$first_page_png" ] \
 	   || [ ${presentation_pdf} -nt "$$first_page_png" ]; \
@@ -44,6 +48,5 @@ images: ${presentation_pdf}
 	    ${rm} "$$filename"; \
 	  done; \
 	fi
-	${image_viewer} *.png
 
 ${presentation_pdf}: beamerthemettipresentation.sty
