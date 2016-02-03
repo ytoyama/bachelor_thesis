@@ -32,9 +32,11 @@
 \setbeamercolor*{frametitle}{fg=white,bg=airforceblue}
 \setbeamercolor*{block title}{fg=white,bg=airforceblue}
 \setbeamercolor*{itemize item}{fg=ttiblue}
-\setbeamercolor*{itemize subitem}{fg=ttiblue}
-\setbeamercolor*{itemize subsubitem}{fg=ttiblue}
+\setbeamercolor*{itemize subitem}{parent=itemize item}
+\setbeamercolor*{itemize subsubitem}{parent=itemize item}
 \setbeamercolor*{enumerate item}{fg=black}
+\setbeamercolor*{enumerate subitem}{parent=enumerate item}
+\setbeamercolor*{enumerate subsubitem}{parent=enumerate item}
 \setbeamercolor*{bibliography entry title}{fg=black}
 \setbeamercolor*{bibliography entry author}{parent=bibliography entry title}
 \setbeamercolor*{bibliography entry location}{parent=bibliography entry title}
@@ -45,7 +47,7 @@
 
 %% enumeration
 
-\setbeamertemplate{enumerate item}{[\insertenumlabel]}
+\setbeamertemplate{enumerate item}{(\insertenumlabel)}
 
 %% caption
 
