@@ -9,6 +9,7 @@
 \geometry{a4paper,portrait}
 \beamertemplatenavigationsymbolsempty
 
+\newcommand{\arrow}{\textcolor{ttiblue}{→}\hspace{1ex}}
 \newcommand{\itemtitle}[1]{\textbf{#1}\\}
 \newcommand{\fire}[1]{\textcolor{red}{\textbf{#1}}}
 \newcommand{\columnsize}{0.475\textwidth}
@@ -44,14 +45,25 @@
     \end{itemize}
     \begin{figure}
       \includegraphics[width=0.9\linewidth]{fig/review.png}
+      \caption{複数のカテゴリを持つ商品レビューの例}
     \end{figure}
   \end{block}
 
   \begin{block}{関連研究}
     \begin{itemize}
-      \item \itemtitle{パラグラフベクトル}
+      \item \itemtitle{隠れ状態を用いたホテルレビューの\\
+                       レーティング予測\cite{fujitani15}}
         \begin{itemize}
-          \item 文や文書を、その意味を表す実数ベクトルに変換する手法
+          \item 複数のカテゴリにおけるレーティング予測
+          \item 文毎のレーティングからレビュー全体の \\
+                レーティングを予測
+          \item カテゴリ間の繋がりを手調整によって変化させ \\
+                カテゴリ間の関係性を考慮
+        \end{itemize}
+      \item \itemtitle{パラグラフベクトル\cite{quoc14}}
+        \begin{itemize}
+          \item 文や文書を、その意味を表す実数ベクトルに \\
+                変換する手法
           \item 評判分類において優れる
         \end{itemize}
       \item \itemtitle{ニューラルネットワーク}
@@ -64,13 +76,15 @@
   \end{block}
 
   \begin{block}{提案手法}
-    \begin{figure}
-      \includegraphics[width=\linewidth]{fig/model.png}
-    \end{figure}
   \end{block}
 \end{column}
 
 \begin{column}{\columnsize}
+  \begin{figure}
+    \includegraphics[width=\linewidth]{fig/model.png}
+    \caption{提案手法におけるモデルの概略}
+  \end{figure}
+
   \begin{block}{実験}
     \begin{itemize}
       \item \itemtitle{実験設定}
@@ -98,7 +112,15 @@
 
   \begin{block}{まとめ}
     \begin{itemize}
-      \item 提案手法が従来手法より\fire{高い正答率}を示す
+      \item 多カテゴリにおける評判分類問題について、\\
+            レビュー全体の文書ベクトルに加え重み付け平均された文ベクトルを
+            用いた手法を提案
+      \item 提案手法が従来手法\cite{fujitani15}より高い正答率を示した。
+      \item \itemtitle{今後の課題}
+            言語要素間のより多様で複雑な関係を考慮 \\
+            \arrow 各レビューの意味表現を生成するモデルと
+                   分類を行うモデルを1つに統合 \\
+            \arrow 学習手法の柔軟性及び正答率の向上を目指す。
     \end{itemize}
   \end{block}
 
