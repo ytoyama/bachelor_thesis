@@ -2,8 +2,7 @@ RM = rm -rf
 INKSCAPE = inkscape
 DPI = 360
 
-svg_figures = dvsvwv.svg model.svg algorithm.svg paragraph_vector.svg \
-              review.svg
+svg_figures != ls *.svg
 target_files = ${svg_figures:.svg=.png} ${svg_figures:.svg=.eps}
 
 .SUFFIXES: .svg .png
