@@ -19,8 +19,8 @@
 \setbeamerfont*{itemize/enumerate subsubbody}{parent=itemize/enumerate subbody}
 \setbeamerfont*{caption}{size=\normalsize}
 
-\setbeamerfont*{title}{size=\Large}
-\setbeamerfont*{author}{size=\footnotesize}
+\setbeamerfont*{title}{size=\LARGE}
+\setbeamerfont*{author}{size=\large}
 \setbeamerfont*{institute}{parent=author}
 
 %% colors
@@ -58,19 +58,19 @@
 \setbeamertemplate{headline}{
   \begin{beamercolorbox}[sep=4ex,wd=\paperwidth]{headandfootline}
     \begin{tti@horizontaloffsetenv}
-      {\usebeamercolor{title}\usebeamerfont{title}\textbf{\insertshorttitle}}
+      \begin{minipage}{\textwidth}
+        {\usebeamercolor{title}\usebeamerfont{title}\textbf{\insertshorttitle}}\par
+        \vspace{1em}
+        {\usebeamercolor{institute}\usebeamerfont{institute}\insertinstitute}
+        \hspace{2ex}
+        {\usebeamercolor{author}\usebeamerfont{author}\insertauthor}\par
+      \end{minipage}
     \end{tti@horizontaloffsetenv}
   \end{beamercolorbox}
 }
 
 \setbeamertemplate{footline}{
   \begin{beamercolorbox}[sep=2ex,wd=\paperwidth]{headandfootline}
-    \begin{tti@horizontaloffsetenv}
-      \hfill
-      {\usebeamercolor{institute}\usebeamerfont{institute}\insertinstitute}
-      \hspace{2ex}
-      {\usebeamercolor{author}\usebeamerfont{author}\insertauthor}
-    \end{tti@horizontaloffsetenv}
   \end{beamercolorbox}
 }
 
@@ -82,7 +82,7 @@
 
 \setbeamertemplate{title page}{
   \centering
-  {\Huge title page is NOT supported.}
+  {\Huge Any title page is NOT supported.}
 }
 
 
