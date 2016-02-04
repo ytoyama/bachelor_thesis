@@ -20,6 +20,8 @@
 \newcommand{\itemtitle}[1]{\textbf{#1}\\}
 \newcommand{\fire}[1]{\textcolor{red}{\textbf{#1}}}
 \newcommand{\freeze}[1]{\textcolor{blue}{\textbf{#1}}}
+\newcommand{\then}{\textcolor{ttiblue}{\textbf{⇒}}\hspace{1ex}}
+\newcommand{\up}{\textcolor{orange}{\textbf{◎}}\hspace{1ex}}
 
 
 \title{文書・文間及びカテゴリ間の関係を\\考慮したレーティング予測}
@@ -39,13 +41,34 @@
   \begin{block}{多カテゴリにおける商品レビューのレーティング予測}
     \begin{itemize}
       \item カテゴリ：レーティングの付く各項目のこと
-      \item 文字から文書に渡る\fire{様々な言語要素間の関係}、 \\
-            及び、\fire{カテゴリ間の関係}が重要
+      \item \fire{文同士の位置関係}及び\fire{カテゴリ間の関係}が重要
     \end{itemize}
   \end{block}
   \begin{figure}
     \includegraphics[width=0.9\linewidth]{fig/review.png}
   \end{figure}
+\end{frame}
+
+\begin{frame}{研究背景}{}
+  \begin{block}{文同士の位置関係}
+    \begin{figure}
+      \includegraphics[width=0.8\linewidth]
+                      {fig/why_orders_of_sentences_count.png}
+    \end{figure}
+  \end{block}
+\end{frame}
+
+\begin{frame}{研究背景}{}
+  \begin{block}{カテゴリ間の関係}
+    \begin{itemize}
+      \item 食事\up \then サービス\up
+      \item 設備・アメニティ\up \then サービス\up
+    \end{itemize}
+    \begin{figure}
+      \includegraphics[width=0.5\linewidth]
+                      {fig/relations_among_review_points.png}
+    \end{figure}
+  \end{block}
 \end{frame}
 
 \begin{frame}{関連研究}{}
@@ -64,21 +87,22 @@
   \begin{block}{ニューラルネットワーク}{}
     \begin{itemize}
       \item 神経回路を模した機械学習手法
-      \item 分類問題に適用可能
-      \item \fire{文書・文間やカテゴリ間の複雑な関係}を考慮
+      %\item 分類問題に適用可能
+      \item \fire{入力の要素間の複雑な関係}を考慮
     \end{itemize}
   \end{block}
 \end{frame}
 
 \begin{frame}{提案手法}{}
   \begin{block}{レーティング予測の流れ}
-    \begin{enumerate}
-      \item パラグラフベクトルにより各レビューとその中の文のベクトルを生成
-      \item 文ベクトルをレビュー毎に圧縮
-      \item ニューラルネットワークによりレーティングを予測
-    \end{enumerate}
+    %\begin{enumerate}
+    %  \item パラグラフベクトルにより各レビューとその中の文のベクトルを生成
+    %  \item 文ベクトルをレビュー毎に圧縮
+    %  \item ニューラルネットワークによりレーティングを予測
+    %\end{enumerate}
     \begin{figure}
-      \includegraphics[width=0.5\linewidth]{fig/model.png}
+      \includegraphics[width=0.9\linewidth]
+                      {fig/model_with_detailed_processes.png}
     \end{figure}
   \end{block}
 \end{frame}
