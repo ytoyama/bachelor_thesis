@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="59.083363mm"
+   width="61.973095mm"
    height="39.729828mm"
-   viewBox="0 0 209.35049 140.77498"
+   viewBox="0 0 219.5897 140.77498"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -71,13 +71,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="158.75867"
-     inkscape:cy="33.546005"
+     inkscape:zoom="2.8"
+     inkscape:cx="100.95158"
+     inkscape:cy="46.679256"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1246"
+     inkscape:window-width="958"
      inkscape:window-height="1064"
      inkscape:window-x="0"
      inkscape:window-y="14"
@@ -86,7 +86,7 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:snap-bbox="true"
+     inkscape:snap-bbox="false"
      inkscape:bbox-nodes="true"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -94,7 +94,7 @@
        type="xygrid"
        id="grid4150"
        originx="-304.65264"
-       originy="-19.225024" />
+       originy="-19.225028" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -450,5 +450,17 @@
        id="path4198-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#001eaa;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="864.44305"
+       y="148.90378"
+       id="text3406"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3408"
+         x="864.44305"
+         y="148.90378"
+         style="font-size:17.5px;fill:#001eaa;fill-opacity:1">影響</tspan></text>
   </g>
 </svg>
