@@ -67,10 +67,12 @@
         \end{itemize}
       \item \itemtitle{パラグラフベクトル\cite{quoc14}}
         \begin{itemize}
-          \item 文や文書を、その意味を表す実数ベクトルに \\
-                変換する手法
-          \item 評判分類において優れる
+          \item 文や文書を、その意味を表す実数ベクトルに変換
+          \item \fire{評判分類において優れる}
         \end{itemize}
+        \begin{figure}
+          \includegraphics{fig/paragraph_vector.png}
+        \end{figure}
       \item \itemtitle{ニューラルネットワーク}
         \begin{itemize}
           \item 神経回路を模した機械学習手法
@@ -79,7 +81,9 @@
         \end{itemize}
     \end{itemize}
   \end{block}
+\end{column}
 
+\begin{column}{\columnsize}
   \begin{block}{提案手法}
     \begin{itemize}
       \item \itemtitle{特徴}
@@ -99,14 +103,11 @@
       %    \item ニューラルネットワークで多ラベル多クラス分類
       %  \end{enumerate}
     \end{itemize}
+    \begin{figure}
+      \includegraphics[width=\linewidth]{fig/model_with_detailed_processes.png}
+      \caption{提案手法におけるモデルの概略}
+    \end{figure}
   \end{block}
-\end{column}
-
-\begin{column}{\columnsize}
-  \begin{figure}
-    \includegraphics[width=\linewidth]{fig/model_with_detailed_processes.png}
-    \caption{提案手法におけるモデルの概略}
-  \end{figure}
 
   \begin{block}{実験}
     \begin{itemize}
