@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="193.01997mm"
-   height="127.83565mm"
-   viewBox="0 0 683.92904 452.96095"
+   width="215.79684mm"
+   height="116.82281mm"
+   viewBox="0 0 764.63449 413.93908"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -139,6 +139,21 @@
          style="fill:#0024c5;fill-opacity:1;fill-rule:evenodd;stroke:#0024c5;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
          id="path6683-9" />
     </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker6681-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6,-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#0024c5;fill-opacity:1;fill-rule:evenodd;stroke:#0024c5;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path6683-95"
+         inkscape:connector-curvature="0" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -148,15 +163,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="247.56902"
-     inkscape:cy="152.86336"
+     inkscape:cx="-26.067451"
+     inkscape:cy="282.24746"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:snap-bbox="true"
+     inkscape:snap-bbox="false"
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-midpoints="false"
-     inkscape:window-width="1246"
+     inkscape:window-width="958"
      inkscape:window-height="1064"
      inkscape:window-x="0"
      inkscape:window-y="14"
@@ -168,8 +183,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid3336"
-       originx="17.542329"
-       originy="-587.03907" />
+       originx="98.247735"
+       originy="-666.06091" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -187,7 +202,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(17.542329,-12.362221)">
+     transform="translate(98.247742,27.637723)">
     <flowRoot
        xml:space="preserve"
        id="flowRoot3338"
@@ -199,100 +214,146 @@
            x="220"
            y="432.36221" /></flowRegion><flowPara
          id="flowPara3344" /></flowRoot>    <g
-       id="g8474"
-       transform="translate(0,-52)">
-      <text
-         sodipodi:linespacing="125%"
-         id="text3346-4"
-         y="317.32315"
-         x="38.359375"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="fill:#000000;fill-opacity:1"
-           id="tspan3352-5"
-           y="317.32315"
-           x="38.359375"
-           sodipodi:role="line">..............</tspan><tspan
-           id="tspan4201"
-           style="fill:#ff0000;fill-opacity:1"
-           y="371.44733"
-           x="38.359375"
-           sodipodi:role="line">部屋からの眺めが素晴らしかった。</tspan><tspan
-           id="tspan3385"
-           y="421.44733"
-           x="38.359375"
-           sodipodi:role="line">しかし、それよりも良かったことがある。</tspan><tspan
-           id="tspan3389"
-           y="471.44733"
-           x="38.359375"
-           sodipodi:role="line"><tspan
-             style="fill:#ff0000;fill-opacity:1"
-             id="tspan7530">食事が美味しかった。</tspan></tspan><tspan
-           id="tspan4203"
-           y="517.32312"
-           x="38.359375"
-           sodipodi:role="line">..............</tspan><tspan
-           id="tspan3354-6"
-           y="567.32312"
-           x="38.359375"
-           sodipodi:role="line" /></text>
-      <path
-         inkscape:connector-curvature="0"
-         id="path4207"
-         d="m 20,452.3622 c -80,-60 0,-100 0,-100"
-         style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Mstart);marker-end:url(#Arrow2Mend)" />
-    </g>
-    <g
-       id="g8485">
+       id="g4491">
       <text
          sodipodi:linespacing="125%"
          id="text3346"
-         y="17.323143"
+         y="5.956027"
          x="38.359375"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
-           y="17.323143"
-           x="38.359375"
-           id="tspan3348"
-           sodipodi:role="line">..............</tspan><tspan
            id="tspan4197"
            rotate="0 0 0 0 0"
-           y="71.447319"
+           y="5.956027"
            x="38.359375"
            sodipodi:role="line"><tspan
    style="fill:#00b300;fill-opacity:1"
    id="tspan8496">食事</tspan>が美味しかった。</tspan><tspan
            id="tspan3350"
-           y="121.44732"
+           y="55.956028"
            x="38.359375"
            sodipodi:role="line">しかし、それよりも良かったことがある。</tspan><tspan
-           id="tspan3352"
-           y="171.44731"
+           y="105.95602"
            x="38.359375"
-           sodipodi:role="line"><tspan
+           sodipodi:role="line"
+           id="tspan3400"><tspan
    style="fill:#00b300;fill-opacity:1"
-   id="tspan8526">部屋からの眺め</tspan>が素晴らしかった。</tspan><tspan
-           id="tspan4199"
-           y="217.32315"
-           x="38.359375"
-           sodipodi:role="line">..............</tspan></text>
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path6637"
-         d="m 653.57143,140.87783 c 5,171.48437 -72.85714,49.99999 -72.85714,49.99999"
-         style="fill:none;fill-rule:evenodd;stroke:#0024c5;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6681)" />
+   id="tspan8526">部屋からの眺め</tspan>が素晴らしかった。</tspan></text>
+      <g
+         transform="translate(-20.806856,-68.633836)"
+         id="g3421">
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#0024c5;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6681)"
+           d="m 653.57143,140.87783 c 5,171.48437 -72.85714,49.99999 -72.85714,49.99999"
+           id="path6637"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0024c5;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="493.28125"
+           y="229.15907"
+           id="text6809"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan6811"
+             x="493.28125"
+             y="229.15907">強調</tspan></text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-81.5625"
+       y="5.5654082"
+       id="text3376"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3378"
+         x="-81.5625"
+         y="5.5654082">例１</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-81.5625"
+       y="225.56541"
+       id="text3376-1-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3378-9-6"
+         x="-81.5625"
+         y="225.56541">例2</tspan></text>
+    <g
+       id="g4474">
       <text
          sodipodi:linespacing="125%"
-         id="text6809"
-         y="229.15907"
-         x="493.28125"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0024c5;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="text3346-4"
+         y="225.95602"
+         x="38.359375"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
-           y="229.15907"
+           id="tspan4201"
+           style="fill:#000000;fill-opacity:1"
+           y="225.95602"
+           x="38.359375"
+           sodipodi:role="line"><tspan
+   id="tspan4280"
+   style="fill:#00b30f;fill-opacity:0.94117647">部屋からの眺め</tspan>が素晴らしかった。</tspan><tspan
+           id="tspan3385"
+           y="275.95602"
+           x="38.359375"
+           sodipodi:role="line">しかし、それよりも良かったことがある。</tspan><tspan
+           id="tspan4203"
+           y="325.95602"
+           x="38.359375"
+           sodipodi:role="line"
+           style="fill:#ff0000;fill-opacity:1"><tspan
+             id="tspan4290"
+             style="fill:#00b30f;fill-opacity:0.94117647">食事</tspan><tspan
+             id="tspan4300"
+             style="fill:#000000;fill-opacity:1">が美味しかった。</tspan></tspan><tspan
+           id="tspan3354-6"
+           y="375.95602"
+           x="38.359375"
+           sodipodi:role="line" /></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path4207"
+         d="m 23.603243,312.18326 c -80,-60 0,-100 0,-100"
+         style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Mstart);marker-end:url(#Arrow2Mend)" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3376-1"
+         y="282.70825"
+         x="-101.00168"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="fill:#ff0000;fill-opacity:1"
+           y="282.70825"
+           x="-101.00168"
+           id="tspan3378-9"
+           sodipodi:role="line">交換</tspan></text>
+      <g
+         transform="translate(-231.76624,151.67236)"
+         id="g3421-4">
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#0024c5;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6681-2)"
+           d="m 653.57143,140.87783 c 5,171.48437 -72.85714,49.99999 -72.85714,49.99999"
+           id="path6637-0"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0024c5;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="493.28125"
-           id="tspan6811"
-           sodipodi:role="line">強調</tspan></text>
+           y="229.15907"
+           id="text6809-8"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan6811-1"
+             x="493.28125"
+             y="229.15907">強調</tspan></text>
+      </g>
     </g>
   </g>
 </svg>
