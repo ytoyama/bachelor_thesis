@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="293.51111mm"
-   height="158.04445mm"
-   viewBox="0 0 1040 560.00001"
+   width="292.39697mm"
+   height="166.51111mm"
+   viewBox="0 0 1036.0523 589.99998"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -210,8 +210,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="477.81912"
-     inkscape:cy="85.333048"
+     inkscape:cx="505.14269"
+     inkscape:cy="199.61876"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -229,8 +229,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid3336"
-       originx="-50.000001"
-       originy="-310" />
+       originx="-53.947769"
+       originy="-309.99999" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -248,7 +248,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-50.000004,-182.36217)">
+     transform="translate(-53.947769,-152.36218)">
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-8-3-4-4)"
        d="m 575.98934,494.27525 78.72116,-1.77151"
@@ -377,28 +377,6 @@
        cx="820"
        cy="492.36221"
        r="40" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="617.56104"
-       y="585.16736"
-       id="text12843-1"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="617.56104"
-         y="585.16736"
-         id="tspan3421"
-         style="font-size:45px">ニューラル</tspan><tspan
-         sodipodi:role="line"
-         x="617.56104"
-         y="641.41736"
-         id="tspan3425"
-         style="font-size:45px">ネットワーク</tspan><tspan
-         sodipodi:role="line"
-         x="617.56104"
-         y="697.66736"
-         id="tspan3419"
-         style="font-size:45px">により分類</tspan></text>
     <path
        sodipodi:type="star"
        style="fill:#ffd200;fill-opacity:1;stroke:none;stroke-width:3.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -692,75 +670,118 @@
          id="tspan4227-2"
          x="67.167976"
          y="414.68643">文ベクトル2</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="113.72314"
-       y="219.97935"
-       id="text4225-2"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4227-6"
-         x="113.72314"
-         y="219.97935"
-         style="font-size:45px">パラグラフベクトルで生成</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="550.08057"
-       y="586.50769"
-       id="text12843-3"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="550.08057"
+    <g
+       id="g4373">
+      <text
+         sodipodi:linespacing="125%"
+         id="text12843-1"
+         y="585.16736"
+         x="617.56104"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-size:45px"
+           id="tspan3421"
+           y="585.16736"
+           x="617.56104"
+           sodipodi:role="line">ニューラル</tspan><tspan
+           style="font-size:45px"
+           id="tspan3425"
+           y="641.41736"
+           x="617.56104"
+           sodipodi:role="line">ネットワーク</tspan><tspan
+           style="font-size:45px"
+           id="tspan3419"
+           y="697.66736"
+           x="617.56104"
+           sodipodi:role="line">により分類</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text12843-3"
          y="586.50769"
-         id="tspan4297-4"
-         style="font-size:45px;fill:#000000;fill-opacity:1">(3)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="430.08057"
-       y="286.50769"
-       id="text12843"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="430.08057"
-         y="286.50769"
-         id="tspan4297"
-         style="font-size:45px;fill:#000000;fill-opacity:1">(2)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="497.29736"
-       y="288.72693"
-       id="text12843-0"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="497.29736"
-         y="288.72693"
-         id="tspan4297-6"
-         style="font-size:45px;fill:#000000;fill-opacity:1">文ベクトルを</tspan><tspan
-         sodipodi:role="line"
-         x="497.29736"
-         y="344.97693"
-         style="font-size:45px;fill:#ff0000;fill-opacity:1"
-         id="tspan3460">重み付け平均</tspan><tspan
-         sodipodi:role="line"
-         x="497.29736"
-         y="401.22693"
-         style="font-size:45px;fill:#ff0000;fill-opacity:1"
-         id="tspan3462">により圧縮</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="46.132816"
-       y="216.50768"
-       id="text4225-2-1"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4227-6-9"
-         x="46.132816"
-         y="216.50768"
-         style="font-size:45px">(1)</tspan></text>
+         x="550.08057"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-size:45px;fill:#000000;fill-opacity:1"
+           id="tspan4297-4"
+           y="586.50769"
+           x="550.08057"
+           sodipodi:role="line">(3)</tspan></text>
+    </g>
+    <g
+       id="g4343"
+       transform="translate(6.5356475,19.36279)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text12843-0"
+         y="249.36414"
+         x="456.81396"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan3436"
+           style="font-size:45px;fill:#ff0000;fill-opacity:1"
+           y="249.36414"
+           x="456.81396"
+           sodipodi:role="line"><tspan
+   style="font-size:45px;fill:#000000;fill-opacity:1"
+   id="tspan3424">文ベクトルを</tspan></tspan><tspan
+           id="tspan4318"
+           style="font-size:45px;fill:#ff0000;fill-opacity:1"
+           y="305.61414"
+           x="456.81396"
+           sodipodi:role="line">重み付け平均</tspan><tspan
+           id="tspan3442"
+           style="font-size:45px;fill:#ff7a00;fill-opacity:1"
+           y="361.86414"
+           x="456.81396"
+           sodipodi:role="line"><tspan
+             id="tspan4316"
+             style="fill:#ff0b00;fill-opacity:1"><tspan
+   style="fill:#000000;fill-opacity:1"
+   id="tspan4355">➡ </tspan>文の数を統一</tspan></tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text12843"
+         y="247.1449"
+         x="389.59717"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-size:45px;fill:#000000;fill-opacity:1"
+           id="tspan4297"
+           y="247.1449"
+           x="389.59717"
+           sodipodi:role="line">(2)</tspan></text>
+    </g>
+    <g
+       id="g4336">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4225-2"
+         y="189.97937"
+         x="117.6709"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-size:45px"
+           y="189.97937"
+           x="117.6709"
+           id="tspan4227-6"
+           sodipodi:role="line">パラグラフベクトル</tspan><tspan
+           id="tspan3422"
+           style="font-size:45px"
+           y="246.22937"
+           x="117.6709"
+           sodipodi:role="line">により生成</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4225-2-1"
+         y="186.50769"
+         x="50.080582"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-size:45px"
+           y="186.50769"
+           x="50.080582"
+           id="tspan4227-6-9"
+           sodipodi:role="line">(1)</tspan></text>
+    </g>
   </g>
 </svg>
