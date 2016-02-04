@@ -8,13 +8,16 @@
 \usepackage{multicol}
 
 \setmainjfont{ipagp.otf}
-\geometry{a4paper,portrait}
 \beamertemplatenavigationsymbolsempty
+
+% LAYOUT HACK
+\geometry{a4paper,portrait,left=3truemm}
+\setlength{\textwidth}{207truemm}
+\newcommand{\columnsize}{0.485\textwidth}
 
 \newcommand{\arrow}{\textcolor{ttiblue}{\textbf{→}}\hspace{1ex}}
 \newcommand{\itemtitle}[1]{\textbf{#1}\\}
 \newcommand{\fire}[1]{\textcolor{red}{\textbf{#1}}}
-\newcommand{\columnsize}{0.475\textwidth}
 
 
 \title{文書・文間及びカテゴリ間の関係を考慮したレーティング予測}
@@ -128,7 +131,7 @@
       \begin{itemize}
         \item \itemtitle{結果}
           \begin{itemize}
-            \item 提案手法が従来手法より\fire{高い正答率}を示す
+            \item 提案手法が従来手法より\\\fire{高い正答率}を示す
             %\item \fire{文の並び}が予測のために重要
             %\item 文書ベクトルと文ベクトルを同時に素性として用いることが有効
           \end{itemize}
