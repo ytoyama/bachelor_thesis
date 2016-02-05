@@ -6,6 +6,8 @@
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{multicol}
+\usepackage{subcaption}
+\captionsetup{compatibility=false}
 
 \setmainjfont{ipagp.otf}
 \beamertemplatenavigationsymbolsempty
@@ -38,19 +40,19 @@
             多カテゴリにおける商品レビューのレーティング予測
       \item \itemtitle{目的}
         以下を考慮したレーティング予測の実現
-        \begin{itemize}
-          \item 文章・文間の関係
-            \begin{figure}
-              \includegraphics[width=0.9\linewidth]
-                              {fig/relations_among_sentences.png}
-            \end{figure}
-          \item カテゴリ間の関係
-            \begin{figure}
-              \includegraphics[width=0.6\linewidth]
-                              {fig/relations_among_rating_categories.png}
-            \end{figure}
-        \end{itemize}
     \end{itemize}
+    \begin{figure}
+      \begin{subfigure}[t]{0.58\linewidth}
+        \subcaption*{文章・文間の関係}
+        \includegraphics[width=\linewidth]
+                        {fig/global_relations_among_sentences.png}
+      \end{subfigure}
+      \begin{subfigure}[t]{0.4\linewidth}
+        \subcaption*{カテゴリ間の関係}
+        \includegraphics[width=\linewidth]
+                        {fig/relations_among_rating_categories.png}
+      \end{subfigure}
+    \end{figure}
     %\begin{figure}
     %  \includegraphics[width=0.9\linewidth]{fig/review.png}
     %  \caption{複数のカテゴリを持つ商品レビューの例}
@@ -107,7 +109,8 @@
       %  \end{enumerate}
     \end{itemize}
     \begin{figure}
-      \includegraphics[width=\linewidth]{fig/model_with_detailed_processes.png}
+      \includegraphics[width=0.9\linewidth]
+                      {fig/model_with_detailed_processes.png}
       \caption{提案手法におけるモデルの概略}
     \end{figure}
   \end{block}
