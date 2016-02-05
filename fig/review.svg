@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="133.51122mm"
-   height="42.897774mm"
-   viewBox="0 0 473.07124 151.99998"
+   width="132.09229mm"
+   height="41.163513mm"
+   viewBox="0 0 468.04354 145.85496"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="233.93745"
-     inkscape:cy="-61.155929"
+     inkscape:cx="233.93746"
+     inkscape:cy="-65.346679"
      inkscape:document-units="px"
      inkscape:current-layer="g4219"
      showgrid="true"
@@ -45,8 +45,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid3350"
-       originx="-3.1122591"
-       originy="-11.693983" />
+       originx="-3.11225"
+       originy="-15.884733" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -64,7 +64,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-377.43285,-116.4659)">
+     transform="translate(-377.43285,-118.42016)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.75px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -455,13 +455,6 @@
              y="177.91743"
              style="font-size:17.5px;fill:#b70000;fill-opacity:1;stroke:none;stroke-opacity:1">5</tspan></text>
       </g>
-      <rect
-         y="113.93088"
-         x="673.23444"
-         height="150.17227"
-         width="170.17232"
-         id="rect3415"
-         style="opacity:0.969;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.82771564;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.37647059" />
     </g>
   </g>
 </svg>
