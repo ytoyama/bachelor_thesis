@@ -41,8 +41,9 @@
 \begin{frame}{多カテゴリにおける商品レビューのレーティング予測}{}
   \begin{itemize}
     \item レーティング予測：商品のレーティングを予測すること
-    \item カテゴリ：レーティングの付く各項目のこと
-    \item \fire{文同士の位置関係}及び\fire{カテゴリ間の関係}を考慮したい
+    \item カテゴリ：レーティングの付く各項目
+    \item レビューとレーティング間の様々な関係が存在 \\
+          \arrow \fire{文書・文間の関係}及び\fire{カテゴリ間の関係}に着目
   \end{itemize}
   \begin{figure}
     \fboxsep=2mm
@@ -156,8 +157,8 @@
   \vspace{-1em} % HACK
   \begin{block}{今後の課題}
     \begin{itemize}
-      \item 文間あるいは単語間等のより多様で複雑な関係を考慮 \\
-            \arrow 文書・文ベクトルの生成と分類のモデルを統合
+      \item \fire{文間や単語間、文字間等のより多様な関係}を考慮 \\
+            \arrow レビューの意味表現の生成と分類の\fire{モデルを統合}
     \end{itemize}
   \end{block}
 \end{frame}
