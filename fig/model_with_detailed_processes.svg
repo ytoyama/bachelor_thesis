@@ -198,14 +198,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="439.94523"
-     inkscape:cy="133.03918"
+     inkscape:cx="711.41186"
+     inkscape:cy="133.03919"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
-     inkscape:window-width="1438"
+     inkscape:window-width="1150"
      inkscape:window-height="1064"
      inkscape:window-x="0"
      inkscape:window-y="14"
@@ -220,7 +220,7 @@
        type="xygrid"
        id="grid3336"
        originx="-53.947769"
-       originy="-309.99996" />
+       originy="-309.99995" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -714,7 +714,7 @@
            id="tspan3419"
            y="697.66736"
            x="617.56104"
-           sodipodi:role="line">により分類</tspan></text>
+           sodipodi:role="line">により予測</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text12843-3"
