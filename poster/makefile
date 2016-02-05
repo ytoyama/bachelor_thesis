@@ -15,38 +15,15 @@ convert = convert
 	${latex} --jobname=${.TARGET:.pdf=} ${src}
 	${rm} ${src}
 
-.SUFFIXES: .pdf .png
-.pdf.png:
-	${convert} -density 512 ${.IMPSRC} -quality 100 ${.TARGET}
-
 .PHONY: all
-all: ${poster_pdf} images
+all: ${poster_pdf}
 
 .PHONY: clean
 clean:
-	${rm} *.pdf *.dvi *.aux *.log *.toc *.nav *.snm *.out *.png doc_data.txt
+	${rm} *.pdf *.dvi *.aux *.log *.toc *.nav *.snm *.out
 
 .PHONY: poster
 poster: ${poster_pdf}
 	${pdf_viewer} ${.ALLSRC}
-
-.PHONY: view_images
-view_images: images
-	${image_viewer} *.png
-
-.PHONY: images
-images: ${poster_pdf}
-	: ${filename_format::=${.ALLSRC:.pdf=}_%d.pdf}
-	first_page_png=$$(echo "${filename_format:.pdf=.png}" | sed 's/%d/1/'); \
-	if [ ! -r "$$first_page_png" ] \
-	   || [ ${poster_pdf} -nt "$$first_page_png" ]; \
-	then \
-	  ${pdftk} ${.ALLSRC} burst output '${filename_format}'; \
-	  for filename in $$(echo $$(echo "${filename_format}" | sed 's/%d/*/')); \
-	  do \
-	    ${MAKE} "$$(echo "$$filename" | sed "s/\.pdf/\.png/")"; \
-	    ${rm} "$$filename"; \
-	  done; \
-	fi
 
 ${poster_pdf}: beamerthemettiposter.sty
