@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="272.88437mm"
+   height="81.232536mm"
+   viewBox="0 0 966.91312 287.83182"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="fujitani_miml_relations_among_categories.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker6364"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         transform="scale(0.4,0.4)"
+         style="fill:#0381ff;fill-opacity:1;fill-rule:evenodd;stroke:#0381ff;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path6366"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <pattern
+       patternTransform="translate(-46.098322,1119.1505)"
+       id="pattern6011-3"
+       xlink:href="#pattern5277-4"
+       inkscape:collect="always" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="19.465666"
+       height="155.68994"
+       patternTransform="translate(-892.64593,767.49101)"
+       id="pattern5277-4">
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4641-1"
+         d="M 8.7624548,2.0284843 9.7726048,144.45999"
+         style="fill:none;fill-rule:evenodd;stroke:#0381ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-3)" />
+    </pattern>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-3"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4792-6"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0381ff;fill-opacity:1;fill-rule:evenodd;stroke:#0381ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4,0.4)" />
+    </marker>
+    <pattern
+       patternTransform="translate(-184.48922,1119.1506)"
+       id="pattern6011-0"
+       xlink:href="#pattern5277-9"
+       inkscape:collect="always" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="19.465666"
+       height="155.68994"
+       patternTransform="translate(-892.64593,767.49101)"
+       id="pattern5277-9">
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4641-5"
+         d="M 8.7624548,2.0284843 9.7726048,144.45999"
+         style="fill:none;fill-rule:evenodd;stroke:#0381ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-4)" />
+    </pattern>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4792-61"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0381ff;fill-opacity:1;fill-rule:evenodd;stroke:#0381ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4,0.4)" />
+    </marker>
+    <pattern
+       patternTransform="translate(-353.1847,1119.1504)"
+       id="pattern6011-8"
+       xlink:href="#pattern5277-1"
+       inkscape:collect="always" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="19.465666"
+       height="155.68994"
+       patternTransform="translate(-892.64593,767.49101)"
+       id="pattern5277-1">
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4641-2"
+         d="M 8.7624548,2.0284843 9.7726048,144.45999"
+         style="fill:none;fill-rule:evenodd;stroke:#0381ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-9)" />
+    </pattern>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4792-19"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0381ff;fill-opacity:1;fill-rule:evenodd;stroke:#0381ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4,0.4)" />
+    </marker>
+    <pattern
+       patternTransform="translate(-515.81926,1119.1505)"
+       id="pattern6011-9"
+       xlink:href="#pattern5277-99"
+       inkscape:collect="always" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="19.465666"
+       height="155.68994"
+       patternTransform="translate(-892.64593,767.49101)"
+       id="pattern5277-99">
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4641-52"
+         d="M 8.7624548,2.0284843 9.7726048,144.45999"
+         style="fill:none;fill-rule:evenodd;stroke:#0381ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-7)" />
+    </pattern>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4792-0"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0381ff;fill-opacity:1;fill-rule:evenodd;stroke:#0381ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4,0.4)" />
+    </marker>
+    <pattern
+       patternTransform="translate(-644.10863,1119.1506)"
+       id="pattern6011-08"
+       xlink:href="#pattern5277-0"
+       inkscape:collect="always" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="19.465666"
+       height="155.68994"
+       patternTransform="translate(-892.64593,767.49101)"
+       id="pattern5277-0">
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4641-3"
+         d="M 8.7624548,2.0284843 9.7726048,144.45999"
+         style="fill:none;fill-rule:evenodd;stroke:#0381ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-5)" />
+    </pattern>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-5"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4792-8"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0381ff;fill-opacity:1;fill-rule:evenodd;stroke:#0381ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4,0.4)" />
+    </marker>
+    <pattern
+       patternTransform="translate(-771.38785,1119.1506)"
+       id="pattern6011-6"
+       xlink:href="#pattern5277-48"
+       inkscape:collect="always" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="19.465666"
+       height="155.68994"
+       patternTransform="translate(-892.64593,767.49101)"
+       id="pattern5277-48">
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4641-9"
+         d="M 8.7624548,2.0284843 9.7726048,144.45999"
+         style="fill:none;fill-rule:evenodd;stroke:#0381ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-77)" />
+    </pattern>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-77"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4792-63"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0381ff;fill-opacity:1;fill-rule:evenodd;stroke:#0381ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4,0.4)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker6364-7"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(0.4,0.4)"
+         style="fill:#0381ff;fill-opacity:1;fill-rule:evenodd;stroke:#0381ff;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path6366-2" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker6364-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(0.4,0.4)"
+         style="fill:#0381ff;fill-opacity:1;fill-rule:evenodd;stroke:#0381ff;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path6366-6" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker6364-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(0.4,0.4)"
+         style="fill:#0381ff;fill-opacity:1;fill-rule:evenodd;stroke:#0381ff;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path6366-8" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker6364-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(0.4,0.4)"
+         style="fill:#0381ff;fill-opacity:1;fill-rule:evenodd;stroke:#0381ff;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path6366-67" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker6364-4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(0.4,0.4)"
+         style="fill:#0381ff;fill-opacity:1;fill-rule:evenodd;stroke:#0381ff;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path6366-1" />
+    </marker>
+    <pattern
+       patternTransform="translate(-898.66705,1119.9793)"
+       id="pattern6011-6-5"
+       xlink:href="#pattern5277-48-7"
+       inkscape:collect="always" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="19.465666"
+       height="155.68994"
+       patternTransform="translate(-892.64593,767.49101)"
+       id="pattern5277-48-7">
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4641-9-7"
+         d="M 8.7624548,2.0284843 9.7726048,144.45999"
+         style="fill:none;fill-rule:evenodd;stroke:#0381ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-77-7)" />
+    </pattern>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-77-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4792-63-4"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0381ff;fill-opacity:1;fill-rule:evenodd;stroke:#0381ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4,0.4)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="273.98094"
+     inkscape:cy="61.525265"
+     inkscape:document-units="px"
+     inkscape:current-layer="g6347"
+     showgrid="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:window-width="1918"
+     inkscape:window-height="1064"
+     inkscape:window-x="0"
+     inkscape:window-y="14"
+     inkscape:window-maximized="0"
+     inkscape:snap-global="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3336"
+       originx="939.99998"
+       originy="-62.168177" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(940,-702.3622)">
+    <g
+       id="g4493"
+       transform="translate(-963.55871,8.5137355)">
+      <g
+         transform="translate(0,67.831819)"
+         id="g4357">
+        <rect
+           style="opacity:1;fill:#dbf4ff;fill-opacity:0.98431373;stroke:#007fff;stroke-width:3.19448233;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98431373"
+           id="rect3450"
+           width="104.63734"
+           height="64.637337"
+           x="25.155947"
+           y="627.61389" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="37.597656"
+           y="674.56445"
+           id="text3338"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3340"
+             x="37.597656"
+             y="674.56445">立地</tspan></text>
+      </g>
+      <g
+         transform="translate(-10.441638,67.831819)"
+         id="g4372">
+        <rect
+           style="opacity:1;fill:#dbf4ff;fill-opacity:0.98431373;stroke:#007fff;stroke-width:3.19448233;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98431373"
+           id="rect3450-4-5-0"
+           width="104.63734"
+           height="64.637337"
+           x="417.15594"
+           y="627.61389" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="431.07422"
+           y="672.96289"
+           id="text3338-7"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3340-8"
+             x="431.07422"
+             y="672.96289">風呂</tspan></text>
+      </g>
+      <g
+         transform="translate(2.9069598,67.831845)"
+         id="g4377">
+        <rect
+           style="opacity:1;fill:#dbf4ff;fill-opacity:0.98431373;stroke:#007fff;stroke-width:4.08442736;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98431373"
+           id="rect3450-4-5-0-2"
+           width="173.44791"
+           height="63.747391"
+           x="531.43848"
+           y="628.05884" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="543.20312"
+           y="674.05664"
+           id="text3338-7-2"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3340-8-0"
+             x="543.20312"
+             y="674.05664">サービス</tspan></text>
+      </g>
+      <g
+         transform="translate(-2.8138916,67.831819)"
+         id="g4392">
+        <rect
+           style="opacity:1;fill:#dbf4ff;fill-opacity:0.98431373;stroke:#007fff;stroke-width:3.19448233;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98431373"
+           id="rect3450-4"
+           width="104.63734"
+           height="64.637337"
+           x="155.15594"
+           y="627.61389" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="168.00781"
+           y="675.01367"
+           id="text3338-7-2-7"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3340-8-0-5"
+             x="168.00781"
+             y="675.01367">部屋</tspan></text>
+      </g>
+      <g
+         transform="translate(3.7074089e-5,67.831844)"
+         id="g4387">
+        <rect
+           style="opacity:1;fill:#dbf4ff;fill-opacity:0.98431373;stroke:#007fff;stroke-width:3.3814218;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98431373"
+           id="rect3450-4-5-0-2-6-1"
+           width="117.58237"
+           height="64.450394"
+           x="871.19867"
+           y="627.70734" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="889.77307"
+           y="675.13086"
+           id="text3338-7-2-7-2"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3340-8-0-5-3"
+             x="889.77307"
+             y="675.13086">総合</tspan></text>
+      </g>
+      <g
+         transform="translate(2.3722351,67.831819)"
+         id="g4367">
+        <rect
+           style="opacity:1;fill:#dbf4ff;fill-opacity:0.98431373;stroke:#007fff;stroke-width:3.19448233;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98431373"
+           id="rect3450-4-5"
+           width="104.63734"
+           height="64.637337"
+           x="277.15594"
+           y="627.61389" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="288.2085"
+           y="675.01367"
+           id="text3338-7-2-7-2-3"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3340-8-0-5-3-2"
+             x="288.2085"
+             y="675.01367">食事</tspan></text>
+      </g>
+      <g
+         transform="translate(-4.4551631,67.831844)"
+         id="g4382">
+        <rect
+           style="opacity:1;fill:#dbf4ff;fill-opacity:0.98431373;stroke:#007fff;stroke-width:3.3814218;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98431373"
+           id="rect3450-4-5-0-2-6"
+           width="117.58237"
+           height="64.450394"
+           x="735.33575"
+           y="627.70734" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="753.94513"
+           y="675.05273"
+           id="text3338-4"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3340-5"
+             x="753.94513"
+             y="675.05273">設備</tspan></text>
+      </g>
+    </g>
+    <g
+       transform="translate(-963.55871,228.51374)"
+       id="g4493-4">
+      <g
+         transform="translate(0,67.831819)"
+         id="g4357-7">
+        <rect
+           style="opacity:1;fill:#dbf4ff;fill-opacity:0.98431373;stroke:#007fff;stroke-width:3.19448233;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98431373"
+           id="rect3450-1"
+           width="104.63734"
+           height="64.637337"
+           x="25.155947"
+           y="627.61389" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="37.597656"
+           y="674.56445"
+           id="text3338-6"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3340-9"
+             x="37.597656"
+             y="674.56445">立地</tspan></text>
+      </g>
+      <g
+         transform="translate(-10.441638,67.831819)"
+         id="g4372-4">
+        <rect
+           style="opacity:1;fill:#dbf4ff;fill-opacity:0.98431373;stroke:#007fff;stroke-width:3.19448233;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98431373"
+           id="rect3450-4-5-0-7"
+           width="104.63734"
+           height="64.637337"
+           x="417.15594"
+           y="627.61389" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="431.07422"
+           y="672.96289"
+           id="text3338-7-21"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3340-8-3"
+             x="431.07422"
+             y="672.96289">風呂</tspan></text>
+      </g>
+      <g
+         transform="translate(2.9069598,67.831845)"
+         id="g4377-1">
+        <rect
+           style="opacity:1;fill:#dbf4ff;fill-opacity:0.98431373;stroke:#007fff;stroke-width:4.08442736;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98431373"
+           id="rect3450-4-5-0-2-9"
+           width="173.44791"
+           height="63.747391"
+           x="531.43848"
+           y="628.05884" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="543.20312"
+           y="674.05664"
+           id="text3338-7-2-6"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3340-8-0-50"
+             x="543.20312"
+             y="674.05664">サービス</tspan></text>
+      </g>
+      <g
+         transform="translate(-2.8138916,67.831819)"
+         id="g4392-2">
+        <rect
+           style="opacity:1;fill:#dbf4ff;fill-opacity:0.98431373;stroke:#007fff;stroke-width:3.19448233;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98431373"
+           id="rect3450-4-2"
+           width="104.63734"
+           height="64.637337"
+           x="155.15594"
+           y="627.61389" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="168.00781"
+           y="675.01367"
+           id="text3338-7-2-7-9"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3340-8-0-5-4"
+             x="168.00781"
+             y="675.01367">部屋</tspan></text>
+      </g>
+      <g
+         transform="translate(3.7074089e-5,67.831844)"
+         id="g4387-9">
+        <rect
+           style="opacity:1;fill:#dbf4ff;fill-opacity:0.98431373;stroke:#007fff;stroke-width:3.3814218;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98431373"
+           id="rect3450-4-5-0-2-6-1-8"
+           width="117.58237"
+           height="64.450394"
+           x="871.19867"
+           y="627.70734" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="889.77307"
+           y="675.13086"
+           id="text3338-7-2-7-2-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3340-8-0-5-3-22"
+             x="889.77307"
+             y="675.13086">総合</tspan></text>
+      </g>
+      <g
+         transform="translate(2.3722351,67.831819)"
+         id="g4367-8">
+        <rect
+           style="opacity:1;fill:#dbf4ff;fill-opacity:0.98431373;stroke:#007fff;stroke-width:3.19448233;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98431373"
+           id="rect3450-4-5-6"
+           width="104.63734"
+           height="64.637337"
+           x="277.15594"
+           y="627.61389" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="288.2085"
+           y="675.01367"
+           id="text3338-7-2-7-2-3-0"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3340-8-0-5-3-2-2"
+             x="288.2085"
+             y="675.01367">食事</tspan></text>
+      </g>
+      <g
+         transform="translate(-4.4551631,67.831844)"
+         id="g4382-0">
+        <rect
+           style="opacity:1;fill:#dbf4ff;fill-opacity:0.98431373;stroke:#007fff;stroke-width:3.3814218;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98431373"
+           id="rect3450-4-5-0-2-6-8"
+           width="117.58237"
+           height="64.450394"
+           x="735.33575"
+           y="627.70734" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="753.94513"
+           y="675.05273"
+           id="text3338-4-0"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3340-5-8"
+             x="753.94513"
+             y="675.05273">設備</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g6347"
+       transform="translate(2.0203051,-351.53309)">
+      <rect
+         id="rect5280-7"
+         y="1119.1505"
+         x="-46.098351"
+         height="155.68994"
+         width="19.465666"
+         style="fill:url(#pattern6011-3);stroke:none" />
+      <rect
+         id="rect5280-0"
+         y="1119.1505"
+         x="-184.48924"
+         height="155.68994"
+         width="19.465666"
+         style="fill:url(#pattern6011-0);stroke:none" />
+      <rect
+         id="rect5280-9"
+         y="1119.1505"
+         x="-353.18472"
+         height="155.68994"
+         width="19.465666"
+         style="fill:url(#pattern6011-8);stroke:none" />
+      <rect
+         id="rect5280-75"
+         y="1119.1505"
+         x="-515.81927"
+         height="155.68994"
+         width="19.465666"
+         style="fill:url(#pattern6011-9);stroke:none" />
+      <rect
+         id="rect5280-5"
+         y="1119.1505"
+         x="-644.10864"
+         height="155.68994"
+         width="19.465666"
+         style="fill:url(#pattern6011-08);stroke:none" />
+      <rect
+         id="rect5280-99"
+         y="1119.1505"
+         x="-771.38788"
+         height="155.68994"
+         width="19.465666"
+         style="fill:url(#pattern6011-6);stroke:none" />
+      <rect
+         id="rect5280-99-7"
+         y="1119.9792"
+         x="-898.66705"
+         height="155.68994"
+         width="19.465666"
+         style="fill:url(#pattern6011-6-5);stroke:none" />
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0381ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6364)"
+       d="M -172.5,769.86221 -42.142858,915.21934"
+       id="path6356"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0381ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6364-7)"
+       d="M -634.69074,770.18691 -42.69388,918.5745"
+       id="path6356-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0381ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6364-2)"
+       d="M -761.49207,770.14486 -48.276904,917.52229"
+       id="path6356-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0381ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6364-3)"
+       d="M -887.76114,770.14486 -49.287056,919.5426"
+       id="path6356-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0381ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6364-6)"
+       d="M -340.65914,769.43268 -42.616679,918.83043"
+       id="path6356-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0381ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6364-4)"
+       d="M -506.32416,767.41237 -43.943725,917.27931"
+       id="path6356-25"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>

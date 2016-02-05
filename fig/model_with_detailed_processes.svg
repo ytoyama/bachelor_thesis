@@ -199,13 +199,13 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
      inkscape:cx="711.41186"
-     inkscape:cy="133.03919"
+     inkscape:cy="133.0392"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
-     inkscape:window-width="1150"
+     inkscape:window-width="1630"
      inkscape:window-height="1064"
      inkscape:window-x="0"
      inkscape:window-y="14"
@@ -220,7 +220,7 @@
        type="xygrid"
        id="grid3336"
        originx="-53.947769"
-       originy="-309.99995" />
+       originy="-309.99994" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -246,12 +246,6 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker10719-3)"
-       d="M 318.85604,584.074 426.75982,408.99807"
-       id="path4281-8-5"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker10477)"
        d="m 322.46952,404.74096 88.89285,-19.96287"
        id="path4281-4"
@@ -267,12 +261,6 @@
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker10849)"
        d="m 320.32666,405.81239 95.67857,62.53713"
        id="path4281-4-2"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker10719)"
-       d="M 320.28461,304.074 429.11187,453.36301"
-       id="path4281-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
@@ -745,9 +733,14 @@
            sodipodi:role="line"><tspan
              style="font-size:45px;fill:#000000;fill-opacity:1"
              id="tspan3424">文ベクトルを</tspan></tspan><tspan
-           id="tspan4318"
            style="font-size:45px;fill:#ff0000;fill-opacity:1"
            y="305.61414"
+           x="456.81396"
+           sodipodi:role="line"
+           id="tspan3432">位置によって</tspan><tspan
+           id="tspan4318"
+           style="font-size:45px;fill:#ff0000;fill-opacity:1"
+           y="361.86414"
            x="456.81396"
            sodipodi:role="line">重み付け平均</tspan><tspan
            id="tspan3442"
@@ -756,9 +749,7 @@
            x="456.81396"
            sodipodi:role="line"><tspan
              id="tspan4316"
-             style="fill:#ff0b00;fill-opacity:1"><tspan
-   style="fill:#000000;fill-opacity:1"
-   id="tspan4355">➡ </tspan>文の数を統一</tspan></tspan></text>
+             style="fill:#ff0b00;fill-opacity:1" /></tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text12843"
