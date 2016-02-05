@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="global_relations_of_sentences.svg">
+   sodipodi:docname="global_relations_among_sentences.svg">
   <defs
      id="defs4">
     <marker
@@ -56,13 +56,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="298.75098"
-     inkscape:cy="225.40195"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="271.35689"
+     inkscape:cy="238.05295"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1438"
+     inkscape:window-width="1150"
      inkscape:window-height="1064"
      inkscape:window-x="0"
      inkscape:window-y="14"
@@ -77,7 +77,7 @@
        type="xygrid"
        id="grid3336"
        originx="-104.17177"
-       originy="-522.35092" />
+       originy="-522.35093" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -120,26 +120,25 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="218.35938"
-       y="265.95596"
+       x="306.99219"
+       y="265.56537"
        id="text3338"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3340"
-         x="218.35938"
-         y="265.95596">食事が美味しかったという文章</tspan></text>
+         x="306.99219"
+         y="265.56537">高い評価を示す文章</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="254.57031"
-       y="365.95596"
+       x="308.71094"
+       y="365.56537"
        id="text3338-8"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3340-7"
-         x="254.57031"
-         y="365.95596"
-         rotate="0 0 0 0 0 0 0 0 0">立地が悪かったという文章</tspan></text>
+         x="308.71094"
+         y="365.56537">低い評価を示す文章</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
