@@ -17,7 +17,7 @@ convert = convert
 
 .SUFFIXES: .pdf .png
 .pdf.png:
-	${convert} -density 512 ${.IMPSRC} -quality 100 ${.TARGET}
+	${convert} -density 1024 -quality 100 ${.IMPSRC} ${.TARGET}
 
 .PHONY: all
 all: ${presentation_pdf} images
