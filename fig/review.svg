@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="145.38678mm"
-   height="55.303734mm"
-   viewBox="0 0 515.15002 195.95809"
+   width="145.3868mm"
+   height="55.045158mm"
+   viewBox="0 0 515.15007 195.04188"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -26,12 +26,12 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="303.36788"
-     inkscape:cy="56.302047"
+     inkscape:cx="303.91813"
+     inkscape:cy="24.518189"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1630"
+     inkscape:window-width="1438"
      inkscape:window-height="1064"
      inkscape:window-x="0"
      inkscape:window-y="14"
@@ -45,8 +45,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid3350"
-       originx="5.0000314"
-       originy="25.958099" />
+       originx="5.0000325"
+       originy="-5.0000146" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -64,7 +64,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-369.32057,-110.15986)">
+     transform="translate(-369.32057,-80.117967)">
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:0.94509804;stroke:#9a9a9a;stroke-width:1.41934645;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.94509804"
        id="rect4367"
@@ -461,7 +461,7 @@
     </g>
     <g
        id="g4320"
-       transform="matrix(0.81449168,0,0,0.48524052,292.66278,127.54605)"
+       transform="matrix(0.81449168,0,0,-0.48524052,292.66278,258.51653)"
        style="fill:none;fill-opacity:0.94509804;stroke:#0062c5;stroke-width:3.18132591;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98382353">
       <path
          style="fill:none;fill-opacity:0.94509804;fill-rule:evenodd;stroke:#0062c5;stroke-width:3.18132591;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98382353"
@@ -478,7 +478,7 @@
     </g>
     <g
        id="g4320-9"
-       transform="matrix(0.30941185,0,0,0.49253166,680.64479,125.34238)"
+       transform="matrix(0.30941185,0,0,-0.49253166,680.64479,260.94981)"
        style="fill:none;fill-opacity:0.94509804;stroke:#0062c5;stroke-width:3.84242821;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98382353">
       <path
          style="fill:none;fill-opacity:0.94509804;fill-rule:evenodd;stroke:#0062c5;stroke-width:3.84242821;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98382353"
@@ -497,25 +497,25 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#0062c5;fill-opacity:0.98431373;stroke:#0062c5;stroke-width:0.30000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98431373"
        x="683.09869"
-       y="305.00238"
+       y="95.110489"
        id="text4345"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4347"
          x="683.09869"
-         y="305.00238"
+         y="95.110489"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#0062c5;fill-opacity:0.98431373;stroke:#0062c5;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98431373">カテゴリ</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0062c5;fill-opacity:0.98431373;stroke:#0062c5;stroke-width:0.30000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98431373"
        x="795.83795"
-       y="304.78876"
+       y="94.896873"
        id="text4345-2"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4347-5"
          x="795.83795"
-         y="304.78876"
+         y="94.896873"
          style="font-size:17.5px;fill:#0062c5;fill-opacity:0.98431373;stroke:#0062c5;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98431373">レーティング</tspan></text>
   </g>
 </svg>
