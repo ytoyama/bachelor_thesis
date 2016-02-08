@@ -41,20 +41,24 @@
       \item \itemtitle{目的}
         以下を考慮したレーティング予測の実現
     \end{itemize}
+    \vspace{-2em} % HACK
     \begin{figure}
-      \begin{subfigure}[t]{0.58\linewidth}
+      \hspace*{\fill} % HACK
+      \begin{subfigure}[t]{0.4\linewidth}
         \subcaption*{文章・文間の関係}
         \includegraphics[width=\linewidth]
-                        {fig/global_relations_among_sentences.png}
+                        {fig/global_relations_among_sentences_v2.pdf}
       \end{subfigure}
+      \hfill % HACK
       \begin{subfigure}[t]{0.4\linewidth}
         \subcaption*{カテゴリ間の関係}
         \includegraphics[width=\linewidth]
-                        {fig/relations_among_rating_categories.png}
+                        {fig/relations_among_rating_categories.pdf}
       \end{subfigure}
+      \hspace*{\fill} % HACK
     \end{figure}
     %\begin{figure}
-    %  \includegraphics[width=0.9\linewidth]{fig/review.png}
+    %  \includegraphics[width=0.9\linewidth]{fig/review.pdf}
     %  \caption{複数のカテゴリを持つ商品レビューの例}
     %\end{figure}
   \end{block}
@@ -70,13 +74,17 @@
           \item カテゴリ間の繋がりを手調整によって変化させ \\
                 カテゴリ間の関係性を考慮
         \end{itemize}
+        \begin{figure}
+          \includegraphics[width=0.7\linewidth]
+              {fig/fujitani_miml_relations_among_rating_categories.pdf}
+        \end{figure}
       \item \itemtitle{パラグラフベクトル\cite{quoc14}}
         \begin{itemize}
           \item 文や文書を、その意味を表す実数ベクトルに変換
           \item \fire{評判分類において優れる}
         \end{itemize}
         \begin{figure}
-          \includegraphics{fig/paragraph_vector.png}
+          \includegraphics{fig/paragraph_vector.pdf}
         \end{figure}
       \item \itemtitle{ニューラルネットワーク}
         \begin{itemize}
@@ -110,7 +118,7 @@
     \end{itemize}
     \begin{figure}
       \includegraphics[width=0.9\linewidth]
-                      {fig/model_with_detailed_processes.png}
+                      {fig/model_with_detailed_processes.pdf}
       \caption{提案手法におけるモデルの概略}
     \end{figure}
   \end{block}
