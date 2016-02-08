@@ -3,7 +3,8 @@ INKSCAPE = inkscape
 DPI = 360
 
 svg_figures != ls *.svg
-target_files = ${svg_figures:.svg=.png} ${svg_figures:.svg=.eps}
+target_files = ${svg_figures:.svg=.png} ${svg_figures:.svg=.eps} \
+               ${svg_figures:.svg=.pdf}
 
 .SUFFIXES: .svg .png
 .svg.png:
@@ -12,6 +13,10 @@ target_files = ${svg_figures:.svg=.png} ${svg_figures:.svg=.eps}
 .SUFFIXES: .svg .eps
 .svg.eps:
 	${INKSCAPE} -zD -E ${.TARGET} ${.IMPSRC}
+
+.SUFFIXES: .svg .pdf
+.svg.pdf:
+	${INKSCAPE} -zD -A ${.TARGET} ${.IMPSRC}
 
 .SUFFIXES: .csv .png
 .csv.png:
