@@ -45,9 +45,17 @@
 
 % templates
 
+%% block
+
+\setbeamertemplate{block begin}{%
+  \begin{beamercolorbox}[sep=1ex,wd=\columnwidth]{block title}
+    \usebeamerfont{block title}{\insertblocktitle}
+  \end{beamercolorbox}}
+\setbeamertemplate{block end}{}
+
 %% enumeration
 
-\newcommand{\tti@listindent}{2.2ex}
+\newcommand{\tti@listindent}{3.5ex}
 \setbeamertemplate{itemize/enumerate body begin}
                   {\setlength{\leftmargini}{\tti@listindent}}
 \setbeamertemplate{itemize/enumerate subbody begin}
