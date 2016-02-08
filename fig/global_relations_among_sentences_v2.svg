@@ -9,46 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="107.90246mm"
+   width="91.299698mm"
    height="71.442482mm"
-   viewBox="0 0 382.33154 253.14266"
+   viewBox="0 0 323.50286 253.14266"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="global_relations_among_sentences_v2.svg">
   <defs
-     id="defs4">
-    <marker
-       inkscape:stockid="TriangleInS"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="TriangleInS"
-       style="overflow:visible"
-       inkscape:isstock="true">
-      <path
-         id="path5191"
-         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
-         style="fill:#ff0400;fill-opacity:1;fill-rule:evenodd;stroke:#ff0400;stroke-width:1pt;stroke-opacity:1"
-         transform="scale(-0.2,-0.2)"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:stockid="TriangleOutS"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="TriangleOutS-5"
-       style="overflow:visible"
-       inkscape:isstock="true">
-      <path
-         id="path4602-6"
-         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
-         style="fill:#ff0400;fill-opacity:1;fill-rule:evenodd;stroke:#ff0400;stroke-width:1pt;stroke-opacity:1"
-         transform="scale(0.2,0.2)"
-         inkscape:connector-curvature="0" />
-    </marker>
-  </defs>
+     id="defs4" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -57,12 +26,12 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4194444"
-     inkscape:cx="209.62916"
-     inkscape:cy="125.37265"
+     inkscape:cx="44.420832"
+     inkscape:cy="125.37264"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1438"
+     inkscape:window-width="1342"
      inkscape:window-height="1064"
      inkscape:window-x="0"
      inkscape:window-y="14"
@@ -85,7 +54,7 @@
     <inkscape:grid
        type="xygrid"
        id="grid3336"
-       originx="-239.46374"
+       originx="-298.29241"
        originy="-597.77273" />
   </sodipodi:namedview>
   <metadata
@@ -104,7 +73,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-239.46375,-201.44692)">
+     transform="translate(-298.29242,-201.44692)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#9fc6f8;fill-opacity:1;stroke:#9fc6f8;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -129,14 +98,8 @@
          x="297.62891"
          y="301.91498"
          style="font-size:35.00000381px;fill:#002e68;fill-opacity:1;stroke:#002e68;stroke-width:1.00000012;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">とても良かった。</tspan></text>
-    <path
-       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0400;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleInS);marker-end:url(#TriangleOutS-5)"
-       d="m 280.00001,312.36229 c -80,60 0,110 0,110"
-       id="path4448-6-2"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
     <rect
-       style="opacity:1;fill:#fff1bc;fill-opacity:1;stroke:#ffd536;stroke-width:3.58245039;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#d6ffcd;fill-opacity:1;stroke:#0a9f00;stroke-width:3.58245039;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect3353"
        width="318.12515"
        height="59.332851"
