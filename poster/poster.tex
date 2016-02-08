@@ -13,9 +13,11 @@
 \beamertemplatenavigationsymbolsempty
 
 % LAYOUT HACK
-\geometry{a4paper,portrait,left=3truemm}
-\setlength{\textwidth}{207truemm}
-\newcommand{\columnsize}{0.485\textwidth}
+\geometry{a4paper,portrait,left=2truemm,width=206truemm}
+% "width" option of \geometry is ignored
+% and \textwidth need to be set by \setlength somehow
+\setlength{\textwidth}{206truemm} % HACK
+\newcommand{\columnsize}{0.495\textwidth}
 
 \newcommand{\arrow}{\textcolor{ttiblue}{\textbf{→}}\hspace{1ex}}
 \newcommand{\itemtitle}[1]{\textbf{#1}\\}
@@ -36,10 +38,8 @@
 \begin{column}{\columnsize}
   \begin{block}{背景と目的}
     \begin{itemize}
-      \item \itemtitle{対象問題}
-            多カテゴリにおける商品レビューのレーティング予測
-      \item \itemtitle{目的}
-        以下を考慮したレーティング予測の実現
+      \item 対象問題：多カテゴリにおける商品レビューのレーティング予測
+      \item 目的：以下を考慮したレーティング予測の実現
     \end{itemize}
     \vspace{-2em} % HACK
     \begin{figure}
@@ -50,7 +50,7 @@
                         {fig/global_relations_among_sentences_v2.pdf}
       \end{subfigure}
       \hfill % HACK
-      \begin{subfigure}[t]{0.4\linewidth}
+      \begin{subfigure}[t]{0.45\linewidth}
         \subcaption*{カテゴリ間の関係}
         \includegraphics[width=\linewidth]
                         {fig/relations_among_rating_categories.pdf}
@@ -68,31 +68,31 @@
       \item \itemtitle{隠れ状態を用いたホテルレビューの\\
                        レーティング予測\cite{fujitani15}}
         \begin{itemize}
-          %\item 複数のカテゴリにおけるレーティング予測
-          \item 文毎のレーティングからレビュー全体の \\
-                レーティングを予測
-          \item カテゴリ間の繋がりを手調整によって変化させ \\
-                カテゴリ間の関係性を考慮
+          %\item 複数カテゴリでの予測に対応
+          \item 文毎のレーティングからレビュー全体のレーティングを予測
+          \item カテゴリ間の繋がりを\fire{手調整によって変化}させその関係を考慮
         \end{itemize}
-        \begin{figure}
-          \includegraphics[width=0.7\linewidth]
-              {fig/fujitani_miml_relations_among_rating_categories.pdf}
-        \end{figure}
+    \end{itemize}
+    \begin{figure}
+      \includegraphics[width=0.7\linewidth]
+          {fig/fujitani_miml_relations_among_rating_categories.pdf}
+    \end{figure}
+    \begin{itemize}
       \item \itemtitle{パラグラフベクトル\cite{quoc14}}
         \begin{itemize}
           \item 文や文書を、その意味を表す実数ベクトルに変換
-          \item \fire{評判分類において優れる}
+          \item \fire{レーティング予測において優れた性能}
         \end{itemize}
-        \begin{figure}
-          \includegraphics{fig/paragraph_vector.pdf}
-        \end{figure}
-      \item \itemtitle{ニューラルネットワーク}
-        \begin{itemize}
-          \item 神経回路を模した機械学習手法
-          %\item 分類問題に適用可能
-          %\item 文書・文間やカテゴリ間の複雑な関係を考慮
-        \end{itemize}
+      %\item \itemtitle{ニューラルネットワーク}
+      %  \begin{itemize}
+      %    \item 神経回路を模した機械学習手法
+      %    %\item 分類問題に適用可能
+      %    %\item 文書・文間やカテゴリ間の複雑な関係を考慮
+      %  \end{itemize}
     \end{itemize}
+    \begin{figure}
+      \includegraphics[width=0.8\linewidth]{fig/paragraph_vector.pdf}
+    \end{figure}
   \end{block}
 \end{column}
 
@@ -101,12 +101,11 @@
     \begin{itemize}
       \item \itemtitle{特徴}
         \begin{itemize}
-          \item 文毎の意味表現 \arrow \fire{文同士の位置関係}を考慮
-          \item ニューラルネットワークによる分類器 \\
-                \arrow \fire{文書・文間及びカテゴリ間の複雑な関係}を考慮
+          \item 位置によって重み付け平均された文ベクトル \\
+                \arrow \fire{文同士の位置関係}を考慮
+          \item ニューラルネットワークによる予測 \\
+                \arrow \fire{文書・文間及びカテゴリ間の関係}を考慮
         \end{itemize}
-      \item 入力：レビューと正解レーティングの組の集合
-      \item 出力：各レビューについて予測されたカテゴリ毎のクラス
       %\item \itemtitle{レーティング予測の流れ}
       %  \begin{enumerate}
       %    \item パラグラフベクトルによってレビュー内の \\
@@ -116,10 +115,16 @@
       %    \item ニューラルネットワークで多ラベル多クラス分類
       %  \end{enumerate}
     \end{itemize}
+    \begin{flalign*}
+      \begin{cases}
+        \text{入力：レビューの文書} \\
+        \text{出力：カテゴリ毎のレーティング}
+      \end{cases} &&
+    \end{flalign*}
     \begin{figure}
       \includegraphics[width=0.9\linewidth]
                       {fig/model_with_detailed_processes.pdf}
-      \caption{提案手法におけるモデルの概略}
+      \caption*{提案手法における予測モデル}
     \end{figure}
   \end{block}
 
@@ -142,7 +147,7 @@
       \begin{itemize}
         \item \itemtitle{結果}
           \begin{itemize}
-            \item 提案手法が従来手法より\\\fire{高い正答率}を示す
+            \item 提案手法が従来手法より\fire{高い正答率}を示す
             %\item \fire{文の並び}が予測のために重要
             %\item 文書ベクトルと文ベクトルを同時に素性として用いることが有効
           \end{itemize}
@@ -165,15 +170,13 @@
 
   \begin{block}{まとめ}
     \begin{itemize}
-      \item 多カテゴリにおける評判分類問題について、\\
+      \item 多カテゴリにおけるレーティング予測について、\\
             レビュー全体の文書ベクトルに加え重み付け平均された文ベクトルを
             用いた手法を提案
-      \item 提案手法が従来手法\cite{fujitani15}より高い正答率を示した。
+      \item 提案手法が従来手法\cite{fujitani15}より高い正答率を示した
       \item \itemtitle{今後の課題}
-            言語要素間のより多様で複雑な関係を考慮 \\
-            \arrow 各レビューの意味表現を生成するモデルと
-                   分類を行うモデルを1つに統合 \\
-            %\arrow 学習手法の柔軟性及び正答率の向上を目指す。
+            文間、単語間、文字間等のより多様で複雑な関係を考慮 \\
+            \arrow レビューの特徴の抽出と分類のモデルを統合 \\
     \end{itemize}
   \end{block}
 
