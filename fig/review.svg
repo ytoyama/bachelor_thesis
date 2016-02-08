@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="145.3868mm"
-   height="55.045158mm"
-   viewBox="0 0 515.15007 195.04188"
+   width="145.38678mm"
+   height="55.045147mm"
+   viewBox="0 0 515.15002 195.04184"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -25,13 +25,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="303.91813"
-     inkscape:cy="24.518189"
+     inkscape:zoom="5.6"
+     inkscape:cx="375.02618"
+     inkscape:cy="152.23291"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1438"
+     inkscape:window-width="1246"
      inkscape:window-height="1064"
      inkscape:window-x="0"
      inkscape:window-y="14"
@@ -45,8 +45,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid3350"
-       originx="5.0000325"
-       originy="-5.0000146" />
+       originx="5.0000329"
+       originy="-5.0000464" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -64,7 +64,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-369.32057,-80.117967)">
+     transform="translate(-369.32057,-80.117982)">
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:0.94509804;stroke:#9a9a9a;stroke-width:1.41934645;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.94509804"
        id="rect4367"
@@ -495,7 +495,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#0062c5;fill-opacity:0.98431373;stroke:#0062c5;stroke-width:0.30000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98431373"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0062c5;fill-opacity:0.98431373;stroke:#0062c5;stroke-width:0.30000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98431373"
        x="683.09869"
        y="95.110489"
        id="text4345"
@@ -504,7 +504,7 @@
          id="tspan4347"
          x="683.09869"
          y="95.110489"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#0062c5;fill-opacity:0.98431373;stroke:#0062c5;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98431373">カテゴリ</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#0062c5;fill-opacity:0.98431373;stroke:#0062c5;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98431373">カテゴリ</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0062c5;fill-opacity:0.98431373;stroke:#0062c5;stroke-width:0.30000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98431373"
