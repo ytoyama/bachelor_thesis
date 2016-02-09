@@ -32,21 +32,22 @@
 \begin{columns}[onlytextwidth,t]
 
 \begin{column}{\mycolumnwidth}
-  \begin{block}{背景と目的}
+  \begin{block}{1. 背景と目的}
     \begin{itemize}
       \item 対象問題：多カテゴリにおける商品レビューのレーティング予測
       \item 目的：以下を考慮したレーティング予測の実現
     \end{itemize}
+    \vspace{-0.5em} % HACK
     \begin{figure}
       \hspace*{\fill} % HACK
       \begin{subfigure}[t]{0.4\linewidth}
-        \includegraphics[width=\linewidth]
+        \includegraphics[width=0.9\linewidth]
                         {fig/global_relations_among_sentences_v2.pdf}
         \subcaption*{文章・文間の関係}
       \end{subfigure}
       \hfill % HACK
       \begin{subfigure}[t]{0.5\linewidth}
-        \includegraphics[width=\linewidth]
+        \includegraphics[width=0.9\linewidth]
                         {fig/relations_among_rating_categories.pdf}
         \subcaption*{カテゴリ間の関係}
       \end{subfigure}
@@ -58,7 +59,7 @@
     %\end{figure}
   \end{block}
 
-  \begin{block}{関連研究}
+  \begin{block}{2. 関連研究}
     \begin{itemize}
       \item \itemtitle{隠れ状態を用いたホテルレビューのレーティング予測
                        \cite{fujitani15}}
@@ -89,12 +90,10 @@
       \includegraphics[width=0.8\linewidth]{fig/paragraph_vector.pdf}
     \end{figure}
   \end{block}
-\end{column}
 
-\begin{column}{\mycolumnwidth}
-  \begin{block}{提案手法}
-    \begin{itemize}
-      \item \itemtitle{特徴}
+  \begin{block}{3. 提案手法}
+    %\begin{itemize}
+    %  \item \itemtitle{特徴}
         \begin{itemize}
           \item 位置によって重み付け平均された文ベクトル \\
                 \arrow \fire{文同士の位置関係}を考慮
@@ -109,21 +108,23 @@
       %          \arrow 全てのレビューで文の数を統一
       %    \item ニューラルネットワークで多ラベル多クラス分類
       %  \end{enumerate}
-    \end{itemize}
-    \begin{flalign*}
-      \begin{cases}
-        \text{入力：レビューの文書} \\
-        \text{出力：カテゴリ毎のレーティング}
-      \end{cases} &&
-    \end{flalign*}
+    %\end{itemize}
+    %\begin{flalign*}
+    %  \begin{cases}
+    %    \text{入力：レビューの文書} \\
+    %    \text{出力：カテゴリ毎のレーティング}
+    %  \end{cases} &&
+    %\end{flalign*}
     \begin{figure}
       \includegraphics[width=0.9\linewidth]
                       {fig/model_with_detailed_processes.pdf}
       \caption*{提案手法における予測モデル}
     \end{figure}
   \end{block}
+\end{column}
 
-  \begin{block}{実験}
+\begin{column}{\mycolumnwidth}
+  \begin{block}{4. 実験}
     \begin{itemize}
       \item \itemtitle{実験設定}
         \begin{itemize}
@@ -163,7 +164,7 @@
     \end{multicols}
   \end{block}
 
-  \begin{block}{まとめ}
+  \begin{block}{5. まとめ}
     \begin{itemize}
       \item 多カテゴリにおけるレーティング予測について、
             レビュー全体の文書ベクトルに加え重み付け平均された文ベクトルを
