@@ -130,12 +130,12 @@
         \begin{itemize}
           \item 7カテゴリにおける0〜5点のレーティング予測の正答率を測定
           \item データセット：楽天トラベルのレビュー約330,000件
-          %\item 分類器の入力が異なる3つの比較手法
-          %  \begin{itemize}
-          %    \item Document Vector (DV)：\\レビュー全体の文書ベクトル
-          %    \item Averaged Sentence Vector (ASV)：\\平均した文ベクトル
-          %    \item Weighted ASV：重み付け平均した文ベクトル
-          %  \end{itemize}
+          \item 分類器の入力が異なる3つの比較手法
+            \begin{enumerate}
+              \item Document Vector (DV)：\\レビュー全体の文書ベクトル
+              \item Averaged Sentence Vector (ASV)：\\平均した文ベクトル
+              \item Weighted ASV：重み付け平均した文ベクトル
+            \end{enumerate}
         \end{itemize}
     \end{itemize}
 
@@ -144,8 +144,8 @@
         \item \itemtitle{結果}
           \begin{itemize}
             \item 提案手法が従来手法より\fire{高い正答率}を示す
-            %\item \fire{文の並び}が予測のために重要
-            %\item 文書ベクトルと文ベクトルを同時に素性として用いることが有効
+            \item \fire{文の並び}が予測のために重要
+            \item 文書ベクトルと文ベクトルを同時に素性として用いることが有効
           \end{itemize}
       \end{itemize}
       \columnbreak
@@ -155,9 +155,9 @@
           手法 & 正答率 \\
           \hline
           従来手法\cite{fujitani15} & 0.4832 \\
-          %DV & 0.4980 \\
-          %ASV & 0.4838 \\
-          %Weighted ASV & 0.4867 \\
+          DV & 0.4980 \\
+          ASV & 0.4838 \\
+          Weighted ASV & 0.4867 \\
           提案手法 & \fire{0.5030} \\
         \end{tabular}
       \end{table}
