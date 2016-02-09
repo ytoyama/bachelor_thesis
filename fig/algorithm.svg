@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="217.36617mm"
-   height="217.94278mm"
-   viewBox="0 0 770.19507 772.2382"
+   width="217.36607mm"
+   height="204.41594mm"
+   viewBox="0 0 770.19475 724.30846"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="434.02891"
-     inkscape:cy="396.37433"
+     inkscape:cx="315.51577"
+     inkscape:cy="292.39478"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -46,8 +46,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid4136"
-       originx="68.507502"
-       originy="-371.68763" />
+       originx="68.507166"
+       originy="-421.68768" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -65,7 +65,29 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(68.507502,91.563569)">
+     transform="translate(68.507168,93.633828)">
+    <g
+       id="g4350"
+       transform="translate(221.68759,-121.68754)">
+      <rect
+         y="674.0498"
+         x="31.687611"
+         height="76.624794"
+         width="446.62479"
+         id="rect4138-7-1-26-1"
+         style="fill:#ffffdb;fill-opacity:0.99607843;stroke:#e4cb00;stroke-width:3.37520552;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4152"
+         y="729.31537"
+         x="254.35547"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="729.31537"
+           x="254.35547"
+           id="tspan4154"
+           sodipodi:role="line">予測されたレーティング</tspan></text>
+    </g>
     <path
        style="fill:#70c460;fill-opacity:1;fill-rule:evenodd;stroke:#70c460;stroke-width:0.96899998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 340.38139,172.84664 0,19.52427 -19.23077,0 28.84614,29.28639 28.84615,-29.28639 -19.23077,0 0,-19.52427 z"
@@ -89,28 +111,6 @@
          id="tspan4146"
          x="208.76953"
          y="145.79971">パラグラフベクトル</tspan></text>
-    <g
-       id="g4350"
-       transform="translate(221.68759,-71.687587)">
-      <rect
-         y="674.0498"
-         x="31.687611"
-         height="76.624794"
-         width="446.62479"
-         id="rect4138-7-1-26-1"
-         style="fill:#ffffdb;fill-opacity:0.99607843;stroke:#e4cb00;stroke-width:3.37520552;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text4152"
-         y="729.31537"
-         x="254.35547"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="729.31537"
-           x="254.35547"
-           id="tspan4154"
-           sodipodi:role="line">予測されたレーティング</tspan></text>
-    </g>
     <path
        style="fill:#ffcf64;fill-opacity:1;fill-rule:evenodd;stroke:#ffcf64;stroke-width:0.96884775px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 340.38786,52.846642 0,19.52427 -19.23077,0 28.84614,29.286388 28.84615,-29.286388 -19.23077,0 0,-19.52427 z"
@@ -130,14 +130,14 @@
       <text
          sodipodi:linespacing="125%"
          id="text4148"
-         y="-59.083096"
-         x="238.02734"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         y="-60.430698"
+         x="356.77734"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          xml:space="preserve"><tspan
-           y="-59.083096"
-           x="238.02734"
+           y="-60.430698"
+           x="356.77734"
            id="tspan4150"
-           sodipodi:role="line">全てのレビュー</tspan></text>
+           sodipodi:role="line">全てのレビュー文書</tspan></text>
       <rect
          y="-26.412725"
          x="375.41864"
@@ -180,19 +180,19 @@
        id="rect4138-7-1-0-4"
        width="695.80963"
        height="75.809639"
-       x="2.0951843"
-       y="474.4574" />
+       x="2.6029966"
+       y="434.45743" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="167.48047"
-       y="524.99896"
+       x="167.98828"
+       y="484.99899"
        id="text4144-2"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4146-6"
-         x="167.48047"
-         y="524.99896">ニューラルネットワーク</tspan></text>
+         x="167.98828"
+         y="484.99899">ニューラルネットワーク</tspan></text>
     <rect
        style="fill:#efffec;fill-opacity:0.99418598;stroke:#70c460;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4138-7-1-26-2"
@@ -250,7 +250,7 @@
          y="339.12003">訓練用レビュー</tspan></text>
     <path
        style="fill:#70c460;fill-opacity:1;fill-rule:evenodd;stroke:#70c460;stroke-width:0.96884775px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 30,312.36222 c -70,30 -145.37252,174.3085 -60,210 l 0,10 30,-20 -30,-20 0,10 c -62.759861,-28.46927 -10,-140 60,-170 z"
+       d="m 30,312.36222 c -70,30 -145.37252,134.30855 -60,170.00005 l 0,10 29.99999985406929,-20 L -30,452.36227 l 0,10 C -92.759861,433.893 -40,362.36222 30,332.36222 Z"
        id="path4223-0-5-5-5"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccc" />
@@ -258,22 +258,22 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        x="-32.246094"
-       y="439.12003"
+       y="416.07321"
        id="text4148-2-3-9"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4150-0-6-3"
          x="-32.246094"
-         y="439.12003">モデルを訓練</tspan></text>
+         y="416.07321">モデルを訓練</tspan></text>
     <path
        style="fill:#70c460;fill-opacity:1;fill-rule:evenodd;stroke:#70c460;stroke-width:0.96884775px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 514.23075,352.36221 515,442.36222 l -19.23077,0 28.84614,29.28639 28.84615,-29.28639 -19.23077,0 0,-90.00001 z"
+       d="m 515,352.36227 0,50 -20,0 30,30 30,-30 -20,0 0,-50 z"
        id="path4223-0-5-5-5-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccc" />
     <path
-       style="fill:#70c460;fill-opacity:1;fill-rule:evenodd;stroke:#70c460;stroke-width:0.96884775px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 515,552.83795 0,19.52427 -19.23077,0 28.84614,29.2864 28.84615,-29.2864 -19.23077,0 0,-19.52427 z"
+       style="fill:#e4cb00;fill-opacity:1;fill-rule:evenodd;stroke:#e4cb00;stroke-width:0.96884775px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 515.50781,512.83797 0,19.52427 -19.23077,0 28.84614,29.2864 28.84615,-29.2864 -19.23077,0 0,-19.52427 z"
        id="path4223-0-5-5-9"
        inkscape:connector-curvature="0" />
   </g>
