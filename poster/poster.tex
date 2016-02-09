@@ -13,25 +13,11 @@
 \beamertemplatenavigationsymbolsempty
 
 \geometry{a4paper,portrait,left=2truemm,width=206truemm,right=2truemm}
-\newlength{\mycolumnwidth}
-\setlength{\mycolumnwidth}{0.495\textwidth}
+\newcommand{\mycolumnwidth}{0.495\textwidth}
 
 \newcommand{\arrow}{\textcolor{ttiblue}{\textbf{→}}\hspace{1ex}}
 \newcommand{\itemtitle}[1]{\textbf{#1}\\}
 \newcommand{\fire}[1]{\textcolor{red}{\textbf{#1}}}
-\newcommand{\doublefigure}[4]{
-  \begin{figure}
-    \hspace*{\fill}
-    \begin{subfigure}[t]{#1}
-      #2
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[t]{#3}
-      #4
-    \end{subfigure}
-    \hspace*{\fill}
-  \end{figure}}
-
 \newcommand{\doublecolumns}[4]{
     \begin{minipage}[t]{#1}
       #2
@@ -50,168 +36,208 @@
 
 \begin{document}
 \begin{frame}
-
 \begin{columns}[onlytextwidth,t]
-  \begin{column}{0.7\mycolumnwidth}
-    \begin{block}{1. 背景と目的}
-      \begin{itemize}
-        \item 対象問題：多カテゴリにおける商品レビューのレーティング予測
-        \item 目的：以下を考慮したレーティング予測の実現
-      \end{itemize}
-      \doublefigure{0.4\linewidth}{
-        \includegraphics[width=\linewidth]
+
+\begin{column}{\mycolumnwidth}
+  \begin{block}{1. 背景と目的}
+    \begin{itemize}
+      \item 対象問題：多カテゴリにおける商品レビューのレーティング予測
+      \item 目的：以下を考慮したレーティング予測の実現
+    \end{itemize}
+    \begin{figure}
+      \hspace*{\fill} % HACK
+      \begin{subfigure}[t]{0.4\linewidth}
+        \includegraphics[width=0.9\linewidth]
                         {fig/global_relations_among_sentences_v2.pdf}
         \subcaption*{文章・文間の関係}
-      }{0.5\linewidth}{
-        \includegraphics[width=\linewidth]
+      \end{subfigure}
+      \hfill % HACK
+      \begin{subfigure}[t]{0.5\linewidth}
+        \includegraphics[width=0.9\linewidth]
                         {fig/relations_among_rating_categories.pdf}
         \subcaption*{カテゴリ間の関係}
-      }
-      %\begin{figure}
-      %  \includegraphics[width=0.9\linewidth]{fig/review.pdf}
-      %  \caption{複数のカテゴリを持つ商品レビューの例}
-      %\end{figure}
-    \end{block}
-  \end{column}
+      \end{subfigure}
+      \hspace*{\fill} % HACK
+    \end{figure}
+    %\begin{figure}
+    %  \includegraphics[width=0.9\linewidth]{fig/review.pdf}
+    %  \caption{複数のカテゴリを持つ商品レビューの例}
+    %\end{figure}
+  \end{block}
 
-  \begin{column}{1.3\mycolumnwidth}
-    \begin{block}{2. 関連研究}
-      \doublecolumns{0.525\textwidth}{
+  \begin{block}{3. 提案手法}
+    %\begin{itemize}
+    %  \item \itemtitle{特徴}
         \begin{itemize}
-          \item \itemtitle{隠れ状態を用いたホテルレビューのレーティング予測
-                           \cite{fujitani15}}
-            \begin{itemize}
-              %\item 複数カテゴリでの予測に対応
-              \item 文毎のレーティングからレビュー全体のレーティングを予測
-              \item カテゴリ間の繋がりを\fire{手調整によって変化}させ
-                    その関係を考慮
-            \end{itemize}
-          \item \itemtitle{パラグラフベクトル\cite{quoc14}}
-            \begin{itemize}
-              \item 文や文書を、その意味を表す\\実数ベクトルに変換
-              \item \fire{レーティング予測において優れた性能}
-            \end{itemize}
-          %\item \itemtitle{ニューラルネットワーク}
-          %  \begin{itemize}
-          %    \item 神経回路を模した機械学習手法
-          %    %\item 分類問題に適用可能
-          %    %\item 文書・文間やカテゴリ間の複雑な関係を考慮
-          %  \end{itemize}
+          \item 位置によって重み付け平均された文ベクトル \\
+                \arrow \fire{文同士の位置関係}を考慮
+          \item ニューラルネットワークによる予測 \\
+                \arrow \fire{文書・文間及びカテゴリ間の関係}を考慮
         \end{itemize}
-      }{0.45\textwidth}{
-        \begin{figure}
-          \includegraphics[width=\linewidth]
-              {fig/fujitani_miml_relations_among_rating_categories.pdf}
-        \end{figure}
-        \begin{figure}
-          \includegraphics[width=\linewidth]{fig/paragraph_vector.pdf}
-        \end{figure}
-      }
-    \end{block}
-  \end{column}
-\end{columns}
+      %\item \itemtitle{レーティング予測の流れ}
+      %  \begin{enumerate}
+      %    \item パラグラフベクトルによってレビュー内の \\
+      %          文書全体及び各文の意味表現を生成
+      %    \item 文ベクトルをレビュー毎に重み付け平均 \\
+      %          \arrow 全てのレビューで文の数を統一
+      %    \item ニューラルネットワークで多ラベル多クラス分類
+      %  \end{enumerate}
+    %\end{itemize}
+    %\begin{flalign*}
+    %  \begin{cases}
+    %    \text{入力：レビューの文書} \\
+    %    \text{出力：カテゴリ毎のレーティング}
+    %  \end{cases} &&
+    %\end{flalign*}
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]
+                      {fig/model_with_detailed_processes.pdf}
+      \caption*{提案手法における予測モデル}
+    \end{figure}
 
-\begin{block}{3. 提案手法}
-  \begin{columns}[onlytextwidth,t]
-    \begin{column}{\mycolumnwidth}
-      \begin{itemize}
-        \item \itemtitle{特徴}
-          \begin{itemize}
-            \item 位置によって重み付け平均された文ベクトル
-                  \arrow \fire{文同士の位置関係}を考慮
-            \item ニューラルネットワークによる予測
-                  \arrow \fire{文書・文間及びカテゴリ間の関係}を考慮
-          \end{itemize}
-        %\item \itemtitle{レーティング予測の流れ}
-        %  \begin{enumerate}
-        %    \item パラグラフベクトルによってレビュー内の \\
-        %          文書全体及び各文の意味表現を生成
-        %    \item 文ベクトルをレビュー毎に重み付け平均 \\
-        %          \arrow 全てのレビューで文の数を統一
-        %    \item ニューラルネットワークで多ラベル多クラス分類
-        %  \end{enumerate}
-        \item \itemtitle{重み付け関数}
-        \item \itemtitle{目的関数}
-      \end{itemize}
-      %\begin{flalign*}
-      %  \begin{cases}
-      %    \text{入力：レビューの文書} \\
-      %    \text{出力：カテゴリ毎のレーティング}
-      %  \end{cases} &&
-      %\end{flalign*}
-    \end{column}
-    \begin{column}{\mycolumnwidth}
-      \begin{figure}
-        \includegraphics[width=0.95\linewidth]
-                        {fig/model_with_detailed_processes.pdf}
-      \end{figure}
-      %\begin{figure}
-      %  \includegraphics[width=0.95\linewidth]
-      %                  {fig/algorithm.pdf}
-      %\end{figure}
-    \end{column}
-  \end{columns}
-\end{block}
+    \begin{itemize}
+      \item \itemtitle{重み付け平均された文ベクトル：$\mathbf{t}_{i_{part}}$}
+        \doublecolumns{0.625\linewidth}{
+          \abovedisplayskip=0pt
+          \begin{gather*}
+            \mathbf{t}_{i_{part}} = \sum_{i_{sent}}
+                                    \frac{w(x_{i_{part}}(i_{sent}))}
+                                         {|\sum_{i_{sent}'}
+                                    w(x_{i_{part}}(i_{sent}'))|}
+                                    \mathbf{s}_{i_{sent}},
+            \label{eq:WeightedAverageSV} \\
+            x_{i_{part}}(i_{sent}) = \frac{i_{sent} - i_{part}}{\#partitions},
+            \nonumber \\
+            w(x) = \begin{cases}
+              \frac{1}{2} (\cos(\pi|x|) + 1) &\text{if $|x| <= 1$} \\
+              0 &\text{otherwise}
+            \end{cases} \nonumber
+          \end{gather*}
+        }{0.35\linewidth}{
+          \small
+          $i_{sent}$：レビュー内の文のインデックス \\
+          $\#partitions$：重み付け平均後の文ベクトルの数\\
+          $i_{part}$：重み付け平均後の文ベクトルのインデックス\\
+          $\mathbf{s}_{i_{sent}}$：文ベクトル
+          %\footnote{重み付けの関数には$\cos$関数の他に、
+          %$x$に対して線形に重みを減少させるような関数や、
+          %単純に文を区画毎に平均するような関数も考えられる。
+          %区画毎に平均する関数は他の2つより正答率が低く、線形な関数と
+          %$\cos$関数はほぼ同じ正答率を示したため、$\cos$関数を採用した。}
+        }
+      \item \itemtitle{ニューラルネットワークの目的関数：$E$}
+        \doublecolumns{0.6\linewidth}{
+          \begin{gather*}
+            E = - \sum^{N}_{n = 1} \sum^{C}_{c = 1} \sum^{K}_{k = 1}
+                  d_{nck} \log{y_{ck}(x_n; w)},
+            \label{eq:NNObjective} \\
+            y_{ck}(x_n; w) = \frac{e^{u_{ck}(x_n; w)}}
+                                  {\sum^{K}_{j = 1} e^{u_{cj}(x_n; w)}}
+            \nonumber
+          \end{gather*}
+        }{0.375\linewidth}{
+          \small
+          %$u_{ck}$：出力層のユニットの出力値 \\
+          %$y_{ck}$：カテゴリ$c$においてクラス$k$が選ばれる確率 \\
+          $w$：ニューラルネットワークのパラメータ \\
+          %$d_{nck}$：$n$番目の文書がカテゴリ$c$でクラス$k$ならば1、
+          %それ以外で0となる値 \\
+          $N$：ミニバッチサイズ \\
+          $C$：カテゴリの総数 \\
+          $K$：クラスの総数 \\
+        }
+    \end{itemize}
+  \end{block}
+\end{column}
 
-\begin{columns}[onlytextwidth,t]
-  \begin{column}{1.2\mycolumnwidth}
-    \begin{block}{4. 実験}
-      \begin{itemize}
-        \item \itemtitle{実験設定}
-          \begin{itemize}
-            \item 7カテゴリにおける0〜5点のレーティング予測の正答率を測定
-            \item データセット：楽天トラベルのレビュー約330,000件
-            \item 分類器の入力が異なる3つの比較手法
-              \begin{enumerate}
-                \item Document Vector (DV)：\\レビュー全体の文書ベクトル
-                \item Averaged Sentence Vector (ASV)：\\平均した文ベクトル
-                \item Weighted ASV：重み付け平均した文ベクトル
-              \end{enumerate}
-          \end{itemize}
-      \end{itemize}
-
-      \begin{multicols}{2}
+\begin{column}{\mycolumnwidth}
+  \begin{block}{2. 関連研究}
+    \begin{itemize}
+      \item \itemtitle{隠れ状態を用いたホテルレビューのレーティング予測
+                       \cite{fujitani15}}
         \begin{itemize}
-          \item \itemtitle{結果}
-            \begin{itemize}
-              \item 提案手法が従来手法より\fire{高い正答率}を示す
-              \item \fire{文の並び}が予測のために重要
-              \item 文書ベクトルと文ベクトルを同時に素性として用いることが有効
-            \end{itemize}
+          %\item 複数カテゴリでの予測に対応
+          \item 文毎のレーティングからレビュー全体のレーティングを予測
+          \item カテゴリ間の繋がりを\fire{手調整によって変化}させその関係を考慮
         \end{itemize}
-        \columnbreak
-        \begin{table}
-          \centering
-          \begin{tabular}{l | r}
-            手法 & 正答率 \\
-            \hline
-            従来手法\cite{fujitani15} & 0.4832 \\
-            DV & 0.4980 \\
-            ASV & 0.4838 \\
-            Weighted ASV & 0.4867 \\
-            提案手法 & \fire{0.5030} \\
-          \end{tabular}
-        \end{table}
-      \end{multicols}
-    \end{block}
-  \end{column}
+    \end{itemize}
+    \begin{figure}
+      \includegraphics[width=0.7\linewidth]
+          {fig/fujitani_miml_relations_among_rating_categories.pdf}
+    \end{figure}
+    \begin{itemize}
+      \item \itemtitle{パラグラフベクトル\cite{quoc14}}
+        \begin{itemize}
+          \item 文や文書を、その意味を表す実数ベクトルに変換
+          \item \fire{レーティング予測において優れた性能}
+        \end{itemize}
+      %\item \itemtitle{ニューラルネットワーク}
+      %  \begin{itemize}
+      %    \item 神経回路を模した機械学習手法
+      %    %\item 分類問題に適用可能
+      %    %\item 文書・文間やカテゴリ間の複雑な関係を考慮
+      %  \end{itemize}
+    \end{itemize}
+    \begin{figure}
+      \includegraphics[width=0.8\linewidth]{fig/paragraph_vector.pdf}
+    \end{figure}
+  \end{block}
 
-  \begin{column}{0.8\mycolumnwidth}
-    \begin{block}{5. まとめ}
+  \begin{block}{4. 実験}
+    \begin{itemize}
+      \item \itemtitle{実験設定}
+        \begin{itemize}
+          \item 7カテゴリにおける0〜5点のレーティング予測の正答率を測定
+          \item データセット：楽天トラベルのレビュー約330,000件
+          \item 分類器の入力が異なる3つの比較手法
+            \begin{enumerate}
+              \item Document Vector (DV)：\\レビュー全体の文書ベクトル
+              \item Averaged Sentence Vector (ASV)：\\平均した文ベクトル
+              \item Weighted ASV：重み付け平均した文ベクトル
+            \end{enumerate}
+        \end{itemize}
+    \end{itemize}
+
+    \begin{multicols}{2}
       \begin{itemize}
-        \item 多カテゴリにおけるレーティング予測について、
-              レビュー全体の文書ベクトルに加え重み付け平均された文ベクトルを
-              用いた手法を提案
-        \item 提案手法が従来手法\cite{fujitani15}より高い正答率を示した
-        \item \itemtitle{今後の課題}
-              \fire{文間、単語間、文字間等のより多様で複雑な関係}を考慮 \\
-              \arrow レビューの特徴の抽出と分類の\fire{モデルを統合}
+        \item \itemtitle{結果}
+          \begin{itemize}
+            \item 提案手法が従来手法より\fire{高い正答率}を示す
+            \item \fire{文の並び}が予測のために重要
+            \item 文書ベクトルと文ベクトルを同時に素性として用いることが有効
+          \end{itemize}
       \end{itemize}
-    \end{block}
+      \columnbreak
+      \begin{table}
+        \centering
+        \begin{tabular}{l | r}
+          手法 & 正答率 \\
+          \hline
+          従来手法\cite{fujitani15} & 0.4832 \\
+          DV & 0.4980 \\
+          ASV & 0.4838 \\
+          Weighted ASV & 0.4867 \\
+          提案手法 & \fire{0.5030} \\
+        \end{tabular}
+      \end{table}
+    \end{multicols}
+  \end{block}
 
-    参考文献
-    \bibliographystyle{jplain}
-    \begin{thebibliography}{9}
+  \begin{block}{5. まとめ}
+    \begin{itemize}
+      \item 多カテゴリにおけるレーティング予測について、
+            レビュー全体の文書ベクトルに加え重み付け平均された文ベクトルを
+            用いた手法を提案
+      \item 提案手法が従来手法\cite{fujitani15}より高い正答率を示した
+      \item \itemtitle{今後の課題}
+            \fire{文間、単語間、文字間等のより多様で複雑な関係}を考慮 \\
+            \arrow レビューの特徴の抽出と分類の\fire{モデルを統合}
+    \end{itemize}
+  \end{block}
+
+  参考文献
+  \bibliographystyle{jplain}
+  \begin{thebibliography}{9}
     \bibitem{fujitani15}
       藤谷宣典ら,
       隠れ状態を用いたホテルレビューのレーティング予測.
@@ -238,9 +264,9 @@
     %  Mihai Surdeanu et al.,
     %  Multi-instance multi-label learning for relation extraction.
     %  CoNLL 2012, 2012.
-    \end{thebibliography}
-  \end{column}
-\end{columns}
+  \end{thebibliography}
+\end{column}
 
+\end{columns}
 \end{frame}
 \end{document}
