@@ -184,35 +184,39 @@
 
     \begin{column}{\mycolumnwidth}
       \begin{itemize}
-        \item \itemtitle{重み付け平均された文ベクトル：$\mathbf{t}_{i_{part}}$}
-          \doublecolumns{0.625\linewidth}{
-            \abovedisplayskip=0pt
-            \begin{gather*}
-              \mathbf{t}_{i_{part}} = \sum_{i_{sent}}
-                                      \frac{w(x_{i_{part}}(i_{sent}))}
-                                           {|\sum_{i_{sent}'}
-                                      w(x_{i_{part}}(i_{sent}'))|}
-                                      \mathbf{s}_{i_{sent}},
-              \label{eq:WeightedAverageSV} \\
-              x_{i_{part}}(i_{sent}) = \frac{i_{sent} - i_{part}}{\#partitions},
-              \nonumber \\
-              w(x) = \begin{cases}
-                \frac{1}{2} (\cos(\pi|x|) + 1) &\text{if $|x| <= 1$} \\
-                0 &\text{otherwise}
-              \end{cases} \nonumber
-            \end{gather*}
-          }{0.35\linewidth}{
-            \small
-            $i_{sent}$：レビュー内の文のインデックス \\
-            $\#partitions$：重み付け平均後の文ベクトルの数\\
-            $i_{part}$：重み付け平均後の文ベクトルのインデックス\\
-            $\mathbf{s}_{i_{sent}}$：文ベクトル
-            %\footnote{重み付けの関数には$\cos$関数の他に、
-            %$x$に対して線形に重みを減少させるような関数や、
-            %単純に文を区画毎に平均するような関数も考えられる。
-            %区画毎に平均する関数は他の2つより正答率が低く、線形な関数と
-            %$\cos$関数はほぼ同じ正答率を示したため、$\cos$関数を採用した。}
-          }
+        \item \itemtitle{文ベクトルを位置によって重み付け平均}
+          \begin{figure}
+            \includegraphics[width=\linewidth]
+                            {fig/what_are_you_weighting_for.pdf}
+          \end{figure}
+          %\doublecolumns{0.625\linewidth}{
+          %  \abovedisplayskip=0pt
+          %  \begin{gather*}
+          %    \mathbf{t}_{i_{part}} = \sum_{i_{sent}}
+          %                            \frac{w(x_{i_{part}}(i_{sent}))}
+          %                                 {|\sum_{i_{sent}'}
+          %                            w(x_{i_{part}}(i_{sent}'))|}
+          %                            \mathbf{s}_{i_{sent}},
+          %    \label{eq:WeightedAverageSV} \\
+          %    x_{i_{part}}(i_{sent}) = \frac{i_{sent} - i_{part}}{\#partitions},
+          %    \nonumber \\
+          %    w(x) = \begin{cases}
+          %      \frac{1}{2} (\cos(\pi|x|) + 1) &\text{if $|x| <= 1$} \\
+          %      0 &\text{otherwise}
+          %    \end{cases} \nonumber
+          %  \end{gather*}
+          %}{0.35\linewidth}{
+          %  \small
+          %  $i_{sent}$：レビュー内の文のインデックス \\
+          %  $\#partitions$：重み付け平均後の文ベクトルの数\\
+          %  $i_{part}$：重み付け平均後の文ベクトルのインデックス\\
+          %  $\mathbf{s}_{i_{sent}}$：文ベクトル
+          %  %\footnote{重み付けの関数には$\cos$関数の他に、
+          %  %$x$に対して線形に重みを減少させるような関数や、
+          %  %単純に文を区画毎に平均するような関数も考えられる。
+          %  %区画毎に平均する関数は他の2つより正答率が低く、線形な関数と
+          %  %$\cos$関数はほぼ同じ正答率を示したため、$\cos$関数を採用した。}
+          %}
         \item \itemtitle{ニューラルネットワークの目的関数：$E$}
           \doublecolumns{0.6\linewidth}{
             \begin{gather*}
