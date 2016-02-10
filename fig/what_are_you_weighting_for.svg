@@ -56,14 +56,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="637.35212"
-     inkscape:cy="527.38379"
+     inkscape:zoom="0.7"
+     inkscape:cx="784.17599"
+     inkscape:cy="119.72431"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g4901-1"
      showgrid="true"
      inkscape:object-nodes="true"
-     inkscape:snap-bbox="false"
+     inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
      inkscape:snap-intersection-paths="true"
      inkscape:snap-smooth-nodes="true"
@@ -80,7 +80,7 @@
        type="xygrid"
        id="grid4136"
        originx="680"
-       originy="-337.6932" />
+       originy="-337.69315" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -225,6 +225,12 @@
          width="80"
          id="rect4221"
          style="opacity:1;fill:#44d800;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4278-4-3"
+         d="m -260,612.36214 0,-380"
+         style="fill:none;fill-rule:evenodd;stroke:#494949;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:10, 10;stroke-dashoffset:0;stroke-opacity:1" />
       <rect
          y="252.36217"
          x="-300"
@@ -303,6 +309,12 @@
          width="80"
          id="rect4221-8-1-5"
          style="opacity:1;fill:#008cec;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4278-8-9"
+         d="m -260,612.36213 0,-380"
+         style="fill:none;fill-rule:evenodd;stroke:#494949;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:10, 10;stroke-dashoffset:0;stroke-opacity:1"
+         sodipodi:nodetypes="cc" />
     </g>
   </g>
 </svg>
