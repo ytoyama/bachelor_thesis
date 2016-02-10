@@ -36,7 +36,8 @@
 
 
 \begin{document}
-\begin{frame}
+\begin{frame}[t]
+\vspace{-1em} % HACK
 
 \begin{columns}[onlytextwidth,t]
   \begin{column}{1.1\mycolumnwidth}
@@ -241,7 +242,7 @@
 \end{block}
 
 \begin{columns}[onlytextwidth,t]
-  \begin{column}{1.2\mycolumnwidth}
+  \begin{column}{1.1\mycolumnwidth}
     \begin{block}{実験}
       \begin{itemize}
         \item \itemtitle{実験設定}
@@ -283,16 +284,20 @@
     \end{block}
   \end{column}
 
-  \begin{column}{0.8\mycolumnwidth}
+  \begin{column}{0.9\mycolumnwidth}
     \begin{block}{まとめ}
       \begin{itemize}
         \item 多カテゴリにおけるレーティング予測について、
               レビュー全体の文書ベクトルに加え重み付け平均された文ベクトルを
               用いた手法を提案
         \item 提案手法が従来手法\cite{fujitani15}より高い正答率を示した
-        \item \itemtitle{今後の課題}
-              \fire{文間、単語間、文字間等のより多様で複雑な関係}を考慮 \\
-              \arrow レビューの特徴の抽出と分類の\fire{モデルを統合}
+        \item \itemtitle{今後の予定}
+          \begin{itemize}
+            \item \fire{文間、単語間、文字間等のより多様な関係}を考慮
+            \item レビューの文書について１文字ずつ特徴を考慮した\\
+                  ニューラルネットワークを利用 \\
+                  \arrow 文書・文ベクトルの生成と予測の\fire{モデルを統合}
+          \end{itemize}
       \end{itemize}
     \end{block}
 
