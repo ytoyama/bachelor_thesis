@@ -44,7 +44,7 @@
     \begin{block}{背景と目的}
       \begin{itemize}
         \item 対象問題：多カテゴリにおける商品レビューのレーティング予測
-        \item 研究意義：企業における文書からの商品の評判分析
+        \item 応用例：企業における文書からの商品の評判分析
         \item 目的：\fire{文書・文間の関係}及び\fire{カテゴリ間の関係}を
                     考慮した\\レーティング予測の実現
       \end{itemize}
@@ -185,6 +185,10 @@
     \begin{column}{\mycolumnwidth}
       \begin{itemize}
         \item \itemtitle{文ベクトルを位置によって重み付け平均}
+          \begin{itemize}
+            \item 重み関数：$cos$関数
+            \item \fire{文の位置関係を考慮}しつつ\fire{文の数を統一}
+          \end{itemize}
           \begin{figure}
             \includegraphics[width=\linewidth]
                             {fig/what_are_you_weighting_for.pdf}
@@ -218,7 +222,9 @@
           %  %$\cos$関数はほぼ同じ正答率を示したため、$\cos$関数を採用した。}
           %}
         \item \itemtitle{ニューラルネットワークの目的関数：$E$}
-              %カテゴリ毎に誤差を計算し合計
+            \begin{itemize}
+              \item カテゴリ毎に誤差を計算し、それらを合計
+            \end{itemize}
           \doublecolumns{0.6\linewidth}{
             \vspace{-1.5em} % HACK
             \begin{gather*}
