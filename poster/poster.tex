@@ -218,14 +218,22 @@
           %  %$\cos$関数はほぼ同じ正答率を示したため、$\cos$関数を採用した。}
           %}
         \item \itemtitle{ニューラルネットワークの目的関数：$E$}
+              %カテゴリ毎に誤差を計算し合計
           \doublecolumns{0.6\linewidth}{
+            \vspace{-1.5em} % HACK
             \begin{gather*}
               E = - \sum^{N}_{n = 1} \sum^{C}_{c = 1} \sum^{K}_{k = 1}
                     d_{nck} \log{y_{ck}(x_n; w)},
               \label{eq:NNObjective} \\
               y_{ck}(x_n; w) = \frac{e^{u_{ck}(x_n; w)}}
-                                    {\sum^{K}_{j = 1} e^{u_{cj}(x_n; w)}}
-              \nonumber
+                                    {\sum^{K}_{j = 1} e^{u_{cj}(x_n; w)}}%,
+              \nonumber \\
+              %d_{nck} =
+              %  \begin{cases}
+              %  1 & \text{if 文書$n$がカテゴリ$c$で\newline クラス$k$} \\
+              %  0 & \text{otherwise}
+              %  \end{cases}
+              %\nonumber
             \end{gather*}
           }{0.375\linewidth}{
             \small
@@ -234,8 +242,7 @@
             %$y_{ck}$：カテゴリ$c$においてクラス$k$が選ばれる確率 \\
             %$w$：ニューラルネットワークのパラメータ \\
             $w$：パラメータ \\
-            $d_{nck}$：$n$番目の文書がカテゴリ$c$でクラス$k$ならば1、
-            それ以外で0となる値 \\
+            $d_{nck}$：文書$n$がカテゴリ$c$でクラス$k$ならば1、それ以外で0 \\
             $N$：ミニバッチサイズ \\
             $C$：カテゴリの総数 \\
             $K$：クラスの総数 \\

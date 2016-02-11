@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="295.00696mm"
-   height="218.80093mm"
-   viewBox="0 0 1045.3002 775.27888"
+   width="307.62225mm"
+   height="248.99088mm"
+   viewBox="0 0 1090 882.2511"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -190,6 +190,22 @@
          d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
          id="path10367-8" />
     </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutS-6"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path4590-4"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#373737;fill-opacity:1;fill-rule:evenodd;stroke:#373737;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2,0.2)"
+         inkscape:connector-curvature="0" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -198,11 +214,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="507.89643"
-     inkscape:cy="695.8176"
+     inkscape:zoom="0.7"
+     inkscape:cx="478.43026"
+     inkscape:cy="248.0926"
      inkscape:document-units="px"
-     inkscape:current-layer="g4374-8"
+     inkscape:current-layer="g4334"
      showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
@@ -216,12 +232,17 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      showguides="false"
-     inkscape:bbox-paths="false">
+     inkscape:bbox-paths="false"
+     inkscape:object-nodes="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid3336"
-       originx="-45.979176"
-       originy="-134.99957" />
+       originx="-49.999932"
+       originy="-27.748903" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -239,10 +260,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-45.979183,-142.08366)">
+     transform="translate(-49.999942,-142.36213)">
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker10365-2)"
-       d="m 459.84278,493.45218 70.01772,-0.88451"
+       d="m 459.99994,492.36213 90,0"
        id="path4281-5-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -266,25 +287,25 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker12459)"
-       d="m 575.98934,494.27525 74.43545,-1.05722"
+       d="m 669.99994,492.36213 30,0"
        id="path4281-9-8-3-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker12607)"
-       d="m 695.36231,493.85912 74.79259,-1.77151"
+       d="m 745.36227,493.85903 74.79259,-1.77151"
        id="path4281-9-8-3"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker10365)"
-       d="m 461.8136,373.95215 82.13955,84.47338"
+       d="m 459.99994,372.36213 90.89286,10.71428"
        id="path4281-5"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker10985)"
-       d="M 321.28042,711.19467 540.0296,520.50728"
+       d="M 321.28042,711.19467 554.99994,612.36213"
        id="path4281-4-9-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -371,24 +392,19 @@
          y="740.84851" /></text>
     <circle
        style="fill:#ff9933;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="path3340-6-3-4"
-       cx="580"
-       cy="492.36221"
-       r="40" />
-    <circle
-       style="fill:#ff9933;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="path3340-6-3-4-5"
-       cx="700"
-       cy="492.36221"
+       cx="749.99994"
+       cy="492.36212"
        r="40" />
     <circle
        style="fill:#ff9933;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="path3340-6-3-4-5-9"
-       cx="820"
-       cy="492.36221"
+       cx="869.99994"
+       cy="492.36212"
        r="40" />
     <g
-       id="g4334">
+       id="g4334"
+       transform="translate(49.999964,-8.1204767e-5)">
       <path
          inkscape:transform-center-x="-1.9098301"
          d="m 920,452.36224 -11.90983,5.87786 -1.90983,13.14327 -9.27051,-9.51056 -13.09017,2.24514 6.18034,-11.75571 -6.18034,-11.7557 13.09017,2.24514 9.27051,-9.51057 1.90983,13.14328 z"
@@ -499,7 +515,7 @@
          sodipodi:cx="1020"
          sodipodi:sides="5"
          id="path12865-8-73"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="fill:#ffffff;fill-opacity:1;stroke:#4d4d4d;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          sodipodi:type="star" />
       <path
          inkscape:transform-center-x="-1.9098301"
@@ -547,7 +563,7 @@
          sodipodi:cx="1060"
          sodipodi:sides="5"
          id="path12865-8-7-9-7"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="fill:#ffffff;fill-opacity:1;stroke:#4d4d4d;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          sodipodi:type="star" />
       <path
          inkscape:transform-center-x="-1.9098301"
@@ -627,7 +643,7 @@
          sodipodi:cx="1060"
          sodipodi:sides="5"
          id="path12865-8-7-9-6"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="fill:#ffffff;fill-opacity:1;stroke:#4d4d4d;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          sodipodi:type="star" />
       <text
          sodipodi:linespacing="125%"
@@ -645,21 +661,21 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="875.64453"
-       y="346.28799"
+       x="925.64447"
+       y="346.2879"
        id="text12843-1-1"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan12845-9-2"
-         x="875.64453"
-         y="346.28799">カテゴリ毎の</tspan><tspan
+         x="925.64447"
+         y="346.2879">カテゴリ毎の</tspan><tspan
          sodipodi:role="line"
-         x="875.64453"
-         y="396.28799"
+         x="925.64447"
+         y="396.2879"
          id="tspan12997">レーティング</tspan><tspan
          sodipodi:role="line"
-         x="875.64453"
-         y="446.28799"
+         x="925.64447"
+         y="446.2879"
          id="tspan12995" /></text>
     <text
        xml:space="preserve"
@@ -685,7 +701,7 @@
          y="414.68643">文ベクトル2</tspan></text>
     <g
        id="g4374"
-       transform="translate(17.122196,45.756339)">
+       transform="translate(37.122135,-54.243644)">
       <text
          sodipodi:linespacing="125%"
          id="text12843-0"
@@ -748,7 +764,8 @@
        cy="372.36218"
        r="40" />
     <g
-       id="g4406">
+       id="g4406"
+       transform="translate(4.0207586,0.27846622)">
       <text
          sodipodi:linespacing="125%"
          id="text4225-2"
@@ -775,7 +792,7 @@
            height="39.501644"
            width="39.501644"
            id="rect4280-1"
-           style="opacity:1;fill:#44d800;fill-opacity:1;stroke:#44d800;stroke-width:25.49871635;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+           style="opacity:1;fill:#3cbe00;fill-opacity:1;stroke:#3cbe00;stroke-width:25.49871635;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:45px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -791,7 +808,8 @@
       </g>
     </g>
     <g
-       id="g4396">
+       id="g4396"
+       transform="translate(-96.235318,116.6533)">
       <text
          sodipodi:linespacing="125%"
          id="text12843-1"
@@ -800,18 +818,13 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            style="font-size:45px"
-           id="tspan3421"
+           id="tspan3425"
            y="603.3501"
            x="630.69299"
-           sodipodi:role="line">ニューラル</tspan><tspan
-           style="font-size:45px"
-           id="tspan3425"
-           y="659.6001"
-           x="630.69299"
-           sodipodi:role="line">ネットワーク</tspan><tspan
+           sodipodi:role="line">ニューラルネットワーク</tspan><tspan
            style="font-size:45px"
            id="tspan3419"
-           y="715.8501"
+           y="659.6001"
            x="630.69299"
            sodipodi:role="line">により予測</tspan></text>
       <g
@@ -839,30 +852,30 @@
       </g>
     </g>
     <g
-       id="g4374-8"
-       transform="translate(-402.87787,575.75636)">
+       id="g4417"
+       transform="translate(7.250575,77.250652)">
       <text
          sodipodi:linespacing="125%"
          id="text12843-0-6"
-         y="243.95929"
-         x="609.69177"
+         y="849.71564"
+         x="226.81396"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            id="tspan4318-1"
            style="font-size:45px;fill:#ff0000;fill-opacity:1"
-           y="243.95929"
-           x="609.69177"
+           y="849.71564"
+           x="226.81396"
            sodipodi:role="line">文同士の位置関係<tspan
    style="fill:#000000;fill-opacity:1"
    id="tspan4404">を考慮</tspan></tspan><tspan
            id="tspan3442-8"
            style="font-size:45px;fill:#ff7a00;fill-opacity:1"
-           y="300.20929"
-           x="609.69177"
+           y="905.96564"
+           x="226.81396"
            sodipodi:role="line" /></text>
       <g
          id="g4297-98"
-         transform="translate(66.413817,57.606442)">
+         transform="translate(-316.46398,663.36281)">
         <rect
            y="151.74869"
            x="409.21335"
@@ -885,35 +898,35 @@
       </g>
       <path
          style="fill:#373737;fill-opacity:1;fill-rule:evenodd;stroke:#373737;stroke-width:12;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutS)"
-         d="m 537.87781,226.20539 50,0"
+         d="m 155.00001,831.96176 50,0"
          id="path4434"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:#373737;fill-opacity:1;fill-rule:evenodd;stroke:#373737;stroke-width:12;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4772)"
-         d="m 537.87781,306.20539 50,0"
-         id="path4436"
          inkscape:connector-curvature="0" />
     </g>
     <g
-       transform="translate(-496.23532,296.6533)"
-       id="g4396-0">
+       id="g4441"
+       transform="translate(7.250575,77.250652)">
+      <path
+         style="fill:#373737;fill-opacity:1;fill-rule:evenodd;stroke:#373737;stroke-width:12;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4772)"
+         d="m 155.00001,911.96176 50,0"
+         id="path4436"
+         inkscape:connector-curvature="0" />
       <text
          sodipodi:linespacing="125%"
          id="text12843-1-2"
-         y="603.87537"
-         x="703.04926"
+         y="930.52869"
+         x="226.81401"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            style="font-size:45px"
            id="tspan3419-6"
-           y="603.87537"
-           x="703.04926"
+           y="930.52869"
+           x="226.81401"
            sodipodi:role="line"><tspan
    style="fill:#ff0000;fill-opacity:1"
    id="tspan4412">文書・文間及びカテゴリ間の複雑な関係</tspan>を考慮</tspan></text>
       <g
          id="g4297-0-2"
-         transform="translate(159.77127,416.7095)">
+         transform="translate(-316.46398,743.36281)">
         <rect
            y="151.74869"
            x="409.21335"
@@ -946,5 +959,84 @@
            height="320"
            x="-45.97924"
            y="570.2785" /></flowRegion><flowPara
-         id="flowPara4432"></flowPara></flowRoot>  </g>
+         id="flowPara4432" /></flowRoot>    <g
+       id="g5734"
+       transform="translate(-19.999997,6.0376436e-6)">
+      <circle
+         r="40"
+         cy="492.36212"
+         cx="619.99994"
+         id="path3340-6-3-4"
+         style="fill:#ff9933;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <circle
+         r="40"
+         cy="392.36212"
+         cx="619.99994"
+         id="path3340-6-3-4-3"
+         style="fill:#ff9933;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <circle
+         r="40"
+         cy="592.36212"
+         cx="619.99994"
+         id="path3340-6-3-4-0"
+         style="fill:#ff9933;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="scscscscs"
+         inkscape:connector-curvature="0"
+         id="path5732"
+         d="m 589.99994,322.36213 c -40,0 -40,40 -40,40 l 0,260 c 0,40 40,40 40,40 l 60,0 c 40,0 40,-40 40,-40 l 0,-260 c 0,-40 -40,-40 -40,-40 z"
+         style="fill:none;fill-rule:evenodd;stroke:#818181;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <g
+       transform="translate(7.250575,-2.7493484)"
+       id="g4417-4">
+      <text
+         sodipodi:linespacing="125%"
+         id="text12843-0-6-1"
+         y="849.71564"
+         x="226.81396"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan4318-1-2"
+           style="font-size:45px;fill:#ff0000;fill-opacity:1"
+           y="849.71564"
+           x="226.81396"
+           sodipodi:role="line"><tspan
+   style="fill:#000000;fill-opacity:1"
+   id="tspan4577">文書・文の</tspan>密なベクトル表現</tspan><tspan
+           id="tspan3442-8-6"
+           style="font-size:45px;fill:#ff7a00;fill-opacity:1"
+           y="905.96564"
+           x="226.81396"
+           sodipodi:role="line" /></text>
+      <g
+         id="g4297-98-3"
+         transform="translate(-316.46398,663.36281)">
+        <rect
+           y="151.74869"
+           x="409.21335"
+           height="39.501644"
+           width="39.501644"
+           id="rect4280-6-4"
+           style="opacity:1;fill:#3cbe00;fill-opacity:1;stroke:#3cbe00;stroke-width:25.49871635;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:45px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="429.08493"
+           y="188.97902"
+           id="text12843-6-3"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="429.08493"
+             y="188.97902"
+             id="tspan4297-8-3"
+             style="font-size:45px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">1</tspan></text>
+      </g>
+      <path
+         style="fill:#373737;fill-opacity:1;fill-rule:evenodd;stroke:#373737;stroke-width:12;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutS-6)"
+         d="m 155.00001,831.96176 50,0"
+         id="path4434-8"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
 </svg>
