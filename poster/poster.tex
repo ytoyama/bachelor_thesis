@@ -68,7 +68,6 @@
       \end{subfigure}
       \hspace*{\fill} % HACK
     \end{figure}
-    \vspace{0.5em}
     %\begin{figure}
     %  \includegraphics[width=0.9\linewidth]{fig/review.pdf}
     %  \caption{複数のカテゴリを持つ商品レビューの例}
@@ -176,6 +175,8 @@
             \item 入力：訓練用レビューと正解レーティングの集合、 \\
                   及び、テスト用レビューの集合
             \item 出力：各テスト用レビューのカテゴリ毎のレーティング
+            \item 訓練用レビューでニューラルネットワークを学習 \\
+                  \arrow テスト用レビューについてレーティングを予測
           \end{itemize}
       \end{itemize}
       \begin{figure}
@@ -187,6 +188,7 @@
       %  \item (2) \arrow \fire{文同士の位置関係}を考慮
       %  \item (3) \arrow \fire{文書・文間及びカテゴリ間の関係}を考慮
       %\end{itemize}
+      \vspace{-0.75em} % HACK
       \begin{itemize}
         \setbeamertemplate{itemize item}{} % HACK
         \item \itemtitle{\includegraphics[height=\mytitlefigureheight]
