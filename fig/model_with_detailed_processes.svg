@@ -84,21 +84,6 @@
     <marker
        inkscape:isstock="true"
        style="overflow:visible"
-       id="marker10719"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="TriangleOutM">
-      <path
-         transform="scale(0.4,0.4)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
-         id="path10721"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
        id="marker10595"
        refX="0"
        refY="0"
@@ -161,21 +146,6 @@
     <marker
        inkscape:isstock="true"
        style="overflow:visible"
-       id="marker10719-3"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="TriangleOutM">
-      <path
-         inkscape:connector-curvature="0"
-         transform="scale(0.4,0.4)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
-         id="path10721-9" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
        id="marker10365-2"
        refX="0"
        refY="0"
@@ -198,8 +168,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="711.41186"
-     inkscape:cy="133.0392"
+     inkscape:cx="495.69757"
+     inkscape:cy="133.03921"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -220,7 +190,7 @@
        type="xygrid"
        id="grid3336"
        originx="-53.947769"
-       originy="-309.99994" />
+       originy="-309.99993" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -718,7 +688,7 @@
     </g>
     <g
        id="g4343"
-       transform="translate(66.535647,19.362781)">
+       transform="translate(78.535647,33.362781)">
       <text
          sodipodi:linespacing="125%"
          id="text12843-0"
@@ -781,7 +751,7 @@
            style="font-size:45px"
            y="246.22937"
            x="117.6709"
-           sodipodi:role="line">により生成</tspan></text>
+           sodipodi:role="line">により事前に生成</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text4225-2-1"
