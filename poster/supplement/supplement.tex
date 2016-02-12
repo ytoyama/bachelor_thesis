@@ -1,6 +1,7 @@
-\documentclass[aspectratio=43,unicode,10pt]{beamer}
+\documentclass[unicode,10pt]{beamer}
 \usetheme{ttipresentation}
 
+\usepackage{geometry}
 \usepackage{luatexja}
 \usepackage{luatexja-fontspec}
 \usepackage{graphicx}
@@ -8,6 +9,7 @@
 
 \setmainjfont{ipagp.otf}
 \beamertemplatenavigationsymbolsempty
+\geometry{a5paper,landscape}
 
 \newcommand{\itemtitle}[1]{\textbf{#1}\\}
 \newcommand{\fire}[1]{\textcolor{red}{\textbf{#1}}}
@@ -27,12 +29,14 @@
 
 
 \begin{document}
+\Large
+\setbeamerfont{itemize item}{size=\Large}
+\setbeamerfont{itemize subitem}{size=\Large}
+\setbeamerfont{itemize subsubitem}{size=\Large}
 
 \begin{frame}{パラグラフベクトルの目的関数}{}
   \begin{columns}
     \begin{column}{\mycolumnwidth}
-      \abovedisplayskip=-0.5em % HACK
-      \belowdisplayskip=-0.5em % HACK
       \begin{gather*}
         L = \sum_d L_d \\
         L_d = \frac{1}{T} \sum^{T}_{t = k + 1}
@@ -43,7 +47,6 @@
       \end{gather*}
     \end{column}
     \begin{column}{\mycolumnwidth}
-      \footnotesize
       $d$：文書または文 \\
       $w_i$：文書または文中の$i$番目の単語 \\
       $W$：全ての単語のベクトルを含む行列 \\
@@ -78,7 +81,6 @@
       \end{gather*}
     \end{column}
     \begin{column}{\mycolumnwidth}
-      \footnotesize
       $\mathbf{s}_{i_{sent}}$：レビュー内の文ベクトル \\
       $\mathbf{t}_{i_{part}}$：重み付け平均された文ベクトル \\
       $i_{sent}$：レビュー内の文ベクトルのインデックス \\
@@ -91,24 +93,29 @@
 
 \begin{frame}{ニューラルネットワークの構成}{}
   \begin{itemize}
+    \Large
     \item 活性化関数：シグモイド関数
+      \Large
       \begin{gather*}
         \sigma(x) = \frac{1}{1 + e^{-x}}
       \end{gather*}
     \item 更新式：Adam
       \begin{itemize}
+        \Large
         \item 重みについて更新された値を累積していき更新料が少ない
               重みを大きく更新する手法
         \item 確率的勾配降下法（SGD）より収束が早い
       \end{itemize}
     \item ドロップアウト
       \begin{itemize}
+        \Large
         \item ある層においていくつかのニューロンの出力を
               確率的に0にする正則化の手法
         \item 実験では、入力層で0.2、中間層で0.5の確率
       \end{itemize}
     \item 重み減衰
       \begin{itemize}
+        \Large
         \item ニューラルネットワークの重みの二乗和を目的関数に加え最小化する
               正則化の手法
         \item 実験では、係数5e-5で減衰
