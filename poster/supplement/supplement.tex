@@ -35,9 +35,10 @@
       \belowdisplayskip=-0.5em % HACK
       \begin{gather*}
         L = \sum_d L_d \\
-        L_d = \frac{1}{T} \sum^{T}_{t = k}
+        L_d = \frac{1}{T} \sum^{T}_{t = k + 1}
               \log p(w_t | w_{t-k}, ..., w_{t-1}), \\
-        p(w_t | w_{t-k}, ..., w_{t-1}) = \frac{e^{y_{w_t}}}{\sum_i e^{y_i}}, \\
+        p(w_t | w_{t-k}, ..., w_{t-1})
+            = \frac{e^{y_{w_t}}}{\sum_{w'} e^{y_{w'}}}, \\
         y = b + Uh(w_{t-k}, ..., w_{t-1}, d; W, D)
       \end{gather*}
     \end{column}
@@ -45,16 +46,16 @@
       \footnotesize
       $d$：文書または文 \\
       $w_i$：文書または文中の$i$番目の単語 \\
-      $W$：全ての単語の分散表現を表す行列 \\
-      $D$：全ての文章の分散表現を表す行列 \\
-      $T$：現在の文章に含まれる単語数 \\
+      $W$：全ての単語のベクトルを含む行列 \\
+      $D$：全ての文書または文のベクトルを含む行列 \\
+      $T$：現在の文書または文に含まれる単語数 \\
       $k$：ウィンドウサイズ \\
       ウィンドウ：ある単語の周辺を表す区間 \\
       $p$：softmax関数により正規化された、
            文脈から現在の単語が導かれることの尤度 \\
       $h$：引数となる単語と文書または文のベクトルを結合した
            ベクトルを返す関数 \\
-      %$y$：現在の単語とウィンドウ内の単語及び現在の文章から導出
+      %$y$：現在の単語とウィンドウ内の単語及び現在の文書または文から導出
     \end{column}
   \end{columns}
 \end{frame}
@@ -86,6 +87,33 @@
       $\#part$：重み付け平均された文ベクトルの数
     \end{column}
   \end{columns}
+\end{frame}
+
+\begin{frame}{ニューラルネットワークの構成}{}
+  \begin{itemize}
+    \item 活性化関数：シグモイド関数
+      \begin{gather*}
+        \sigma(x) = \frac{1}{1 + e^{-x}}
+      \end{gather*}
+    \item 更新式：Adam
+      \begin{itemize}
+        \item 重みについて更新された値を累積していき更新料が少ない
+              重みを大きく更新する手法
+        \item 確率的勾配降下法（SGD）より収束が早い
+      \end{itemize}
+    \item ドロップアウト
+      \begin{itemize}
+        \item ある層においていくつかのニューロンの出力を
+              確率的に0にする正則化の手法
+        \item 実験では、入力層で0.2、中間層で0.5の確率
+      \end{itemize}
+    \item 重み減衰
+      \begin{itemize}
+        \item ニューラルネットワークの重みの二乗和を目的関数に加え最小化する
+              正則化の手法
+        \item 実験では、係数5e-5で減衰
+      \end{itemize}
+  \end{itemize}
 \end{frame}
 
 \end{document}
