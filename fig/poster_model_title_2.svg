@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="223.09966mm"
-   height="18.344545mm"
-   viewBox="0 0 790.51052 65.000355"
+   width="223.09969mm"
+   height="18.344549mm"
+   viewBox="0 0 790.51063 65.000367"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -28,15 +28,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="453.21974"
-     inkscape:cy="13.936708"
+     inkscape:zoom="0.9899495"
+     inkscape:cx="334.23908"
+     inkscape:cy="-30.569775"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
-     inkscape:window-width="1054"
+     inkscape:window-width="1630"
      inkscape:window-height="1064"
      inkscape:window-x="0"
      inkscape:window-y="14"
@@ -55,8 +55,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid3336"
-       originx="92.749383"
-       originy="-87.748993" />
+       originx="92.749423"
+       originy="-87.748997" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -74,7 +74,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(92.749359,-899.61272)">
+     transform="translate(92.74939,-899.61272)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -131,6 +131,6 @@
          id="tspan4146"
          x="-13.186068"
          y="949.04285"
-         style="font-size:45px">文ベクトルの重み付け平均による圧縮</tspan></text>
+         style="font-size:45px">重み付け平均による文ベクトルの圧縮</tspan></text>
   </g>
 </svg>
