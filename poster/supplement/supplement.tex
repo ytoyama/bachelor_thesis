@@ -29,10 +29,10 @@
 
 
 \begin{document}
-\Large
-\setbeamerfont{itemize item}{size=\Large}
-\setbeamerfont{itemize subitem}{size=\Large}
-\setbeamerfont{itemize subsubitem}{size=\Large}
+\Large % HACK
+\setbeamerfont{itemize item}{size=\Large} % HACK
+\setbeamerfont{itemize subitem}{size=\Large} % HACK
+\setbeamerfont{itemize subsubitem}{size=\Large} % HACK
 
 \begin{frame}{パラグラフベクトルの目的関数}{}
   \begin{columns}
@@ -93,34 +93,53 @@
 
 \begin{frame}{ニューラルネットワークの構成}{}
   \begin{itemize}
-    \Large
+    \Large % HACK
     \item 活性化関数：シグモイド関数
-      \Large
+      \Large % HACK
       \begin{gather*}
         \sigma(x) = \frac{1}{1 + e^{-x}}
       \end{gather*}
     \item 更新式：Adam
       \begin{itemize}
-        \Large
+        \Large % HACK
         \item 重みについて更新された値を累積していき更新料が少ない
               重みを大きく更新する手法
         \item 確率的勾配降下法（SGD）より収束が早い
       \end{itemize}
     \item ドロップアウト
       \begin{itemize}
-        \Large
+        \Large % HACK
         \item ある層においていくつかのニューロンの出力を
               確率的に0にする正則化の手法
         \item 実験では、入力層で0.2、中間層で0.5の確率
       \end{itemize}
     \item 重み減衰
       \begin{itemize}
-        \Large
+        \Large % HACK
         \item ニューラルネットワークの重みの二乗和を目的関数に加え最小化する
               正則化の手法
         \item 実験では、係数5e-5で減衰
       \end{itemize}
   \end{itemize}
+\end{frame}
+
+\begin{frame}{実験結果（レーティングのRMSE）}{}
+  \begin{table}
+    \caption{\large % HACK
+             表. 提案手法と従来手法におけるレーティングのRMSE}
+    \centering
+    \begin{tabular}{l | r r}
+      手法 & 提案手法 & 従来手法 \\
+      \hline
+      立地      & 0.88 & 0.97 \\
+      部屋      & 0.88 & 0.97 \\
+      食事      & 0.93 & 1.53 \\
+      風呂      & 1.03 & 1.27 \\
+      サービス  & 0.86 & 0.94 \\
+      設備      & 0.90 & 0.95 \\
+      総合      & 0.73 & 0.81 \\
+    \end{tabular}
+  \end{table}
 \end{frame}
 
 \end{document}
