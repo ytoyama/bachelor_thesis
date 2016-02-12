@@ -308,7 +308,7 @@
           \end{itemize}
       \end{itemize}
 
-      \doublecolumns{0.6\textwidth}{
+      \doublecolumns{0.5\textwidth}{
         \begin{itemize}
           \item \itemtitle{結果}
             \begin{itemize}
@@ -317,17 +317,17 @@
               \item 文書ベクトルと文ベクトルを同時に用いることが有効
             \end{itemize}
         \end{itemize}
-      }{0.375\textwidth}{
+      }{0.475\textwidth}{
         \begin{table}
           \centering
-          \begin{tabular}{l | r}
-            手法 & 正答率 \\
+          \begin{tabular}{l | r r}
+            手法 & 正答率 & RMSE \\
             \hline
-            従来手法\cite{fujitani15} & 0.4832 \\
-            DV & 0.4980 \\
-            ASV & 0.4838 \\
-            Weighted ASV & 0.4867 \\
-            提案手法 & \fire{0.5030} \\
+            従来手法\cite{fujitani15} & 0.483 & 0.81 \\
+            DV & 0.498 & 0.74 \\
+            ASV & 0.484 & 0.76 \\
+            Weighted ASV & 0.487 & 0.76 \\
+            提案手法 & \fire{0.503} & \fire{0.73} \\
           \end{tabular}
         \end{table}
       }
