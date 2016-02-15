@@ -28,4 +28,5 @@ clean:
 
 
 ${thesis_pdf}: ttithesis.cls introduction.tex related_research.tex \
-               proposed_method.tex experiments.tex conclusion.tex
+               proposed_method.tex experiments.tex conclusion.tex \
+               discussion.tex

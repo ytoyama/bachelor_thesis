@@ -7,6 +7,7 @@ Multi-Instance Multi-Label learning for Relation Extraction (MIML-RE)
 \cite{mihai12}モデルを用いた手法を提案している。
 その手法では、レビュー内の各文毎に予測した隠れレーティングから
 レビュー全体のレーティングを予測する。
+図\ref{fig:FujitaniRelationsAmongRatingCategories}のように、
 文毎のレーティングからレビュー全体のレーティングを予測する際の
 カテゴリ間の繋がりを手動で変化させカテゴリ間の関係性を考慮している。
 各文の素性にはBag Of Words (BOW)またはBag Of n-gramsを用いている。
@@ -14,9 +15,15 @@ Multi-Instance Multi-Label learning for Relation Extraction (MIML-RE)
 0.4832の正答率が得られることが示された。
 また、カテゴリ間の繋がりによって正答率が変化することも示されている。
 
+\begin{figure}[t!]
+  \includegraphics[0.5]
+      {fig/fujitani_miml_relations_among_rating_categories.pdf}
+  \caption{藤谷ら\cite{fujitani15}のモデルにおけるカテゴリ同士の繋ぎ方の例}
+  \label{fig:FujitaniRelationsAmongRatingCategories}
+\end{figure}
+
 この手法では、文同士の位置関係を考慮しておらず、
 カテゴリ間については考慮しているものの複雑な関係を捉えることができていない。
-
 
 \subsection{パラグラフベクトル}
 
@@ -30,7 +37,7 @@ PV-DMはBOWと異なり、単語の並び順を考慮した文や文書の分散
 生成することができる。
 
 \begin{figure}[t!]
-  \includegraphics{fig/paragraph_vector_v2.png}
+  \includegraphics[0.5]{fig/paragraph_vector_v2.pdf}
   \caption{パラグラフベクトルの学習の概略}
   \label{fig:ParagraphVector}
 \end{figure}
