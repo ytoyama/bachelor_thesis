@@ -41,8 +41,8 @@
 
 次に、カテゴリ間の関係が重要となる例を
 図\ref{fig:RelationsAmongRatingCategories}に示す。
-図\ref{fig:RelationsAmongRatingCategories}のように「総合」カテゴリの
-
+図\ref{fig:RelationsAmongRatingCategories}のように
+「総合」カテゴリの
 
 \begin{figure}
   \includegraphics[0.3]{fig/relations_among_rating_categories.pdf}
@@ -150,20 +150,23 @@
 \begin{gather}
   \mathbf{t}_{i_{part}} = \sum_{i_{sent}}
                           \frac{w(x_{i_{part}}(i_{sent}))}
-                               {|\sum_{i_{sent}'} w(x_{i_{part}}(i_{sent}'))|}
+                               {|\sum_{i_{sent}'}
+                                w(x_{i_{part}}(i_{sent}'))|}
                           \mathbf{s}_{i_{sent}},
   \label{eq:WeightedAverageSV} \\
-  x_{i_{part}}(i_{sent}) = \frac{i_{sent} - i_{part}}{\#partitions},
-  \nonumber \\
+  x_{i_{part}}(i_{sent}) = \frac{i_{sent}}{\#sent - 1}
+                           - \frac{i_{part}}{\#part - 1}, \nonumber \\
   w(x) = \begin{cases}
-    \frac{1}{2} (\cos(\pi|x|) + 1) &\text{if $|x| \leq 1$} \\
-    0 &\text{otherwise}
+    \frac{1}{2} (\cos(\pi|x|) + 1) & \text{if $|x| \leq 1$} \\
+    0 & \text{otherwise}
   \end{cases} \nonumber
 \end{gather}
-ここで、$i_{sent}$はレビュー内の文のインデックス、
-$\#partitions$は重み付け平均された後の文ベクトルの数、
-$i_{part}$は重み付け平均された後の文ベクトルのインデックス、
-$\mathbf{s}_{i_{sent}}$は文ベクトルである。
+ここで、$\mathbf{s}_{i_{sent}}$はレビュー内の文ベクトル、
+$\mathbf{t}_{i_{part}}$は重み付け平均された文ベクトルである。
+$i_{sent}$はレビュー内の文ベクトルのインデックス、
+$i_{part}$は重み付け平均された文ベクトルのインデックスである。
+$\#sent$はレビュー内の文ベクトルの数、
+$\#part$は重み付け平均された文ベクトルの数である。
 \footnote{重み付けの関数には$\cos$関数の他に、
 $x$に対して線形に重みを減少させるような関数や、
 単純に文を区画毎に平均するような関数も考えられる。
