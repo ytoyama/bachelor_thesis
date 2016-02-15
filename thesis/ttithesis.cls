@@ -19,6 +19,28 @@
 
 \renewcommand{\cftsecfont}{\normalfont}
 \renewcommand{\contentsname}{\normalfont 目次}
+%\let\oldl@chapter\l@chapter
+%\def\l@chapter#1#2{\l@chapter{#1}{#2}}
+%\let\oldl@section\l@section
+%\def\l@section#1#2{\l@section{#1}{#2}}
+\RequirePackage{tocloft}
+%\newcommand{\cftchappagefont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+\renewcommand{\cftsubsecpagefont}{\normalfont}
+\renewcommand{\cftsubsubsecpagefont}{\normalfont}
+\renewcommand{\cftfigpagefont}{\normalfont}
+\renewcommand{\cfttabpagefont}{\normalfont}
+
+
+% list of tables and figures
+
+%\let\tti@listoffigures\listoffigures
+%\renewcommand{\listoffigures}{\pagebreak\tti@listoffigures}
+%\let\tti@listoftables\listoftables
+%\renewcommand{\listoftables}{\pagebreak\tti@listoftables}
+
+\renewcommand{\listtablename}{\normalfont 表目次}
+\renewcommand{\listfigurename}{\normalfont 図目次}
 
 
 % sections
