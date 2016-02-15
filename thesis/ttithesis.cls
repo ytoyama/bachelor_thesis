@@ -73,14 +73,14 @@
 
 \let\originaltable\table
 \let\endoriginaltable\endtable
-\renewenvironment{table}[1][ht]{%
-  \originaltable[#1]\centering}%
+\renewenvironment{table}{%
+  \originaltable[b!]\centering}%
   {\endoriginaltable}
 
 \let\originalfigure\figure
 \let\endoriginalfigure\endfigure
-\renewenvironment{figure}[1][ht]{%
-  \originalfigure[#1]\centering}%
+\renewenvironment{figure}{%
+  \originalfigure[t!]\centering}%
   {\endoriginalfigure}
 
 \let\tti@includegraphics\includegraphics
