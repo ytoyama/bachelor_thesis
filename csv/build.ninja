@@ -1,0 +1,56 @@
+# commands
+
+rm = rm -rf
+cp = cp
+
+bin_dir = bin
+
+python = python3.5 -u
+format_csv = $python $bin_dir/format_csv.py
+
+
+# data files
+
+var_dir = var
+
+predicted_class_count_file = predicted_class_count.csv
+answer_class_count_file = answer_class_count.csv
+class_accuracy_file = class_accuracy.csv
+class_f_value_file = class_f_value.csv
+class_precision_file = class_precision.csv
+class_recall_file = class_recall.csv
+class_rmse_file = class_rmse.csv
+
+original_predicted_class_count_file = $var_dir/$predicted_class_count_file
+original_answer_class_count_file    = $var_dir/$answer_class_count_file
+original_class_accuracy_file        = $var_dir/$class_accuracy_file
+original_class_f_value_file         = $var_dir/$class_f_value_file
+original_class_precision_file       = $var_dir/$class_precision_file
+original_class_recall_file          = $var_dir/$class_recall_file
+original_class_rmse_file            = $var_dir/$class_rmse_file
+
+# constants
+
+number_format = ":.4f"
+
+
+rule copy
+  command = $cp $in $out
+
+rule format_csv
+  command = $format_csv -f $number_format $in > $out
+
+
+build $predicted_class_count_file: copy $original_predicted_class_count_file
+build $answer_class_count_file: copy $original_answer_class_count_file
+build $class_accuracy_file: format_csv $original_class_accuracy_file
+build $class_precision_file: format_csv $original_class_precision_file
+build $class_recall_file: format_csv $original_class_recall_file
+build $class_f_value_file: format_csv $original_class_f_value_file
+build $class_rmse_file: format_csv $original_class_rmse_file
+
+default $class_accuracy_file $
+        $class_precision_file $
+        $class_recall_file $
+        $class_f_value_file $
+        $class_rmse_file
