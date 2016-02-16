@@ -155,3 +155,55 @@ Weighted ASVがASVを0.029有意に上回っている。
     総合      & 0.73 & 0.81 \\
   \end{tabular}
 \end{table}
+
+最後に、正答率を測定する実験における提案手法の精度と再現率、F値を
+それぞれ表\ref{tab:ProposedMethodPrecision}と
+表\ref{tab:ProposedMethodRecall}、表\ref{tab:ProposedMethodFValue}に示す。
+
+\begin{table}
+  \caption{提案手法の精度}
+  \centering
+  \begin{tabular}{l | r r r r r r r | r} \label{tab:ProposedMethodPrecision}
+    レーティング & 立地 & 部屋 & 食事 & 風呂 & サービス & 設備 & 総合
+      & 全カテゴリ \\
+    \hline
+    \csvreader[no head,late after line=\\]
+      {csv/class_precision.csv}
+      {1=\rating,2=\location,3=\room,4=\mean,5=\bath,6=\service,7=\facilities,
+       8=\overall,9=\allcategories}
+      {\rating & \location & \room & \mean & \bath & \service & \facilities
+       & \overall & \allcategories}
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \caption{提案手法の再現率}
+  \centering
+  \begin{tabular}{l | r r r r r r r | r} \label{tab:ProposedMethodRecall}
+    レーティング & 立地 & 部屋 & 食事 & 風呂 & サービス & 設備 & 総合
+      & 全カテゴリ \\
+    \hline
+    \csvreader[no head,late after line=\\]
+      {csv/class_recall.csv}
+      {1=\rating,2=\location,3=\room,4=\mean,5=\bath,6=\service,7=\facilities,
+       8=\overall,9=\allcategories}
+      {\rating & \location & \room & \mean & \bath & \service & \facilities
+       & \overall & \allcategories}
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \caption{提案手法のF値}
+  \centering
+  \begin{tabular}{l | r r r r r r r | r} \label{tab:ProposedMethodFValue}
+    レーティング & 立地 & 部屋 & 食事 & 風呂 & サービス & 設備 & 総合
+      & 全カテゴリ \\
+    \hline
+    \csvreader[no head,late after line=\\]
+      {csv/class_f_value.csv}
+      {1=\rating,2=\location,3=\room,4=\mean,5=\bath,6=\service,7=\facilities,
+       8=\overall,9=\allcategories}
+      {\rating & \location & \room & \mean & \bath & \service & \facilities
+       & \overall & \allcategories}
+  \end{tabular}
+\end{table}
