@@ -40,13 +40,21 @@ rule copy
 rule format_csv
   command = $format_csv -f $number_format $in > $out
 
+rule format_csv_with_classes
+  command = $format_csv -f $number_format $in > $out.tmp && $
+            seq 0 $$(expr $$(wc -l $in | grep -o '[[:blank:]]*[0-9]\+') - 1) $
+              > classes.tmp && $
+            paste -d "," classes.tmp $out.tmp > $out && $
+            $rm $out.tmp classes.tmp
+
 
 build $predicted_class_count_file: copy $original_predicted_class_count_file
 build $answer_class_count_file: copy $original_answer_class_count_file
 build $class_accuracy_file: format_csv $original_class_accuracy_file
-build $class_precision_file: format_csv $original_class_precision_file
-build $class_recall_file: format_csv $original_class_recall_file
-build $class_f_value_file: format_csv $original_class_f_value_file
+build $class_precision_file: format_csv_with_classes $
+                             $original_class_precision_file
+build $class_recall_file: format_csv_with_classes $original_class_recall_file
+build $class_f_value_file: format_csv_with_classes $original_class_f_value_file
 build $class_rmse_file: format_csv $original_class_rmse_file
 
 default $class_accuracy_file $
