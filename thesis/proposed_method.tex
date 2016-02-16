@@ -42,7 +42,12 @@
 次に、カテゴリ間の関係が重要となる例を
 図\ref{fig:RelationsAmongRatingCategories}に示す。
 図\ref{fig:RelationsAmongRatingCategories}のように
-「総合」カテゴリの
+「総合」カテゴリのレーティングは一般に他のカテゴリのレーティングに応じて
+高くなる。
+このような関係は「立地」と「部屋」、「食事」と「サービス」等の
+他のカテゴリ間にも存在する。
+よって、このことからも、カテゴリ間の関係をレーティング予測において
+考慮することで、正答率を向上させられると考えられる。
 
 \begin{figure}
   \includegraphics[0.3]{fig/relations_among_rating_categories.pdf}
