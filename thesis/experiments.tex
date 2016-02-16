@@ -102,7 +102,12 @@ Weighted ASVと提案手法において圧縮された文ベクトルの数は
 
 まず、提案手法と3つの比較手法、従来手法\cite{fujitani15}を
 正答率で比較したものを表\ref{tab:Accuracies}に示す。
+また、表\ref{tab:AccuraciesPerCategory}に提案手法と
+従来手法\cite{fujitani15}におけるカテゴリ別の正答率を示す。
+表\ref{tab:Accuracies}において、
 提案手法が従来手法\cite{fujitani15}の正答率を0.0198有意に上回っている。
+また、提案手法がDVの正答率を0.0050有意に上回っている。
+Weighted ASVがASVを0.029有意に上回っている。
 
 \begin{table}
   \caption{各手法における正答率}
@@ -115,6 +120,18 @@ Weighted ASVと提案手法において圧縮された文ベクトルの数は
     ASV & 0.4838 \\
     Weighted ASV & 0.4867 \\
     提案手法 & \textbf{0.5030} \\
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \caption{提案手法と従来手法\cite{fujitani15}におけるカテゴリ別の正答率}
+  \centering
+  \begin{tabular}{l | r r r r r r r} \label{tab:AccuraciesPerCategory}
+    手法 & 立地 & 部屋 & 食事 & 風呂 & サービス & 設備 & 総合 \\
+    \hline
+    提案手法 & 0.5140 & 0.4984 & 0.5353 & 0.4347 & 0.5116 & 0.4479 & 0.5794 \\
+    従来手法\cite{fujitani15}
+        & 0.4961 & 0.4706 & 0.5140 & 0.3973 & 0.4783 & 0.4265 & 0.5660 \\
   \end{tabular}
 \end{table}
 
