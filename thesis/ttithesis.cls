@@ -120,7 +120,13 @@
 \let\originaldocument\document
 \let\endoriginaldocument\enddocument
 \renewenvironment{document}{%
-  \originaldocument\@titlepage\tableofcontents}%
+  \originaldocument\@titlepage
+  \pagenumbering{roman}
+  \tableofcontents
+  \listoftables
+  \listoffigures
+  \pagebreak
+  \pagenumbering{arabic}}%
   {\endoriginaldocument}
 
 

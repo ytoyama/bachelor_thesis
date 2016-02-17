@@ -1,4 +1,4 @@
-\section{実験}
+\section{実験} \label{sec:Experiments}
 
 \subsection{実験設定}
 
@@ -126,7 +126,7 @@ Weighted ASVがASVを0.029有意に上回っている。
 \begin{table}
   \caption{提案手法と従来手法\cite{fujitani15}におけるカテゴリ別の正答率}
   \centering
-  \begin{tabular}{l | r r r r r r r} \label{tab:AccuraciesPerCategory}
+  \begin{tabular}{r | r r r r r r r} \label{tab:AccuraciesPerCategory}
     手法 & 立地 & 部屋 & 食事 & 風呂 & サービス & 設備 & 総合 \\
     \hline
     提案手法 & 0.5140 & 0.4984 & 0.5353 & 0.4347 & 0.5116 & 0.4479 & 0.5794 \\
@@ -143,7 +143,7 @@ Weighted ASVがASVを0.029有意に上回っている。
 \begin{table}
   \caption{提案手法と従来手法\cite{fujitani15}におけるレーティングのRMSE}
   \centering
-  \begin{tabular}{l | r r} \label{tab:RMSEs}
+  \begin{tabular}{r | r r} \label{tab:RMSEs}
     手法 & 提案手法 & 従来手法\cite{fujitani15} \\
     \hline
     立地      & 0.88 & 0.97 \\
@@ -156,15 +156,17 @@ Weighted ASVがASVを0.029有意に上回っている。
   \end{tabular}
 \end{table}
 
-最後に、正答率を測定する実験における提案手法の精度と再現率、F値を
+最後に、正答率を測定する実験における、提案手法の精度と再現率、F値を
 それぞれ表\ref{tab:ProposedMethodPrecision}と
 表\ref{tab:ProposedMethodRecall}、表\ref{tab:ProposedMethodFValue}に示す。
 表においてnanは0による除算が発生し計算できなかったことを示す。
+また、カテゴリ毎の正解レーティングの内訳と提案手法の予測レーティングの内訳を
+表\ref{tab:AnswerRatings}と表\ref{tab:PredictedRatings}に示す。
 
 \begin{table}
   \caption{提案手法の精度}
   \centering
-  \begin{tabular}{l | r r r r r r r | r} \label{tab:ProposedMethodPrecision}
+  \begin{tabular}{r | r r r r r r r | r} \label{tab:ProposedMethodPrecision}
     レーティング & 立地 & 部屋 & 食事 & 風呂 & サービス & 設備 & 総合
       & 全カテゴリ \\
     \hline
@@ -180,7 +182,7 @@ Weighted ASVがASVを0.029有意に上回っている。
 \begin{table}
   \caption{提案手法の再現率}
   \centering
-  \begin{tabular}{l | r r r r r r r | r} \label{tab:ProposedMethodRecall}
+  \begin{tabular}{r | r r r r r r r | r} \label{tab:ProposedMethodRecall}
     レーティング & 立地 & 部屋 & 食事 & 風呂 & サービス & 設備 & 総合
       & 全カテゴリ \\
     \hline
@@ -196,12 +198,44 @@ Weighted ASVがASVを0.029有意に上回っている。
 \begin{table}
   \caption{提案手法のF値}
   \centering
-  \begin{tabular}{l | r r r r r r r | r} \label{tab:ProposedMethodFValue}
+  \begin{tabular}{r | r r r r r r r | r} \label{tab:ProposedMethodFValue}
     レーティング & 立地 & 部屋 & 食事 & 風呂 & サービス & 設備 & 総合
       & 全カテゴリ \\
     \hline
     \csvreader[no head,late after line=\\]
       {csv/class_f_value.csv}
+      {1=\rating,2=\location,3=\room,4=\mean,5=\bath,6=\service,7=\facilities,
+       8=\overall,9=\allcategories}
+      {\rating & \location & \room & \mean & \bath & \service & \facilities
+       & \overall & \allcategories}
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \caption{カテゴリ毎の正解レーティング件数}
+  \centering
+  \begin{tabular}{r | r r r r r r r | r} \label{tab:AsnwerRatings}
+    レーティング & 立地 & 部屋 & 食事 & 風呂 & サービス & 設備 & 総合
+      & 全カテゴリ \\
+    \hline
+    \csvreader[no head,late after line=\\]
+      {csv/answer_class_count.csv}
+      {1=\rating,2=\location,3=\room,4=\mean,5=\bath,6=\service,7=\facilities,
+       8=\overall,9=\allcategories}
+      {\rating & \location & \room & \mean & \bath & \service & \facilities
+       & \overall & \allcategories}
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \caption{提案手法のカテゴリ毎の予測レーティング件数}
+  \centering
+  \begin{tabular}{r | r r r r r r r | r} \label{tab:PredictedRatings}
+    レーティング & 立地 & 部屋 & 食事 & 風呂 & サービス & 設備 & 総合
+      & 全カテゴリ \\
+    \hline
+    \csvreader[no head,late after line=\\]
+      {csv/predicted_class_count.csv}
       {1=\rating,2=\location,3=\room,4=\mean,5=\bath,6=\service,7=\facilities,
        8=\overall,9=\allcategories}
       {\rating & \location & \room & \mean & \bath & \service & \facilities
