@@ -24,7 +24,7 @@ thesis: ${thesis_pdf}
 
 .PHONY: clean
 clean:
-	${rm} *.pdf *.toc *.log *.aux
+	${rm} *.pdf *.toc *.log *.aux *.lot *.lof
 
 
 ${thesis_pdf}: ttithesis.cls introduction.tex related_research.tex \
