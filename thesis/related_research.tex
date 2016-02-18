@@ -2,7 +2,7 @@
 
 多カテゴリにおけるレーティング予測に関する従来研究、
 及び、提案手法において用いる手法、技術について述べる。
-はじめに、基礎的な技術について、その後その他の研究について説明する。
+はじめに基礎的な技術について、その後本研究に関連した研究について説明する。
 
 
 \subsection{形態素解析}
@@ -193,8 +193,12 @@ Rieら\cite{rie14}、Duyuら\cite{duyu15}等によって提案されている。
 全結合層を単純化した層である。
 具体的にはある$H×H$の大きさを持つフィルタを考え、
 それを畳み込み層の入力値に適用して値を出力する。
-式\ref{eq:ConvolutionalLayerFilter}に、畳み込み層のフィルタ$f$によって処理された
-出力値$u_{fij}$を示す。
+図\ref{fig:ConvolutionalLayer}にその概略を示す。
+\begin{figure} \label{fig:ConvolutionalLayer}
+  \includegraphics[0.7]{fig/convolutional_layer_with_one_filter.pdf}
+\end{figure}
+式\ref{eq:ConvolutionalLayerFilter}に、畳み込み層のフィルタ$f$によって
+処理された出力値$u_{fij}$を示す。
 \begin{gather} \label{eq:ConvolutionalLayerFilter}
   u_{fij} = \sum^{C - 1}_{c = 0} \sum^{H - 1}_{p = 0} \sum^{H - 1}_{q = 0}
             z^{(l - 1)}_{c, i + p, j + q} h_{fcpq} + b_{fij}
@@ -247,3 +251,20 @@ $\mathbf{m}_t$と$\mathbf{v}_t$は更新回数$t$における
 パラメータ$\mathbf{w}$の一次・二次モーメントである。
 $\alpha$と$\beta_1$、$\beta_2$はAdamのパラメータである。
 $\mathbf{g}_t$は更新回数$t$におけるパラメータ$\mathbf{w}$の勾配である。
+
+Adamの特徴として、$\alpha \frac{\mathbf{m}_t}{\sqrt{\mathbf{v}_t}}
+\underset{\approx}{<} \alpha$である。
+$\alpha \frac{\mathbf{m}_t}{\sqrt{\mathbf{v}_t}}$は全ての$t$について
+$g_t$を定数倍しても変化しない。
+よって、更新幅のおおまかな上限をデータに依らず$\alpha$によって
+決定することができる。
+また、Diederikら\cite{diederik15}は
+$\frac{\mathbf{m}_t}{\sqrt{\mathbf{v}_t}}$をsignal-to-noise ratio (SNR)と
+呼んでいる。
+分子$\mathbf{m}_t$は、更新回数$t$までの更新幅が小さい、あるいは、
+勾配の向きがよく変わっているとき小さくなる。
+よって、パラメータが最適解や局所解、鞍点付近にあるときは更新幅が小さくなり、
+それ以外のとき大きくなる。
+分母$\mathbf{v}_t$は、更新回数$t$までの更新幅が大きいとき大きくなる。
+よって、パラメータが更新回数$t$までに大きく更新されているとき
+更新幅は小さくなる。
