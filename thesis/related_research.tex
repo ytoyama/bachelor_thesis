@@ -235,11 +235,16 @@ $(p, q)$はあるプーリングの範囲$P_{ij}$における入力画像の位�
 
 Adam\cite{diederik15}は確率的最適化のためのパラメータ更新のアルゴリズムである。
 実験によって、Adamがニューラルネットワークに適用できること、及び、
-パラメータをSGDやAdamGradより速く収束させることが確かめられている。
-式\ref{eq:AdamUpdate}にAdamによるパラメータ$\mathbf{w}$の更新式を示す。
+パラメータをSGDやAdaGrad\cite{john12}より速く収束させることが
+確かめられている。
+式\ref{eq:AdamUpdate}にAdamによる目的関数$L$のパラメータ$\mathbf{w}$の
+更新式を示す。
+式\ref{eq:AdamUpdate}は、実際にはDiederikら\cite{diederik15}によって
+示されている逐次的なアルゴリズムによって効率良く実装できる。
 \begin{gather} \label{eq:AdamUpdate}
   \mathbf{w}_t = \mathbf{w}_{t - 1}
-                 - \alpha \frac{\mathbf{m}_t}{\sqrt{\mathbf{v}_t}}, \\
+                 - \alpha \frac{\mathbf{m}_t}
+                               {\sqrt{\mathbf{v}_t} + \epsilon}, \\
   \mathbf{m}_t = \frac{1 - \beta_1}{1 - {\beta_1}^t}
                  \sum^t_{i = 1} {\beta_1}^{t - i} \mathbf{g}_i, \nonumber \\
   \mathbf{v}_t = \frac{1 - \beta_2}{1 - {\beta_2}^t}
@@ -249,7 +254,7 @@ Adam\cite{diederik15}は確率的最適化のためのパラメータ更新の�
 ここで、$\mathbf{w}_t$は更新回数$t$におけるパラメータ$\mathbf{w}$を表す。
 $\mathbf{m}_t$と$\mathbf{v}_t$は更新回数$t$における
 パラメータ$\mathbf{w}$の一次・二次モーメントである。
-$\alpha$と$\beta_1$、$\beta_2$はAdamのパラメータである。
+$\alpha$と$\beta_1$、$\beta_2$、$\epsilon$はAdamのパラメータである。
 $\mathbf{g}_t$は更新回数$t$におけるパラメータ$\mathbf{w}$の勾配である。
 
 Adamの特徴として、$\alpha \frac{\mathbf{m}_t}{\sqrt{\mathbf{v}_t}}
@@ -261,10 +266,10 @@ $g_t$を定数倍しても変化しない。
 また、Diederikら\cite{diederik15}は
 $\frac{\mathbf{m}_t}{\sqrt{\mathbf{v}_t}}$をsignal-to-noise ratio (SNR)と
 呼んでいる。
-分子$\mathbf{m}_t$は、更新回数$t$までの更新幅が小さい、あるいは、
+SNRの分子$\mathbf{m}_t$は、更新回数$t$までの更新幅が小さい、あるいは、
 勾配の向きがよく変わっているとき小さくなる。
 よって、パラメータが最適解や局所解、鞍点付近にあるときは更新幅が小さくなり、
 それ以外のとき大きくなる。
-分母$\mathbf{v}_t$は、更新回数$t$までの更新幅が大きいとき大きくなる。
+SNRの分母$\mathbf{v}_t$は、更新回数$t$までの更新幅が大きいとき大きくなる。
 よって、パラメータが更新回数$t$までに大きく更新されているとき
 更新幅は小さくなる。

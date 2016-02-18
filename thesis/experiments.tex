@@ -28,14 +28,64 @@ ASVとはレビュー内で平均した文ベクトルであり、
 Weighted ASVとはレビュー内で重み付け平均によって圧縮された文ベクトルである。
 Weighted ASVにおいて重み付け平均の方法は提案手法と同様であるが、
 重み付け平均のハイパーパラメータは別に最適化した。
-データセットとしては、先行研究\cite{fujitani15}と同様に、
-ホテル予約サイト楽天トラベルにおけるレビュー337,266件からレビューの番号順に
-訓練データ300,000件、開発データ10,000件、評価データ10,000件を用いた。
 有意差検定にはマクネマー検定を用い、p値が0.05より小さいとき有意とした。
 また、RMSEの計算において正解または予測レーティングが0点であるものは
 評価から省いた。
 これは用いるデータセットのレビューにおいて、レーティングの0点は
 レーティングが付けられていないことを意味するためである。
+
+データセットとしては、先行研究\cite{fujitani15}と同様に、
+ホテル予約サイト楽天トラベルにおけるレビュー337,266件からレビューの番号順に
+訓練データ300,000件、開発データ10,000件、評価データ10,000件を用いた。
+楽天トラベルによって提供されている元のレビューデータは
+レーティングを含むファイルとレビューの文書を含むファイルとに分かれている。
+それぞれTab Separated Values (TSV)フォーマットで1行1レビューとして情報が
+記述されている。
+レーティングを含むファイルと文書を含むファイルのフォーマットを
+それぞれ図\ref{fig:RatingFileFormat}と図\ref{fig:DocumentFileFormat}に示す。
+レーティングを含むファイルからは、レビューのIDと
+「立地」から「総合」カテゴリまでのレーティングを取り出した。
+レビューの文書を含むファイルからは、レビューのIDと
+レビューの文書を取り出した。
+ただし、元のレビューの文書に含まれる「【ご利用の宿泊プラン】」以降の文字列は
+ユーザが記述したものではないため取り除いた。
+その後、レーティングとレビューの文書をレビューIDが一致するように組にした。
+このとき、レーティングを含むファイル、または、レビューの文書を含むファイルの
+どちらかにしか存在しないIDを持つレビューは取り除いた。
+\begin{figure}
+  第1フィールド（レビューのID）{[Tab]}第2フィールド{[Tab]} ... \\
+  第7フィールド（「立地」カテゴリのレーティング）{[Tab]} ... \\
+  第13フィールド（「総合」カテゴリのレーティング）
+  \caption{レーティングを含むTSVファイルのフォーマット}
+  \label{fig:RatingFileFormat}
+\end{figure}
+\begin{figure}
+  第1フィールド{[Tab]}第2フィールド（レビューの文書）{[Tab]} \\
+  第3フィールド（レビューのID）{[Tab]} ...
+  \caption{文書を含むTSVファイルのフォーマット}
+  \label{fig:DocumentFileFormat}
+\end{figure}
+
+レビューの文書に対する前処理について以下に示す。
+まず、全てのレビューの文書に対して文字コードをUTF-8に変換し、
+文字の正規化処理を行った。
+記号「！”＃＄％＆’（）＊＋，−．／：；＜＞？＠［￥］＾＿｀｛｜｝
+\unicode{301C}」は全てNFKC形式で正規化した。
+記号「\unicode{02D7}\unicode{058A}\unicode{2011}\unicode{2012}\unicode{2013}
+\unicode{2043}\unicode{207B}\unicode{208B}\unicode{2212}」
+は全て記号「-」で置き換えた。
+記号「\unicode{FE63}－ｰ—―─━ー」は全て記号「ー」で置き換えた。
+チルダ記号「\unicode{007E}\unicode{223C}\unicode{223E}\unicode{301C}
+\unicode{3030}\unicode{FF5E}」は全て削除した。
+次に、各レビューの文書を文に分割した。
+「。」、「.」、「!」、「?」を文の終端文字とし、
+文の終端文字でない文字の繰り返しと文の終端文字または文書の終端の組を
+一つの文として正規表現によって解析した。
+ただし、文が1つも解析できなかった文書については、
+文書全体の文字列をその文書に含まれる唯一の文とした。
+最後に、形態素解析には形態素解析器MeCabを用いた、
+辞書にはIPA辞書を用いた。
+単語の情報は表層のみを利用し、表層が無い単語は取り除いた。
 
 %比較手法として、
 %及び、提案手法における分類器の入力を変えた2つの手法、
@@ -95,32 +145,15 @@ Weighted ASVと提案手法において圧縮された文ベクトルの数は
   \end{tabular}
 \end{table}
 
-レビューに対する前処理について以下に示す。
-まず、レビューの文書に対して、文字の正規化処理を行った。
-記号「！”＃＄％＆’（）＊＋，−．／：；＜＞？＠［￥］＾＿｀｛｜｝
-\unicode{301C}」は全てNFKC形式で正規化した。
-記号「\unicode{02D7}\unicode{058A}\unicode{2011}\unicode{2012}\unicode{2013}
-\unicode{2043}\unicode{207B}\unicode{208B}\unicode{2212}」
-は全て記号「-」で置き換えた。
-記号「\unicode{FE63}－ｰ—―─━ー」は全て記号「ー」で置き換えた。
-チルダ記号「\unicode{007E}\unicode{223C}\unicode{223E}\unicode{301C}
-\unicode{3030}\unicode{FF5E}」は全て削除した。
-次に、文の解析は正規表現を用いて行った。
-「。」、「.」、「!」、「?」を文の終端文字とし、
-解析した最後の文の次の文字から
-文の終端文字または文書の終端までを一つの文として解析した。
-最後に、形態素解析には形態素解析器MeCabを用いた、
-辞書にはIPA辞書を用いた。
-単語の情報は表層のみを利用し、表層が無いものは取り除いた。
-
 
 \subsection{結果}
 
 まず、提案手法と3つの比較手法、従来手法\cite{fujitani15}を
-正答率で比較したものを表\ref{tab:Accuracies}に示す。
+正答率で比較したものを表\ref{tab:AccuraciesOfMethods}に示す。
 また、表\ref{tab:AccuraciesPerCategory}に提案手法と
 従来手法\cite{fujitani15}におけるカテゴリ別の正答率を示す。
-表\ref{tab:Accuracies}において、
+それをグラフにしたものを図\ref{tab:AccuraciesPerCategory}に示す。
+表\ref{tab:AccuraciesOfMethods}において、
 提案手法が従来手法\cite{fujitani15}の正答率を0.0198有意に上回っている。
 また、提案手法がDVの正答率を0.0050有意に上回っている。
 Weighted ASVがASVを0.029有意に上回っている。
@@ -128,7 +161,7 @@ Weighted ASVがASVを0.029有意に上回っている。
 \begin{table}
   \caption{各手法における正答率}
   \centering
-  \begin{tabular}{l | r} \label{tab:Accuracies}
+  \begin{tabular}{l | r} \label{tab:AccuraciesOfMethods}
     手法 & 正答率 \\
     \hline
     従来手法\cite{fujitani15} & 0.4832 \\
@@ -151,15 +184,17 @@ Weighted ASVがASVを0.029有意に上回っている。
   \end{tabular}
 \end{table}
 
-次に、表\ref{tab:RMSEs}にレーティングのRMSEを測定した結果を示す。
+次に、表\ref{tab:RMSEsPerCategory}にレーティングのRMSEを測定した結果を示す。
+それをグラフにしたものを図\ref{tab:RMSEsPerCategory}に示す。
 提案手法は従来手法\cite{fujitani15}が弱点としていた
 食事と風呂のカテゴリにおいてそれぞれ0.60及び0.24だけ低い誤差を示した。
 また、その他全てのカテゴリにおいても提案手法は従来手法より低い誤差を示した。
 
 \begin{table}
-  \caption{提案手法と従来手法\cite{fujitani15}におけるレーティングのRMSE}
+  \caption{提案手法と従来手法\cite{fujitani15}におけるカテゴリ別の
+           レーティングのRMSE}
   \centering
-  \begin{tabular}{r | r r r r r r r} \label{tab:RMSEs}
+  \begin{tabular}{r | r r r r r r r} \label{tab:RMSEsPerCategory}
     手法 & 立地 & 部屋 & 食事 & 風呂 & サービス & 設備 & 総合 \\
     \hline
     従来手法\cite{fujitani15}
@@ -226,7 +261,7 @@ Weighted ASVがASVを0.029有意に上回っている。
 \begin{table}
   \caption{カテゴリ毎の正解レーティング件数}
   \centering
-  \begin{tabular}{r | r r r r r r r | r} \label{tab:AsnwerRatings}
+  \begin{tabular}{r | r r r r r r r | r} \label{tab:AnswerRatings}
     レーティング & 立地 & 部屋 & 食事 & 風呂 & サービス & 設備 & 総合
       & 全カテゴリ \\
     \hline
@@ -254,3 +289,16 @@ Weighted ASVがASVを0.029有意に上回っている。
        & \overall & \allcategories}
   \end{tabular}
 \end{table}
+
+\begin{figure}
+  \includegraphics{fig/graph_of_accuracies_per_category.pdf}
+  \caption{提案手法と従来手法\cite{fujitani15}におけるカテゴリ別の正答率}
+  \label{fig:AccuraciesPerCategory}
+\end{figure}
+
+\begin{figure}
+  \includegraphics{fig/graph_of_rmses_per_category.pdf}
+  \caption{提案手法と従来手法\cite{fujitani15}におけるカテゴリ別の
+           レーティングのRMSE}
+  \label{fig:RMSEsPerCategory}
+\end{figure}
