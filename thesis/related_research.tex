@@ -23,13 +23,12 @@ bi-gramマルコフモデルによるものについて説明する。
 再び現在の位置から始まる部分文字列に一致する単語を辞書で検索する。
 これを繰り返していくことによって、文字列の終端まで形態素解析を行う。
 
-これに対して、bi-gramマルコフモデルによる手法では、
-単語のbi-gram確率を考えこの積が文字列全体で最大となるように文字列を
-単語に分割する。
+これに対して、bi-gramマルコフモデルによる手法では単語のbi-gram確率を考え、
+この積が文字列全体で最大となるように文字列を単語に分割する。
 以下に最も適切な単語列$\hat{W}$を求める式を示す。
 \begin{gather}
-  \hat{W} = \text{argmax}_{W} P(W) \\
-  P(W) = \sum^{n}_{i = 1} P(w_i | w_{i - 1}) \nonumber \\
+  \hat{W} = \text{argmax}_{W} P(W), \\
+  P(W) = \sum^{n}_{i = 1} P(w_i | w_{i - 1}), \nonumber \\
   W = w_1, w_2, ... , w_n \nonumber
 \end{gather}
 ここで、$W$は元の文字列から分割された単語列であり、
@@ -51,13 +50,13 @@ bi-gram確率である。
 一時的に減らすことによって正則化を行う方法である。
 ある層に対してドロップアウトを行うには、その層が持つニューロンの出力値を
 確率的に0とする。
-また、出力値が0となったニューロンに対する重みの勾配は0となるため、
-そのニューロンに対する重みはその学習回において更新されない。
+%また、出力値が0となったニューロンに対する重みの勾配は0となるため、
+%そのニューロンに対する重みはその学習回において更新されない。
 これを各学習回で行うことで、ニューラルネットワーク全体を学習する。
 
 次に、重み減衰について説明する。
-重み減衰とは、ニューラルネットワークの各重みについて各重みの大きさに応じて
-その重みを学習回毎に減少させる正則化手法である。
+重み減衰とは、ニューラルネットワークの各重みをその大きさに応じて
+学習回毎に減少させる正則化の手法である。
 重み減衰を行うためには、ニューラルネットワークの最小化すべき目的関数に対して
 各重みの2ノルムを足し合わせる。
 式\ref{eq:NNObjectiveWithWeightDecay}に、重み減衰を適用した目的関数$L'$示す。
@@ -91,9 +90,9 @@ Multi-Instance Multi-Label learning for Relation Extraction (MIML-RE)
 文毎のレーティングからレビュー全体のレーティングを予測する際の
 カテゴリ間の繋がりを手動で変化させカテゴリ間の関係性を考慮している。
 各文の素性にはBag Of Words (BOW)またはBag Of n-gramsを用いている。
-各文毎に隠れレーティングを予測することによって
-0.4832の正答率が得られることが示された。
-また、カテゴリ間の繋がりによって正答率が変化することも示されている。
+藤谷ら\cite{fujitani15}は各文毎に隠れレーティングを予測することによって
+0.4832の正答率が得られることを示した。
+また、カテゴリ間の繋がりによって正答率が変化することを示した。
 
 \begin{figure}
   \includegraphics[0.5]
@@ -131,14 +130,16 @@ PV-DMはBOWと異なり、単語の並び順を考慮した文や文書の分散
 その際、現在の単語及びその周辺の単語、現在の文書について、
 式\ref{eq:ParagraphVector}に示す目的関数$L$を最大化するように
 各パラメータの学習を行う。
-\begin{gather}
-  L = \frac{1}{T} \sum^{T}_{t = k} \log p(w_t | w_{t-k}, ..., w_{t-1}),
-    \label{eq:ParagraphVector} \\
+\begin{gather} \label{eq:ParagraphVector}
+  L = \sum_d L_d \\
+  L_d = \frac{1}{T} \sum^{T}_{t = k} \log p(w_t | w_{t-k}, ..., w_{t-1}),
+     \nonumber \\
   p(w_t | w_{t-k}, ..., w_{t-1}) = \frac{e^{y_{w_t}}}{\sum_i e^{y_i}},
     \nonumber \\
   y = b + Uh(w_{t-k}, ..., w_{t-1}, d; W, D) \nonumber
 \end{gather}
-ここで、$d$は文書、$w_i$は単語、$W$は全ての単語の分散表現を表す行列、
+ここで、$L_d$は文書$d$の目的関数である。
+$w_i$は単語、$W$は全ての単語の分散表現を表す行列、
 $D$は全ての文書の分散表現を表す行列である。
 $k$はウィンドウサイズ、$T$は現在の文書に含まれる単語数である。
 ある単語の周辺を表す区間をウィンドウという。
@@ -191,11 +192,13 @@ Rieら\cite{rie14}、Duyuら\cite{duyu15}等によって提案されている。
 畳み込み層とは、前の層の各ニューロンが
 それと位置の近い次の層のニューロンとしか結合しないように
 全結合層を単純化した層である。
-具体的にはある$H×H$の大きさを持つフィルタを考え、
+具体的にはある$H \times H$の大きさを持つフィルタを考え、
 それを畳み込み層の入力値に適用して値を出力する。
 図\ref{fig:ConvolutionalLayer}にその概略を示す。
-\begin{figure} \label{fig:ConvolutionalLayer}
+\begin{figure}
   \includegraphics[0.7]{fig/convolutional_layer_with_one_filter.pdf}
+  \caption{畳み込み層の概略}
+  \label{fig:ConvolutionalLayer}
 \end{figure}
 式\ref{eq:ConvolutionalLayerFilter}に、畳み込み層のフィルタ$f$によって
 処理された出力値$u_{fij}$を示す。
@@ -210,15 +213,16 @@ $b_{fij}$はフィルタ$f$のバイアスである。
 ただし、バイアスの値は位置によらず一つのフィルタ内で共有することが多い。
 $(i, j)$は出力画像における位置である。
 $(p, q)$はフィルタ$f$における位置である。
-$u_{fij}$の値に活性化関数を適用し最終的な畳み込み層の出力値$z_{fij}$を
+最終的な畳み込み層の出力値$z_{fij}$は$u_{fij}$の値に活性化関数を適用し
 計算する。
 \begin{gather} \label{eq:ConvolutionalLayerOutput}
   z_{fij} = \sigma(u_{fij})
 \end{gather}
 ここで、$\sigma$は活性化関数である。
+実際の畳み込み層は複数のフィルタを持つことが多い。
 
-次に、プーリング層とは入力値の局所的な平均や最大値を取る層である。
-これによって、入力値における特徴の位置に関するノイズを緩衝できる。
+次に、プーリング層とは入力画像の局所的な平均や最大値を取る層である。
+これによって、入力画像における特徴の位置に関するノイズを緩衝できる。
 式\ref{eq:PoolingLayer}に、平均プーリング層の出力値の位置$(i, j)$における
 出力値$u_{cij}$を示す。
 \begin{gather} \label{eq:PoolingLayer}
@@ -228,7 +232,7 @@ $u_{fij}$の値に活性化関数を適用し最終的な畳み込み層の出�
 $P_{ij}$は出力画像の位置によるプーリングの範囲であり、位置の集合で表される。
 $c$はチャネルである。
 $(i, j)$は出力画像における位置である。
-$(p, q)$はあるプーリングの範囲$P_{ij}$における入力画像の位置である。
+$(p, q)$はあるプーリングの範囲$P_{ij}$における入力画像での位置である。
 
 
 \subsection{Adam}
@@ -237,39 +241,39 @@ Adam\cite{diederik15}は確率的最適化のためのパラメータ更新の�
 実験によって、Adamがニューラルネットワークに適用できること、及び、
 パラメータをSGDやAdaGrad\cite{john12}より速く収束させることが
 確かめられている。
-式\ref{eq:AdamUpdate}にAdamによる目的関数$L$のパラメータ$\mathbf{w}$の
+式\ref{eq:AdamUpdate}にAdamによる目的関数$L$のパラメータ$\vc{w}$の
 更新式を示す。
 式\ref{eq:AdamUpdate}は、実際にはDiederikら\cite{diederik15}によって
 示されている逐次的なアルゴリズムによって効率良く実装できる。
 \begin{gather} \label{eq:AdamUpdate}
-  \mathbf{w}_t = \mathbf{w}_{t - 1}
-                 - \alpha \frac{\mathbf{m}_t}
-                               {\sqrt{\mathbf{v}_t} + \epsilon}, \\
-  \mathbf{m}_t = \frac{1 - \beta_1}{1 - {\beta_1}^t}
-                 \sum^t_{i = 1} {\beta_1}^{t - i} \mathbf{g}_i, \nonumber \\
-  \mathbf{v}_t = \frac{1 - \beta_2}{1 - {\beta_2}^t}
-                 \sum^t_{i = 1} {\beta_2}^{t - i} \mathbf{g}_i, \nonumber \\
-  \mathbf{g}_i = \frac{\partial L_i}{\partial \mathbf{w}_i} \nonumber
+  \vc{w}_t = \vc{w}_{t - 1}
+                 - \alpha \frac{\vc{m}_t}
+                               {\sqrt{\vc{v}_t} + \epsilon}, \\
+  \vc{m}_t = \frac{1 - \beta_1}{1 - {\beta_1}^t}
+                 \sum^t_{i = 1} {\beta_1}^{t - i} \vc{g}_i, \nonumber \\
+  \vc{v}_t = \frac{1 - \beta_2}{1 - {\beta_2}^t}
+                 \sum^t_{i = 1} {\beta_2}^{t - i} {\vc{g}_i}^2, \nonumber \\
+  \vc{g}_i = \frac{\partial L_i}{\partial \vc{w}_i} \nonumber
 \end{gather}
-ここで、$\mathbf{w}_t$は更新回数$t$におけるパラメータ$\mathbf{w}$を表す。
-$\mathbf{m}_t$と$\mathbf{v}_t$は更新回数$t$における
-パラメータ$\mathbf{w}$の一次・二次モーメントである。
+ここで、$\vc{w}_t$は更新回数$t$におけるパラメータ$\vc{w}$を表す。
+$\vc{m}_t$と$\vc{v}_t$は更新回数$t$における
+パラメータ$\vc{w}$の一次・二次モーメントである。
 $\alpha$と$\beta_1$、$\beta_2$、$\epsilon$はAdamのパラメータである。
-$\mathbf{g}_t$は更新回数$t$におけるパラメータ$\mathbf{w}$の勾配である。
+$\vc{g}_t$は更新回数$t$におけるパラメータ$\vc{w}$の勾配である。
 
-Adamの特徴として、$\alpha \frac{\mathbf{m}_t}{\sqrt{\mathbf{v}_t}}
+Adamの特徴として、$\alpha \frac{\vc{m}_t}{\sqrt{\vc{v}_t}}
 \underset{\approx}{<} \alpha$である。
-$\alpha \frac{\mathbf{m}_t}{\sqrt{\mathbf{v}_t}}$は全ての$t$について
+$\alpha \frac{\vc{m}_t}{\sqrt{\vc{v}_t}}$は全ての$t$について
 $g_t$を定数倍しても変化しない。
-よって、更新幅のおおまかな上限をデータに依らず$\alpha$によって
-決定することができる。
+よって、更新幅の大まかな上限を実際に計算される勾配$g_t$に依らず
+$\alpha$のみによって決定することができる。
 また、Diederikら\cite{diederik15}は
-$\frac{\mathbf{m}_t}{\sqrt{\mathbf{v}_t}}$をsignal-to-noise ratio (SNR)と
+$\frac{\vc{m}_t}{\sqrt{\vc{v}_t}}$をsignal-to-noise ratio (SNR)と
 呼んでいる。
-SNRの分子$\mathbf{m}_t$は、更新回数$t$までの更新幅が小さい、あるいは、
+SNRの分子$\vc{m}_t$は、更新回数$t$までの更新幅が小さい、あるいは、
 勾配の向きがよく変わっているとき小さくなる。
 よって、パラメータが最適解や局所解、鞍点付近にあるときは更新幅が小さくなり、
 それ以外のとき大きくなる。
-SNRの分母$\mathbf{v}_t$は、更新回数$t$までの更新幅が大きいとき大きくなる。
-よって、パラメータが更新回数$t$までに大きく更新されているとき
-更新幅は小さくなる。
+%SNRの分母$\vc{v}_t$は、更新回数$t$までの更新幅が大きいとき大きくなる。
+%よって、パラメータが更新回数$t$までに大きく更新されているとき
+%更新幅は小さくなる。
