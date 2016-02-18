@@ -125,6 +125,7 @@ Weighted ASVと提案手法において圧縮された文ベクトルの数は
 
 まず、提案手法と3つの比較手法、従来手法\cite{fujitani15}を
 正答率で比較したものを表\ref{tab:AccuraciesOfMethods}に示す。
+そのグラフを図\ref{fig:AccuraciesOfMethods}に示す。
 また、表\ref{tab:AccuraciesPerCategory}に提案手法と
 従来手法\cite{fujitani15}におけるカテゴリ別の正答率を示す。
 そのグラフを図\ref{tab:AccuraciesPerCategory}に示す。
@@ -148,6 +149,12 @@ Weighted ASVがASVを0.0029有意に上回っている。
   \end{tabular}
 \end{table}
 
+\begin{figure}
+  \includegraphics{fig/graph_of_accuracies_of_methods.pdf}
+  \caption{各手法における正答率}
+  \label{fig:AccuraciesOfMethods}
+\end{figure}
+
 \begin{table}
   \caption{提案手法と従来手法\cite{fujitani15}におけるカテゴリ別の正答率}
   \centering
@@ -159,6 +166,12 @@ Weighted ASVがASVを0.0029有意に上回っている。
     提案手法 & 0.5140 & 0.4984 & 0.5353 & 0.4347 & 0.5116 & 0.4479 & 0.5794 \\
   \end{tabular}
 \end{table}
+
+\begin{figure}
+  \includegraphics{fig/graph_of_accuracies_per_category.pdf}
+  \caption{提案手法と従来手法\cite{fujitani15}におけるカテゴリ別の正答率}
+  \label{fig:AccuraciesPerCategory}
+\end{figure}
 
 次に、表\ref{tab:RMSEsPerCategory}にレーティングのRMSEを測定した結果を示す。
 そのグラフを図\ref{tab:RMSEsPerCategory}に示す。
@@ -178,6 +191,13 @@ Weighted ASVがASVを0.0029有意に上回っている。
     提案手法 & 0.88 & 0.88 & 0.93 & 1.03 & 0.86 & 0.90 & 0.73 \\
   \end{tabular}
 \end{table}
+
+\begin{figure}
+  \includegraphics{fig/graph_of_rmses_per_category.pdf}
+  \caption{提案手法と従来手法\cite{fujitani15}におけるカテゴリ別の
+           レーティングのRMSE}
+  \label{fig:RMSEsPerCategory}
+\end{figure}
 
 最後に、正答率を測定する実験における、提案手法の精度と再現率、F値を
 それぞれ表\ref{tab:ProposedMethodPrecision}と
@@ -266,16 +286,3 @@ Weighted ASVがASVを0.0029有意に上回っている。
        & \overall & \allcategories}
   \end{tabular}
 \end{table}
-
-\begin{figure}
-  \includegraphics{fig/graph_of_accuracies_per_category.pdf}
-  \caption{提案手法と従来手法\cite{fujitani15}におけるカテゴリ別の正答率}
-  \label{fig:AccuraciesPerCategory}
-\end{figure}
-
-\begin{figure}
-  \includegraphics{fig/graph_of_rmses_per_category.pdf}
-  \caption{提案手法と従来手法\cite{fujitani15}におけるカテゴリ別の
-           レーティングのRMSE}
-  \label{fig:RMSEsPerCategory}
-\end{figure}
