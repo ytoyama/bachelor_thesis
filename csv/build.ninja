@@ -44,10 +44,10 @@ rule copy_with_classes
   command = paste -d "," $class_column_file $in > $out
 
 rule format_csv
-  command = $format_csv -f $number_format $in > $out
+  command = $format_csv -f $number_format -n "N/A" $in > $out
 
 rule format_csv_with_classes
-  command = $format_csv -f $number_format $in > $out.tmp && $
+  command = $format_csv -f $number_format -n "N/A" $in > $out.tmp && $
             paste -d "," $class_column_file $out.tmp > $out && $
             $rm $out.tmp classes.tmp
 
