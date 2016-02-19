@@ -89,10 +89,7 @@ Weighted ASVにおいて重み付け平均の方法は提案手法と同様で�
 一つの文として正規表現によって解析した。
 ただし、文が1つも解析できなかった文書については、
 文書全体の文字列をその文書に含まれる唯一の文とした。
-最後に、形態素解析には形態素解析器MeCabを用いた、
-辞書にはIPA辞書を用いた。
-単語の情報は表層のみを利用し、MeCabによって出力される
-表層が無い特殊な単語は取り除いた。
+最後に、形態素解析を行い各文を単語に分割した。
 
 表\ref{tab:ParametersOfMethods}に各手法におけるニューラルネットワークの
 パラメータ設定を示す。
@@ -117,6 +114,51 @@ Weighted ASVと提案手法において圧縮された文ベクトルの数は
     ASV & 55 & 256 \\
     Weighted ASV & 24 & 256 \\
     提案手法 & 30 & 512 \\
+  \end{tabular}
+\end{table}
+
+最後に、実験環境及びアルゴリズムの実装について説明する。
+表\ref{tab:SoftwareVersions}に利用した各ソフトウェアのバージョンを示す。
+表\ref{tab:HardwareInformation}に利用した各ハードウェアの情報を示す。
+形態素解析にはbi-gramマルコフモデルを用いた形態素解析器の実装である
+MeCabを用いた。
+その辞書にはIPA辞書を用いた。
+解析結果の情報は単語の表層のみを利用し、MeCabによって出力される
+表層が無い特殊な単語は取り除いた。
+次に、PV-DMの実装には橋本\cite{hashimoto15}による実装を用いた。
+また、ニューラルネットワークによる分類器の実装にはPython言語のライブラリである
+chainerを用いた。
+chainerのバックエンドとしては、CUDA及びそのニューラルネットワーク用の
+ライブラリであるcuDNNを用いGPUにより計算を行った。
+
+\begin{table}
+  \caption{実験に用いた各ソフトウェアのバージョン}
+  \begin{tabular}{l | l} \label{tab:SoftwareVersions}
+    ソフトウェア & バージョン \\
+    \hline
+    Linux (OS) & 4.2.8 \\
+    Python (Python言語インタープリタ) & 3.4.3 \\
+    chainer (ニューラルネットワークのライブラリ） & 1.5.1 \\
+    clang (C言語コンパイラ) & 3.7.0 \\
+    MeCab (形態素解析器) & 0.996 \\
+    CUDA & 7.5 \\
+    cuDNN & 7.0 \\
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \caption{実験に用いた各ハードウェアの情報}
+  \begin{tabular}{l | l} \label{tab:HardwareInformation}
+    項目 & 内容 \\
+    \hline
+    CPU & Intel\textsuperscript{\textregistered} Core\texttrademark\hspace{1ex}
+          i7-5960X \\
+    CPUコア数 & 8コア （ハイパースレッディングにより仮想16コア）\\
+    CPUクロック数 & 3.00GHz \\
+    L1、L2、l3キャッシュ容量 & 512KB, 2MB, 20MB \\
+    メモリ容量 & 64GB \\
+    マザーボード & ASUSTek COMPUTER INC. X99-E WS \\
+    GPU & NVIDIA GeForce GTX TITAN X \\
   \end{tabular}
 \end{table}
 
