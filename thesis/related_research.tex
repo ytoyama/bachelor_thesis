@@ -329,9 +329,11 @@ bi-gram確率である。
 
 \subsection{Adam} \label{ssec:Adam}
 
-Adam\cite{diederik15}は確率的最適化のためのパラメータ更新のアルゴリズムである。
+Adaptive Moment estimation (Adam)\cite{diederik15}は
+確率的最適化のためのパラメータ更新のアルゴリズムである。
 実験によって、Adamがニューラルネットワークに適用できること、及び、
-パラメータをSGDやAdaGrad\cite{john12}より速く収束させることが
+パラメータをStochastic Gradient Descent (SGD)や
+Adaptive Gradient algorithm (AdaGrad)\cite{john12}より速く収束させることが
 確かめられている。
 式\ref{eq:AdamUpdate}にAdamによる目的関数$L$のパラメータ$\vc{w}$の
 更新式を示す。
