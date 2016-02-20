@@ -22,12 +22,6 @@
 PV-DMはBOWと異なり、単語の並び順を考慮した文や文書の分散表現を
 生成することができる。
 
-\begin{figure}
-  \includegraphics[0.5]{fig/paragraph_vector_v2.pdf}
-  \caption{パラグラフベクトルの学習の概略}
-  \label{fig:ParagraphVector}
-\end{figure}
-
 以下に具体的なアルゴリズムを示す。
 ここでは文書の意味表現を学習する場合について考える。
 学習の概略を図\ref{fig:ParagraphVector}に示す。
@@ -60,6 +54,12 @@ PV-DMによって生成したレビューの文書のベクトルを
 レーティング予測においてBOW等より高い正答率が得られることが示されている。
 しかし、文書全体にパラグラフベクトルを用いる場合、文間の関係が
 予測時に考慮できない。
+
+\begin{figure}
+  \includegraphics[0.5]{fig/paragraph_vector_v2.pdf}
+  \caption{パラグラフベクトルの学習の概略}
+  \label{fig:ParagraphVector}
+\end{figure}
 
 
 \subsection{深層学習} \label{ssec:DeepLearning}
