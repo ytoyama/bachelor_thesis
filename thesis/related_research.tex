@@ -225,7 +225,7 @@ Dynamic k-max pooling層は、プーリングの範囲からk個の最大値を
 このとき、$l$番目の畳み込み層の後のプーリングにおける$k$の値、$k_l$は
 式\ref{KOfDynamicKMaxPooling}によって入力文毎に計算される。
 \begin{gather} \label{KOfDynamicKMaxPooling}
-  k_l = \max ( k_{top}, \lceil \frac{L - l}{L}s \rceil )
+  k_l = \max \left( k_{top}, \lceil \frac{L - l}{L}s \rceil \right)
 \end{gather}
 ここで、$top$は最後の畳み込み層であり、
 $L$はDCNNに含まれる畳み込み層の総数である。
