@@ -8,12 +8,9 @@ thesis_pdf = thesis.pdf
 
 .SUFFIXES: .tex .pdf
 .tex.pdf:
-	: ${src::=${.IMPSRC:.tex=_tmp_by_make.tex}}
 	: ${jobname::=${.TARGET:.pdf=}}
-	cat ${.IMPSRC} | tr "、。" "，．" > ${src}
-	${latex} --jobname=${jobname} ${src} # for forward references
-	${latex} --jobname=${jobname} ${src}
-	${rm} ${src}
+	${latex} --jobname=${jobname} ${.IMPSRC} # for forward references
+	${latex} --jobname=${jobname} ${.IMPSRC}
 
 .PHONY: all
 all: ${thesis_pdf}
