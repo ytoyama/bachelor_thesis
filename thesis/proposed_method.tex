@@ -205,7 +205,7 @@ $\#part$は重み付け平均された文ベクトルの数である。
         d_{nck} \log{y_{ck}(x_n; w)},
   \label{eq:NNObjective} \\
   y_{ck}(x_n; w) = \frac{e^{u_{ck}(x_n; w)}}
-                        {\sum^{K}_{j = 0} e^{u_{cj}(x_n; w)}} \nonumber
+                        {\sum^{K}_{j = 1} e^{u_{cj}(x_n; w)}} \nonumber
 \end{gather}
 ここで、$u_{ck}$は出力層のニューロンの出力値、$y_{ck}$はカテゴリ$c$において
 クラス$k$が選ばれる確率、$w$はニューラルネットワークのパラメータである。
