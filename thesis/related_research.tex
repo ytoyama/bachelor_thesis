@@ -2,13 +2,16 @@
 
 多カテゴリにおけるレーティング予測に関する従来研究、
 及び、提案手法に関連した研究や技術について述べる。
-はじめに提案手法で用いているパラグラフベクトルと深層学習について述べる。
-次に、レーティング予測について、多カテゴリのものを対象とした従来手法と
+\secref{ssec:ParagraphVector}と\secref{ssec:DeepLearning}において、
+提案手法で用いているパラグラフベクトルと深層学習について述べる。
+\secref{ssec:RatingPrediction}では、レーティング予測について
+多カテゴリのものを対象とした従来手法と
 ニューラルネットワークを用いた手法について述べる。
-最後に、その他本研究で利用した研究や技術について述べる。
+\secref{ssec:MorphologicalAnalysis}と\secref{ssec:Adam}において、
+その他本研究で利用した研究や技術について述べる。
 
 
-\subsection{パラグラフベクトル}
+\subsection{パラグラフベクトル} \label{ssec:ParagraphVector}
 
 パラグラフベクトルは、文や文書といった大きな単位の言語表現の意味表現を
 学習する手法である。
@@ -59,7 +62,7 @@ PV-DMによって生成したレビューの文書のベクトルを
 予測時に考慮できない。
 
 
-\subsection{深層学習}
+\subsection{深層学習} \label{ssec:DeepLearning}
 
 深層学習とは、多層のニューラルネットワークを用いた
 機械学習の手法の総称である\cite{takayuki15}。
@@ -161,7 +164,7 @@ $(i, j)$は出力画像における位置である。
 $(p, q)$はあるプーリングの範囲$P_{ij}$における入力画像での位置である。
 
 
-\subsection{レーティング予測}
+\subsection{レーティング予測} \label{ssec:RatingPrediction}
 
 商品レビューにおけるレーティング予測とは、レビューの文書から
 そのレビューに対して実際にユーザが付与したレーティングを予測する問題である。
@@ -292,7 +295,7 @@ Duyuらはレビューのデータセットに対して、
 適用しただけではカテゴリ間の関係を考慮することができない。
 
 
-\subsection{形態素解析}
+\subsection{形態素解析} \label{ssec:MorphologicalAnalysis}
 
 形態素解析とは、文等の文字列を形態素に分割する処理である\cite{hozumi06}。
 ここで、形態素とは意味を持った言語の最小単位である。
@@ -324,7 +327,7 @@ $w_i$は単語、$P(w_i | w_{i - 1})$は単語$w_i$と単語$w_{i - 1}$の
 bi-gram確率である。
 
 
-\subsection{Adam}
+\subsection{Adam} \label{ssec:Adam}
 
 Adam\cite{diederik15}は確率的最適化のためのパラメータ更新のアルゴリズムである。
 実験によって、Adamがニューラルネットワークに適用できること、及び、
