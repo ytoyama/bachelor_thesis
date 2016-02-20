@@ -13,9 +13,46 @@
 
 \subsection{実験設定}
 
-実験には、正答率を測定する実験と
-提案手法の予測レーティングと正解レーティングの平均二乗誤差
-(Root Mean Square Error; RMSE)を測定する実験の2つを行った。
+各手法のレーティング予測における正答率を測定する実験を行った。
+さらに、その実験において提案手法の予測レーティングと正解レーティングの
+平均二乗誤差 (Root Mean Square Error; RMSE)、及び、
+提案手法の精度と再現率、F値を算出した。
+ここで、正答率は式\ref{eq:Accuracy}で算出される。
+\begin{gather} \label{eq:Accuracy}
+  \textexpr{正答率}
+    = \frac{\textexpr{各評価レビュー中で手法が正解したカテゴリの総数}}
+           {\textexpr{評価レビューの総数} \times \textexpr{カテゴリ数}}
+\end{gather}
+RMSEは式\ref{eq:RMSE}で算出される。
+\begin{gather} \label{eq:RMSE}
+  \textexpr{RMSE}
+    = \sqrt{\frac{\sum_d \sum_c (r_{d,c,predict} - r_{d,c,answer})^2}
+                 {\textexpr{評価レビューの総数} \times \textexpr{カテゴリ数}}}
+\end{gather}
+ここで、$d$は評価レビュー、$c$はカテゴリである。
+$r_{d,c,predict}$はレビュー$d$、カテゴリ$c$における予測レーティングの値である。
+$r_{d,c,answer}$はレビュー$d$、カテゴリ$c$における正解レーティングの値である。
+精度は式\ref{eq:Precision}で算出される。
+\begin{gather} \label{eq:Precision}
+  \textexpr{精度}
+    = \frac{\textexpr{あるレーティング値において評価レビュー中で
+                      手法が正解したカテゴリの総数}}
+           {\textexpr{あるレーティング値を予測された評価レビューの総数}}
+\end{gather}
+再現率は式\ref{eq:Recall}で算出される。
+\begin{gather} \label{eq:Recall}
+  \textexpr{再現率}
+    = \frac{\textexpr{あるレーティング値において評価レビュー中で
+                      手法が正解したカテゴリの総数}}
+           {\textexpr{あるレーティング値を正解レーティングに持つ
+                      評価レビューの総数}}
+\end{gather}
+F値は式\ref{eq:FValue}で算出される。
+\begin{gather} \label{eq:FValue}
+  \textexpr{F値}
+    = \frac{2 \times \textexpr{精度} \times \textexpr{再現率}}
+           {\textexpr{精度} + \textexpr{再現率}}
+\end{gather}
 比較手法として、提案手法における分類器の入力をそれぞれ
 (1) DV (Document Vector)、
 (2) ASV (Averaged Sentence Vector)、
@@ -135,8 +172,8 @@ chainerのバックエンドとしては、CUDA及びそのニューラルネッ
   \begin{tabular}{l | l} \label{tab:SoftwareVersions}
     ソフトウェア & バージョン \\
     \hline
-    Linux (カーネル) & 4.2.8 \\
     Fedora (OS) & 23 \\
+    Linux (カーネル) & 4.2.8 \\
     Python (Python言語インタープリタ) & 3.4.3 \\
     chainer (ニューラルネットワークのライブラリ） & 1.5.1 \\
     clang (C言語コンパイラ) & 3.7.0 \\
@@ -164,6 +201,11 @@ chainerのバックエンドとしては、CUDA及びそのニューラルネッ
 
 
 \subsection{結果}
+
+正答率を測定実験における各手法の正答率、及び、
+提案手法の精度、再現率、F値を示す。
+また、提案手法と従来手法\cite{fujitani15}をカテゴリ別の正答率とRMSEにおいて
+比較する。
 
 まず、提案手法と3つの比較手法、従来手法\cite{fujitani15}を
 正答率で比較したものを表\ref{tab:AccuraciesOfMethods}に示す。
