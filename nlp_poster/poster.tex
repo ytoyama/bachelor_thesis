@@ -272,8 +272,11 @@
           \item データセット：楽天トラベルのレビュー約330,000件
           \item 提案手法の分類器の入力を変更した3つの比較手法
             \begin{enumerate}
-              \item Document Vector (DV)：レビュー全体の文書ベクトル
-              \item Averaged Sentence Vector (ASV)：平均した文ベクトル
+              %\item Document Vector (DV)：レビュー全体の文書ベクトル
+              %\item Averaged Sentence Vector (ASV)：平均した文ベクトル
+              %\item Weighted ASV：重み付け平均した文ベクトル
+              \item Document Vector (DV)：文書ベクトル
+              \item Averaged Sentence Vector (ASV)：平均文ベクトル
               \item Weighted ASV：重み付け平均した文ベクトル
             \end{enumerate}
         \end{itemize}
@@ -291,6 +294,7 @@
     %}{0.475\textwidth}{
       \begin{table}
         \centering
+        %\caption*{実験結果. RMSEは「総合」カテゴリのもの}
         \begin{tabular}{l | r r}
           手法 & 正答率 & RMSE \\
           \hline
