@@ -194,7 +194,9 @@
                                        {fig/poster_model_title_2.pdf}}
         \begin{itemize}
           \item \fire{文同士の位置関係を考慮}しつつ
-                レビュー間で\fire{文の数を一定に}
+                \fire{文ベクトルの数をN個に固定}
+          %\item \fire{文同士の位置関係を考慮}しつつ
+          %      レビュー間で\fire{文の数を一定に}
         \end{itemize}
         \begin{figure}
           \includegraphics[width=\linewidth]
@@ -283,7 +285,6 @@
         \end{itemize}
     \end{itemize}
 
-    %\doublecolumns{0.5\textwidth}{
       \begin{itemize}
         \item \itemtitle{結果}
           \begin{itemize}
@@ -292,7 +293,7 @@
             \item 文書ベクトルと文ベクトルを同時に用いることが有効
           \end{itemize}
       \end{itemize}
-    %}{0.475\textwidth}{
+    \doublecolumns{0.575\textwidth}{
       \begin{table}
         \centering
         %\caption*{実験結果. RMSEは「総合」カテゴリのもの}
@@ -306,7 +307,15 @@
           提案手法 & \fire{0.503} & \fire{0.73} \\
         \end{tabular}
       \end{table}
-    %}
+    }{0.4\textwidth}{
+      \vspace{0.125em} % HACK
+      正答例 （部屋：5点） \\
+      ...
+      チェックイン時に部屋をランクアップして
+      いただいてすごく嬉しかったです。
+      \fire{ありがとうございました。}
+      ...
+    }
   \end{block}
 
   \begin{block}{まとめ}
