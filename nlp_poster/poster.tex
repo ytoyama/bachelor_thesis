@@ -69,12 +69,13 @@
 
   \begin{block}{関連研究}
     \begin{itemize}
-      \item \itemtitle{隠れ状態を用いたホテルレビューのレーティング予測
-                       \cite{fujitani15}}
+      \item \itemtitle{隠れ状態を用いたレーティング予測\cite{fujitani15}}
         \begin{itemize}
-          \item Multiple-Instance Multiple-Labelの手法を利用
-          \item 文毎のレーティングからレビュー全体のレーティングを予測
-          \item カテゴリ間の繋がりを\fire{手調整によって変化}させ考慮
+          \item 文毎に隠れ状態を予測するMultiple-Instance Multiple-Labelの
+                手法を利用
+          \item 文毎の隠れ状態はカテゴリ別のレーティング
+          %\item 文毎のレーティングからレビュー全体のレーティングを予測
+          \item カテゴリ間の繋がりは\fire{手調整によって変化}させ考慮
         \end{itemize}
       %\item \itemtitle{ニューラルネットワーク}
       %  \begin{itemize}
@@ -311,11 +312,13 @@
       \end{table}
     }{0.4\textwidth}{
       \vspace{0.125em} % HACK
-      正答例 （部屋：5点） \\
+      正答例 （風呂：3点） \\
       ...
-      チェックイン時に部屋をランクアップして
-      いただいてすごく嬉しかったです。
-      \fire{ありがとうございました。}
+      ただ洞窟風呂が人気でかなりの人が待っていましたが、
+      ...
+      %ひげそりは全く準備もなく
+      %...
+      しかし、\fire{この２点以外は}非常に素晴らしく、
       ...
     }
   \end{block}
