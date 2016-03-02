@@ -271,8 +271,9 @@
     \begin{itemize}
       \item \itemtitle{実験設定}
         \begin{itemize}
-          \item データセット：楽天トラベルのレビュー約330,000件
-          \item 7カテゴリにおける0〜5点のレーティング予測の正答率を測定
+          \item データセット：楽天トラベルのホテルレビュー\\
+                訓練：300,000件、開発：10,000件、評価：10,000件
+          \item 7カテゴリ0〜5点のレーティング予測の正答率を測定
           \item 提案手法の分類器の入力を変更した3つの比較手法
             \begin{enumerate}
               %\item Document Vector (DV)：レビュー全体の文書ベクトル
@@ -282,7 +283,7 @@
               \item Averaged Sentence Vector (ASV)：平均文ベクトル
               \item Weighted ASV：重み付け平均した文ベクトル
             \end{enumerate}
-          \item 重み更新にAdam、重み減衰、ドロップアウトを利用
+          \item 重み更新にAdam、L2正則化、ドロップアウトを利用
         \end{itemize}
     \end{itemize}
 
