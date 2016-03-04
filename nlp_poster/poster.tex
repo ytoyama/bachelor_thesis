@@ -46,6 +46,7 @@
   \begin{block}{背景と目的}
     \begin{itemize}
       \item 対象問題：多カテゴリにおける商品レビューのレーティング予測
+                      （多ラベル多クラス問題）
       \item 応用例：企業における文書からの商品の評判分析
       \item 目的：\fire{文書・文間の関係}及び\fire{カテゴリ間の関係}を
                   考慮したレーティング予測の実現
@@ -194,8 +195,8 @@
       \item \itemtitle{\includegraphics[height=\mytitlefigureheight]
                                        {fig/poster_model_title_2.pdf}}
         \begin{itemize}
-          \item \fire{文同士の位置関係を考慮}しつつ
-                \fire{文ベクトルの数をS個に固定}
+          \item \fire{文の位置関係を考慮}しつつ
+                \fire{文ベクトルの数をS個(2個)に固定}
           %\item \fire{文同士の位置関係を考慮}しつつ
           %      レビュー間で\fire{文の数を一定に}
         \end{itemize}
@@ -259,9 +260,9 @@
           %$y_{ck}$：カテゴリ$c$においてクラス$k$が選ばれる確率 \\
           $w$：パラメータ \\
           $d_{nck}$：文書$n$がカテゴリ$c$でクラス$k$ならば1、それ以外で0 \\
-          $N$：ミニバッチサイズ \\
-          $C$：カテゴリの総数 \\
-          $K$：クラスの総数 \\
+          $N$：バッチサイズ（42個）\\
+          $C$：カテゴリの総数（７個）\\
+          $K$：クラスの総数（6個）\\
         }
     \end{itemize}
   \end{block}
