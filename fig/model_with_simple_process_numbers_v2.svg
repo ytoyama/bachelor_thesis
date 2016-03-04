@@ -10,9 +10,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="251.60271mm"
-   height="165.71542mm"
-   viewBox="0 0 891.50562 587.18059"
+   width="329.92474mm"
+   height="165.71541mm"
+   viewBox="0 0 1169.0246 587.18054"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -61,7 +61,7 @@
       <path
          id="path8539"
          d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         style="fill:#46a2ff;fill-opacity:1;fill-rule:evenodd;stroke:#46a2ff;stroke-width:1pt;stroke-opacity:1"
          transform="scale(0.2,0.2)"
          inkscape:connector-curvature="0" />
     </marker>
@@ -251,6 +251,81 @@
          d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
          transform="matrix(-0.3,0,0,-0.3,0.69,0)" />
     </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7559-3"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path7561-5"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#68d437;fill-opacity:1;fill-rule:evenodd;stroke:#68d437;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2,0.2)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7559-3-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path7561-5-7"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#68d437;fill-opacity:1;fill-rule:evenodd;stroke:#68d437;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2,0.2)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7559-3-9-2"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path7561-5-7-0"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#68d437;fill-opacity:1;fill-rule:evenodd;stroke:#68d437;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2,0.2)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7559-3-9-2-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path7561-5-7-0-7"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#68d437;fill-opacity:1;fill-rule:evenodd;stroke:#68d437;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2,0.2)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7559-3-9-2-0-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path7561-5-7-0-7-6"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#44951f;fill-opacity:1;fill-rule:evenodd;stroke:#44951f;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2,0.2)"
+         inkscape:connector-curvature="0" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -259,13 +334,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="266.22257"
-     inkscape:cy="768.72022"
+     inkscape:zoom="0.24748738"
+     inkscape:cx="855.581"
+     inkscape:cy="178.21785"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:snap-bbox="true"
+     inkscape:snap-bbox="false"
      inkscape:bbox-nodes="true"
      inkscape:window-width="1054"
      inkscape:window-height="1064"
@@ -287,8 +362,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid3336"
-       originx="-147.53933"
-       originy="-257.81935" />
+       originx="129.9798"
+       originy="-257.81962" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -298,7 +373,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -306,7 +381,13 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-147.53933,-207.36216)">
+     transform="translate(129.97978,-207.36216)">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#44951f;stroke-width:7.99999905;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7559-3-9-2-0-9)"
+       d="M -33.402586,572.79177 150.55207,698.26426"
+       id="path4281-5-4-6-0-2-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
     <path
        style="fill:url(#linearGradient12093);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 659.99993,292.36211 -79.99999,0 -5,449.99995 84.99999,0 z"
@@ -1371,6 +1452,106 @@
        style="fill:none;fill-rule:evenodd;stroke:#707070;stroke-width:3.99999952;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send-5-3-6)"
        d="M 376.81378,735.36946 C 341.98782,700.78607 364.53479,644.88552 328.6354,617.06035"
        id="path4388-7-9-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4406"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(147.53933,207.36213)"><flowRegion
+         id="flowRegion4408"><rect
+           id="rect4410"
+           width="204.28571"
+           height="0"
+           x="-255.71428"
+           y="127.18063" /></flowRegion><flowPara
+         id="flowPara4412">眺めが良かった。</flowPara></flowRoot>    <g
+       id="g4517"
+       transform="translate(22,42)">
+      <rect
+         y="300.71106"
+         x="-150.63742"
+         height="306.88095"
+         width="237.8069"
+         id="rect7079"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#a5a5a5;stroke-width:2.68472409;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4414"
+         y="340.20749"
+         x="-139.5755"
+         style="font-style:normal;font-weight:normal;font-size:29.99999809px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="340.20749"
+           x="-139.5755"
+           sodipodi:role="line"
+           id="tspan4475">海の眺めが良い。</tspan><tspan
+           id="tspan4434"
+           y="377.70749"
+           x="-139.5755"
+           sodipodi:role="line">食事は新鮮で</tspan><tspan
+           id="tspan4515"
+           y="415.20749"
+           x="-139.5755"
+           sodipodi:role="line">おいしかった。</tspan><tspan
+           id="tspan4420"
+           y="452.70749"
+           x="-139.5755"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4422"
+         y="515.87384"
+         x="-140.23468"
+         style="font-style:normal;font-weight:normal;font-size:29.99999809px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan4472"
+           y="515.87384"
+           x="-140.23468"
+           sodipodi:role="line">良い宿だった。</tspan><tspan
+           y="553.37384"
+           x="-140.23468"
+           sodipodi:role="line"
+           id="tspan4501">また利用したいと</tspan><tspan
+           y="590.87384"
+           x="-140.23468"
+           sodipodi:role="line"
+           id="tspan4503">思う。</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4221-9"
+         y="474.36401"
+         x="-61.533493"
+         style="font-style:normal;font-weight:normal;font-size:30.07081032px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60.14162064px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+           y="474.36401"
+           x="-61.533493"
+           id="tspan4223-8"
+           sodipodi:role="line">⋮</tspan></text>
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#68d437;stroke-width:7.99999905;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7559-3)"
+       d="m 100.9923,368.9281 49.74617,-28.78935"
+       id="path4281-5-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#68d437;stroke-width:7.99999905;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7559-3-9)"
+       d="M 66.545587,421.45603 149.12172,397.21237"
+       id="path4281-5-4-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#68d437;stroke-width:7.99999905;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7559-3-9-2)"
+       d="m 66.342541,547.22001 82.071049,-12.6269"
+       id="path4281-5-4-6-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#68d437;stroke-width:7.99999905;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7559-3-9-2-0)"
+       d="m 100.98975,587.07028 48.23092,4.54568"
+       id="path4281-5-4-6-0-2"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
   </g>
