@@ -123,23 +123,57 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{実験結果（レーティングのRMSE）}{}
-  \begin{table}
-    \caption{\large % HACK
-             表. 提案手法と従来手法におけるレーティングのRMSE}
+\begin{frame}{実験結果}{}
+  \begin{figure}
     \centering
-    \begin{tabular}{l | r r}
-      手法 & 提案手法 & 従来手法 \\
+    \caption{\large % HACK
+             図. 各手法におけるのレーティングの正答率}
+    \includegraphics[width=0.8\linewidth]{fig/graph_of_accuracies_of_methods.pdf}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{実験結果}{}
+  \begin{table}
+    \centering
+    \caption{\large % HACK
+             表. 提案手法と従来手法におけるカテゴリ別のレーティングの正答率}
+    \begin{tabular}{l | r r r r r r r}
+      手法 & 立地 & 部屋 & 食事 & 風呂 & サービス & 設備 & 総合 \\
       \hline
-      立地      & 0.88 & 0.97 \\
-      部屋      & 0.88 & 0.97 \\
-      食事      & 0.93 & 1.53 \\
-      風呂      & 1.03 & 1.27 \\
-      サービス  & 0.86 & 0.94 \\
-      設備      & 0.90 & 0.95 \\
-      総合      & 0.73 & 0.81 \\
+      従来手法 & 0.4961 & 0.4706 & 0.5140 & 0.3973 & 0.4783 & 0.4265 & 0.5660 \\
+      提案手法 & 0.5140 & 0.4984 & 0.5353 & 0.4347 & 0.5116 & 0.4479 & 0.5794 \\
     \end{tabular}
   \end{table}
+
+  \begin{table}
+    \centering
+    \caption{\large % HACK
+             表. 提案手法と従来手法におけるカテゴリ別のレーティングのRMSE}
+    \begin{tabular}{l | r r r r r r r}
+      手法 & 立地 & 部屋 & 食事 & 風呂 & サービス & 設備 & 総合 \\
+      \hline
+      従来手法 & 0.97 & 0.97 & 1.53 & 1.27 & 0.94 & 0.95 & 0.81 \\
+      提案手法 & 0.88 & 0.88 & 0.93 & 1.03 & 0.86 & 0.90 & 0.73 \\
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+\begin{frame}{実験結果}{}
+  \begin{figure}
+    \centering
+    \caption{\large % HACK
+             図. 提案手法と従来手法におけるカテゴリ別のレーティングの正答率}
+    \includegraphics{fig/graph_of_accuracies_per_category.pdf}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{実験結果}{}
+  \begin{figure}
+    \centering
+    \caption{\large % HACK
+             図. 提案手法と従来手法におけるカテゴリ別のレーティングのRMSE}
+    \includegraphics{fig/graph_of_rmses_per_category.pdf}
+  \end{figure}
 \end{frame}
 
 \end{document}
